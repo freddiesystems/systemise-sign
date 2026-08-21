@@ -31,12 +31,7 @@ export default function ApiTokensPage() {
         subtitle={
           <Trans>
             On this page, you can create and manage API tokens. See our{' '}
-            <a
-              className="text-primary underline"
-              href={'https://docs.documenso.com/developers/public-api'}
-              target="_blank"
-              rel="noopener"
-            >
+            <a className="text-primary underline" href={'https://systemise.dev'} target="_blank" rel="noopener">
               Documentation
             </a>{' '}
             for more information.

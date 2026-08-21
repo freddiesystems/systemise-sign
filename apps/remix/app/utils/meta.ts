@@ -3,11 +3,11 @@ import { i18n, type MessageDescriptor } from '@lingui/core';
 
 export const appMetaTags = (title?: MessageDescriptor) => {
   const description =
-    'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+    'Send, sign and store documents with Systemise. Secure electronic signatures, full audit trails and reusable templates.';
 
   return [
     {
-      title: title ? `${i18n._(title)} - Documenso` : 'Documenso',
+      title: title ? `${i18n._(title)} - Systemise` : 'Systemise',
     },
     {
       name: 'description',
@@ -16,11 +16,11 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     {
       name: 'keywords',
       content:
-        'Documenso, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+        'Systemise, document signing, electronic signature, e-signature, contracts, agreements, audit trail, templates',
     },
     {
       name: 'author',
-      content: 'Documenso, Inc.',
+      content: 'Systemise',
     },
     {
       name: 'robots',
@@ -28,7 +28,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       property: 'og:title',
-      content: 'Documenso - The Open Source DocuSign Alternative',
+      content: 'Systemise — Document signing',
     },
     {
       property: 'og:description',
@@ -45,10 +45,6 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     {
       name: 'twitter:card',
       content: 'summary_large_image',
-    },
-    {
-      name: 'twitter:site',
-      content: '@documenso',
     },
     {
       name: 'twitter:description',

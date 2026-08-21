@@ -16,7 +16,7 @@ export default function SignatureDisclosure() {
         </h2>
         <p>
           <Trans>
-            Thank you for using Documenso to perform your electronic document signing. The purpose of this disclosure is
+            Thank you for using Systemise to perform your electronic document signing. The purpose of this disclosure is
             to inform you about the process, legality, and your rights regarding the use of electronic signatures on our
             platform. By opting to use an electronic signature, you are agreeing to the terms and conditions outlined
             below.
@@ -127,7 +127,7 @@ export default function SignatureDisclosure() {
         </h2>
         <p>
           <Trans>
-            By proceeding to use the electronic signature service provided by Documenso, you affirm that you have read
+            By proceeding to use the electronic signature service provided by Systemise, you affirm that you have read
             and understood this disclosure. You agree to all terms and conditions related to the use of electronic
             signatures and electronic transactions as outlined herein.
           </Trans>
@@ -140,6 +140,20 @@ export default function SignatureDisclosure() {
           <Trans>
             For any questions regarding this disclosure, electronic signatures, or any related process, please contact
             us at: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
+          </Trans>
+        </p>
+
+        <h2>
+          <Trans>Software</Trans>
+        </h2>
+        <p>
+          <Trans>
+            This service runs on Systemise Sign, a modified version of Documenso, licensed under the GNU Affero General
+            Public License v3.0. The complete corresponding source code is available at{' '}
+            <a href="https://github.com/freddiesystems/systemise-sign" target="_blank" rel="noopener noreferrer">
+              github.com/freddiesystems/systemise-sign
+            </a>
+            .
           </Trans>
         </p>
       </article>

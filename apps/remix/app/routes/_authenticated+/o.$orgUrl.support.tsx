@@ -1,10 +1,10 @@
 import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
 import { useSession } from '@documenso/lib/client-only/providers/session';
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
+import { IS_BILLING_ENABLED, SUPPORT_EMAIL } from '@documenso/lib/constants/app';
 import { Button } from '@documenso/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';
-import { BookIcon, HelpCircleIcon, Link2Icon } from 'lucide-react';
+import { HelpCircleIcon, Link2Icon, MailIcon } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router';
 
@@ -49,45 +49,13 @@ export default function SupportPage() {
         <div className="mt-6 flex flex-col gap-4">
           <div className="rounded-lg border p-4">
             <h2 className="flex items-center gap-2 font-bold text-lg">
-              <BookIcon className="h-5 w-5 text-muted-foreground" />
-              <Link
-                to="https://docs.documenso.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                <Trans>Documentation</Trans>
+              <MailIcon className="h-5 w-5 text-muted-foreground" />
+              <Link to={`mailto:${SUPPORT_EMAIL}`} className="hover:underline">
+                <Trans>Email support</Trans>
               </Link>
             </h2>
             <p className="mt-1 text-muted-foreground">
-              <Trans>Read our documentation to get started with Documenso.</Trans>
-            </p>
-          </div>
-          <div className="rounded-lg border p-4">
-            <h2 className="flex items-center gap-2 font-bold text-lg">
-              <Link2Icon className="h-5 w-5 text-muted-foreground" />
-              <Link
-                to="https://documen.so/discord"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                <Trans>Discord</Trans>
-              </Link>
-            </h2>
-            <p className="mt-1 text-muted-foreground">
-              <Trans>
-                Join our community on{' '}
-                <Link
-                  to="https://documen.so/discord"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  Discord
-                </Link>{' '}
-                for community support and discussion.
-              </Trans>
+              <Trans>Email us at {SUPPORT_EMAIL} and we'll get back to you.</Trans>
             </p>
           </div>
           {organisation && IS_BILLING_ENABLED() && subscriptionStatus && (

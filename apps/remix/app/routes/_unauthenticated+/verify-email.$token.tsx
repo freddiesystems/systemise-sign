@@ -68,7 +68,7 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
   if (isLoading || state === null) {
     return (
       <div className="relative">
-        <Loader className="h-8 w-8 animate-spin text-documenso" />
+        <Loader className="h-8 w-8 animate-spin text-primary" />
       </div>
     );
   }
@@ -142,7 +142,7 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
             </h2>
 
             <p className="mt-4 text-muted-foreground">
-              <Trans>Your email has been successfully confirmed! You can now use all features of Documenso.</Trans>
+              <Trans>Your email has been successfully confirmed! You can now use all features of Systemise.</Trans>
             </p>
 
             <Button className="mt-4" asChild>
@@ -167,7 +167,7 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
             </h2>
 
             <p className="mt-4 text-muted-foreground">
-              <Trans>Your email has already been confirmed. You can now use all features of Documenso.</Trans>
+              <Trans>Your email has already been confirmed. You can now use all features of Systemise.</Trans>
             </p>
 
             <Button className="mt-4" asChild>

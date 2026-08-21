@@ -47,7 +47,7 @@ export const DocumentCreatedFromDirectTemplateEmailTemplate = ({
               {branding.brandingEnabled && branding.brandingLogo ? (
                 <Img src={branding.brandingLogo} alt="Branding Logo" className="mb-4 h-6" />
               ) : (
-                <Img src={getAssetUrl('/static/logo.png')} alt="Documenso Logo" className="mb-4 h-6" />
+                <Img src={getAssetUrl('/static/logo.png')} alt="Systemise Logo" className="mb-4 h-6" />
               )}
 
               <TemplateDocumentImage className="mt-6" assetBaseUrl={assetBaseUrl} />
@@ -65,7 +65,7 @@ export const DocumentCreatedFromDirectTemplateEmailTemplate = ({
 
                 <Section className="my-6 text-center">
                   <Button
-                    className="inline-flex items-center justify-center rounded-lg bg-documenso-500 px-6 py-3 text-center font-medium text-black text-sm no-underline"
+                    className="inline-flex items-center justify-center rounded-lg bg-brand-900 px-6 py-3 text-center font-medium text-sm text-white no-underline"
                     href={documentLink}
                   >
                     <Trans>View document</Trans>

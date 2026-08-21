@@ -27,7 +27,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate, useSearchParams } from 'react-router';
 import { z } from 'zod';
 
-import { UserProfileTimur } from '~/components/general/user-profile-timur';
+import { UserProfilePreview } from '~/components/general/user-profile-preview';
 
 export const ZSignUpFormSchema = z
   .object({
@@ -211,7 +211,7 @@ export const SignUpForm = ({
           </div>
 
           <div className="w-full max-w-md">
-            <UserProfileTimur rows={2} className="rounded-2xl border border-border bg-background shadow-md" />
+            <UserProfilePreview rows={2} className="rounded-2xl border border-border bg-background shadow-md" />
           </div>
 
           <div />
@@ -380,7 +380,7 @@ export const SignUpForm = ({
               <p className="mt-4 text-muted-foreground text-sm">
                 <Trans>
                   Already have an account?{' '}
-                  <Link to="/signin" className="text-documenso-700 duration-200 hover:opacity-70">
+                  <Link to="/signin" className="text-primary duration-200 hover:opacity-70">
                     Sign in instead
                   </Link>
                 </Trans>
@@ -397,19 +397,11 @@ export const SignUpForm = ({
         <p className="mt-6 text-muted-foreground text-xs">
           <Trans>
             By proceeding, you agree to our{' '}
-            <Link
-              to="https://documen.so/terms"
-              target="_blank"
-              className="text-documenso-700 duration-200 hover:opacity-70"
-            >
+            <Link to="https://systemise.dev" target="_blank" className="text-primary duration-200 hover:opacity-70">
               Terms of Service
             </Link>{' '}
             and{' '}
-            <Link
-              to="https://documen.so/privacy"
-              target="_blank"
-              className="text-documenso-700 duration-200 hover:opacity-70"
-            >
+            <Link to="https://systemise.dev" target="_blank" className="text-primary duration-200 hover:opacity-70">
               Privacy Policy
             </Link>
             .

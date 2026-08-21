@@ -37,8 +37,8 @@ export const sendResetPassword = async ({ userId }: SendResetPasswordOptions) =>
       name: user.name || '',
     },
     from: {
-      name: env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Documenso',
-      address: env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@documenso.com',
+      name: env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Systemise',
+      address: env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@systemise.dev',
     },
     subject: 'Password Reset Success!',
     html,
