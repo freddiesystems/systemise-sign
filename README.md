@@ -48,6 +48,11 @@ Systemise KB page *Documenso* for the project, service and environment details.
 
 ## Upstream
 
+Upstream's `.github/workflows` are not carried here — that CI belongs to the Documenso
+project (it publishes their Docker images and runs their release process) and would only
+fail or waste Actions minutes on this fork. Everything required to build and run the
+service is present.
+
 Documentation, architecture notes and contribution guides in this repository are Documenso's own
 and are kept as-is. For upstream issues and releases see
 [documenso/documenso](https://github.com/documenso/documenso).
