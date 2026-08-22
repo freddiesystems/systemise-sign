@@ -1,5 +1,5 @@
-import { ZDocumentManySchema } from '@documenso/lib/types/document';
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
+import { ZDocumentManySchema } from '@systemise/lib/types/document';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
 import { DocumentSource, DocumentStatus } from '@prisma/client';
 import { z } from 'zod';
 

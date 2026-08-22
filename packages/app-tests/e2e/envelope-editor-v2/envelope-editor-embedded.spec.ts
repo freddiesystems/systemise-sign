@@ -1,8 +1,8 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createApiToken } from '@documenso/lib/server-only/public-api/create-api-token';
-import { nanoid } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createApiToken } from '@systemise/lib/server-only/public-api/create-api-token';
+import { nanoid } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 
@@ -221,7 +221,7 @@ const setExternalIdViaSettings = async (surface: TEnvelopeEditorSurface, externa
  */
 const setupMinimalEnvelope = async (surface: TEnvelopeEditorSurface, externalId: string) => {
   await addEnvelopeItemPdf(surface.root);
-  await setRecipientEmail(surface.root, 0, `${nanoid()}@test.documenso.com`);
+  await setRecipientEmail(surface.root, 0, `${nanoid()}@test.systemise.dev`);
   await setExternalIdViaSettings(surface, externalId);
 };
 

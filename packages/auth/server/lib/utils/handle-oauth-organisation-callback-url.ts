@@ -1,9 +1,9 @@
-import { sendOrganisationAccountLinkConfirmationEmail } from '@documenso/ee/server-only/lib/send-organisation-account-link-confirmation-email';
-import { isSignupEnabledForProvider } from '@documenso/lib/constants/auth';
-import { AppError } from '@documenso/lib/errors/app-error';
-import { onCreateUserHook } from '@documenso/lib/server-only/user/create-user';
-import { formatOrganisationLoginUrl } from '@documenso/lib/utils/organisation-authentication-portal';
-import { prisma } from '@documenso/prisma';
+import { sendOrganisationAccountLinkConfirmationEmail } from '@systemise/ee/server-only/lib/send-organisation-account-link-confirmation-email';
+import { isSignupEnabledForProvider } from '@systemise/lib/constants/auth';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { onCreateUserHook } from '@systemise/lib/server-only/user/create-user';
+import { formatOrganisationLoginUrl } from '@systemise/lib/utils/organisation-authentication-portal';
+import { prisma } from '@systemise/prisma';
 import type { Context } from 'hono';
 
 import { AuthenticationErrorCode } from '../errors/error-codes';

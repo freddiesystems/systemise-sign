@@ -1,8 +1,8 @@
-import { prisma } from '@documenso/prisma';
-import { BackgroundJobStatus, DocumentStatus, EnvelopeType, Role } from '@documenso/prisma/client';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedOrganisationMembers } from '@documenso/prisma/seed/organisations';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { prisma } from '@systemise/prisma';
+import { BackgroundJobStatus, DocumentStatus, EnvelopeType, Role } from '@systemise/prisma/client';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedOrganisationMembers } from '@systemise/prisma/seed/organisations';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin, apiSignout } from '../../fixtures/authentication';

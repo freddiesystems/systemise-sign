@@ -1,18 +1,18 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import type { TDocumentMany as TDocumentRow } from '@documenso/lib/types/document';
-import { isDocumentCompleted } from '@documenso/lib/utils/document';
-import { getEnvelopeItemPermissions } from '@documenso/lib/utils/envelope';
-import { findRecipientByEmail } from '@documenso/lib/utils/recipients';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { trpc as trpcReact } from '@documenso/trpc/react';
-import { DocumentShareButton } from '@documenso/ui/components/document/document-share-button';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import type { TDocumentMany as TDocumentRow } from '@systemise/lib/types/document';
+import { isDocumentCompleted } from '@systemise/lib/utils/document';
+import { getEnvelopeItemPermissions } from '@systemise/lib/utils/envelope';
+import { findRecipientByEmail } from '@systemise/lib/utils/recipients';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { trpc as trpcReact } from '@systemise/trpc/react';
+import { DocumentShareButton } from '@systemise/ui/components/document/document-share-button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
+} from '@systemise/ui/primitives/dropdown-menu';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

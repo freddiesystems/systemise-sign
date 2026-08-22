@@ -1,10 +1,10 @@
-import { DEFAULT_SIGNATURE_TEXT_FONT_SIZE } from '@documenso/lib/constants/pdf';
+import { DEFAULT_SIGNATURE_TEXT_FONT_SIZE } from '@systemise/lib/constants/pdf';
 import {
   FIELD_SIGNATURE_META_DEFAULT_VALUES,
   type TSignatureFieldMeta,
   ZSignatureFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import { Form } from '@documenso/ui/primitives/form/form';
+} from '@systemise/lib/types/field-meta';
+import { Form } from '@systemise/ui/primitives/form/form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans } from '@lingui/react/macro';
 import { useEffect } from 'react';

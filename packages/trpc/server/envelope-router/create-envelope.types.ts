@@ -1,16 +1,16 @@
-import { ZDocumentAccessAuthTypesSchema, ZDocumentActionAuthTypesSchema } from '@documenso/lib/types/document-auth';
-import { ZDocumentFormValuesSchema } from '@documenso/lib/types/document-form-values';
-import { ZDocumentMetaCreateSchema } from '@documenso/lib/types/document-meta';
-import { ZEnvelopeAttachmentTypeSchema } from '@documenso/lib/types/envelope-attachment';
+import { ZDocumentAccessAuthTypesSchema, ZDocumentActionAuthTypesSchema } from '@systemise/lib/types/document-auth';
+import { ZDocumentFormValuesSchema } from '@systemise/lib/types/document-form-values';
+import { ZDocumentMetaCreateSchema } from '@systemise/lib/types/document-meta';
+import { ZEnvelopeAttachmentTypeSchema } from '@systemise/lib/types/envelope-attachment';
 import {
   ZClampedFieldHeightSchema,
   ZClampedFieldPositionXSchema,
   ZClampedFieldPositionYSchema,
   ZClampedFieldWidthSchema,
   ZFieldPageNumberSchema,
-} from '@documenso/lib/types/field';
-import { ZEnvelopeFieldAndMetaSchema } from '@documenso/lib/types/field-meta';
-import { zEmail } from '@documenso/lib/utils/zod';
+} from '@systemise/lib/types/field';
+import { ZEnvelopeFieldAndMetaSchema } from '@systemise/lib/types/field-meta';
+import { zEmail } from '@systemise/lib/utils/zod';
 import { EnvelopeType } from '@prisma/client';
 import { z } from 'zod';
 import { zfd } from 'zod-form-data';

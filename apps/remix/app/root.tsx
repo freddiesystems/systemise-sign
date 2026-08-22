@@ -1,12 +1,12 @@
-import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
-import { SessionProvider } from '@documenso/lib/client-only/providers/session';
-import { APP_I18N_OPTIONS, type SupportedLanguageCodes } from '@documenso/lib/constants/i18n';
-import { createPublicEnv } from '@documenso/lib/utils/env';
-import { extractLocaleData } from '@documenso/lib/utils/i18n';
-import { TrpcProvider } from '@documenso/trpc/react';
-import { getOrganisationSession } from '@documenso/trpc/server/organisation-router/get-organisation-session';
-import { Toaster } from '@documenso/ui/primitives/toaster';
-import { TooltipProvider } from '@documenso/ui/primitives/tooltip';
+import { getOptionalSession } from '@systemise/auth/server/lib/utils/get-session';
+import { SessionProvider } from '@systemise/lib/client-only/providers/session';
+import { APP_I18N_OPTIONS, type SupportedLanguageCodes } from '@systemise/lib/constants/i18n';
+import { createPublicEnv } from '@systemise/lib/utils/env';
+import { extractLocaleData } from '@systemise/lib/utils/i18n';
+import { TrpcProvider } from '@systemise/trpc/react';
+import { getOrganisationSession } from '@systemise/trpc/server/organisation-router/get-organisation-session';
+import { Toaster } from '@systemise/ui/primitives/toaster';
+import { TooltipProvider } from '@systemise/ui/primitives/tooltip';
 import { NuqsAdapter } from 'nuqs/adapters/react-router/v7';
 import {
   data,

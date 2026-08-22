@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { AuthenticatorTransportFuture } from '@simplewebauthn/server';
 import { generateRegistrationOptions } from '@simplewebauthn/server';
 import { isoBase64URL } from '@simplewebauthn/server/helpers';

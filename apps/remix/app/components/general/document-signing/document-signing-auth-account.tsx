@@ -1,8 +1,8 @@
-import { authClient } from '@documenso/auth/client';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { DialogFooter } from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { authClient } from '@systemise/auth/client';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { DialogFooter } from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { RecipientRole } from '@prisma/client';
 import { useState } from 'react';

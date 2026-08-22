@@ -1,5 +1,5 @@
-import type { FindResultResponse } from '@documenso/lib/types/search-params';
-import { prisma } from '@documenso/prisma';
+import type { FindResultResponse } from '@systemise/lib/types/search-params';
+import { prisma } from '@systemise/prisma';
 import { Prisma } from '@prisma/client';
 
 import { adminProcedure } from '../trpc';

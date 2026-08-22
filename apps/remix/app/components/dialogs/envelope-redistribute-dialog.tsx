@@ -1,11 +1,11 @@
-import { getRecipientType } from '@documenso/lib/client-only/recipient-type';
-import type { TEnvelope } from '@documenso/lib/types/envelope';
-import type { TEnvelopeRecipientLite } from '@documenso/lib/types/recipient';
-import { recipientAbbreviation } from '@documenso/lib/utils/recipient-formatter';
-import { trpc as trpcReact } from '@documenso/trpc/react';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
+import { getRecipientType } from '@systemise/lib/client-only/recipient-type';
+import type { TEnvelope } from '@systemise/lib/types/envelope';
+import type { TEnvelopeRecipientLite } from '@systemise/lib/types/recipient';
+import { recipientAbbreviation } from '@systemise/lib/utils/recipient-formatter';
+import { trpc as trpcReact } from '@systemise/trpc/react';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
 import {
   Dialog,
   DialogClose,
@@ -15,9 +15,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel } from '@documenso/ui/primitives/form/form';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel } from '@systemise/ui/primitives/form/form';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';

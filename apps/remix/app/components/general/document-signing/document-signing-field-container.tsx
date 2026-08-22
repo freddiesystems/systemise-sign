@@ -1,10 +1,10 @@
-import type { TRecipientActionAuth } from '@documenso/lib/types/document-auth';
-import { ZFieldMetaSchema } from '@documenso/lib/types/field-meta';
-import type { FieldWithSignature } from '@documenso/prisma/types/field-with-signature';
-import { FieldRootContainer } from '@documenso/ui/components/field/field';
-import { getRecipientColorStyles } from '@documenso/ui/lib/recipient-colors';
-import { cn } from '@documenso/ui/lib/utils';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
+import type { TRecipientActionAuth } from '@systemise/lib/types/document-auth';
+import { ZFieldMetaSchema } from '@systemise/lib/types/field-meta';
+import type { FieldWithSignature } from '@systemise/prisma/types/field-with-signature';
+import { FieldRootContainer } from '@systemise/ui/components/field/field';
+import { getRecipientColorStyles } from '@systemise/ui/lib/recipient-colors';
+import { cn } from '@systemise/ui/lib/utils';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
 import { Trans } from '@lingui/react/macro';
 import { FieldType } from '@prisma/client';
 import { TooltipArrow } from '@radix-ui/react-tooltip';

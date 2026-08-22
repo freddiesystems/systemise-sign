@@ -1,5 +1,5 @@
-import { ZDocumentLiteSchema } from '@documenso/lib/types/document';
-import { ZDocumentEmailSettingsSchema } from '@documenso/lib/types/document-email';
+import { ZDocumentLiteSchema } from '@systemise/lib/types/document';
+import { ZDocumentEmailSettingsSchema } from '@systemise/lib/types/document-email';
 import {
   ZDocumentMetaDateFormatSchema,
   ZDocumentMetaDistributionMethodSchema,
@@ -8,8 +8,8 @@ import {
   ZDocumentMetaRedirectUrlSchema,
   ZDocumentMetaSubjectSchema,
   ZDocumentMetaTimezoneSchema,
-} from '@documenso/lib/types/document-meta';
-import { zEmail } from '@documenso/lib/utils/zod';
+} from '@systemise/lib/types/document-meta';
+import { zEmail } from '@systemise/lib/utils/zod';
 import { z } from 'zod';
 
 import type { TrpcRouteMeta } from '../trpc';

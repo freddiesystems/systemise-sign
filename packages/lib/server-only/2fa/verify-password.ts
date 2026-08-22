@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { compare } from '@node-rs/bcrypt';
 
 type VerifyPasswordOptions = {

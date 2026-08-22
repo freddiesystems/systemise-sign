@@ -1,8 +1,8 @@
-import { mailer } from '@documenso/email/mailer';
-import { TeamEmailRemovedTemplate } from '@documenso/email/templates/team-email-removed';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/teams';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { TeamEmailRemovedTemplate } from '@systemise/email/templates/team-email-removed';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/teams';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { createElement } from 'react';
 

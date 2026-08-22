@@ -1,8 +1,8 @@
-import { validateFields as validateNameFields } from '@documenso/lib/advanced-fields-validation/validate-fields';
-import type { TNameFieldMeta as NameFieldMeta } from '@documenso/lib/types/field-meta';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
+import { validateFields as validateNameFields } from '@systemise/lib/advanced-fields-validation/validate-fields';
+import type { TNameFieldMeta as NameFieldMeta } from '@systemise/lib/types/field-meta';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
 import { Trans, useLingui } from '@lingui/react/macro';
 
 type NameFieldAdvancedSettingsProps = {

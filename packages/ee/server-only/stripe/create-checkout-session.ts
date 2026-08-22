@@ -1,5 +1,5 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { stripe } from '@documenso/lib/server-only/stripe';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { stripe } from '@systemise/lib/server-only/stripe';
 import type Stripe from 'stripe';
 
 export type CreateCheckoutSessionOptions = {

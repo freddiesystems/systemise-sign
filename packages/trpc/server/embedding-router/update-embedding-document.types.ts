@@ -1,4 +1,4 @@
-import { ZDocumentEmailSettingsSchema } from '@documenso/lib/types/document-email';
+import { ZDocumentEmailSettingsSchema } from '@systemise/lib/types/document-email';
 import {
   ZDocumentMetaDateFormatSchema,
   ZDocumentMetaDistributionMethodSchema,
@@ -10,17 +10,17 @@ import {
   ZDocumentMetaTimezoneSchema,
   ZDocumentMetaTypedSignatureEnabledSchema,
   ZDocumentMetaUploadSignatureEnabledSchema,
-} from '@documenso/lib/types/document-meta';
+} from '@systemise/lib/types/document-meta';
 import {
   ZFieldHeightSchema,
   ZFieldPageNumberSchema,
   ZFieldPageXSchema,
   ZFieldPageYSchema,
   ZFieldWidthSchema,
-} from '@documenso/lib/types/field';
-import { ZFieldAndMetaSchema } from '@documenso/lib/types/field-meta';
-import { zEmail } from '@documenso/lib/utils/zod';
-import { DocumentSigningOrder, RecipientRole } from '@documenso/prisma/generated/types';
+} from '@systemise/lib/types/field';
+import { ZFieldAndMetaSchema } from '@systemise/lib/types/field-meta';
+import { zEmail } from '@systemise/lib/utils/zod';
+import { DocumentSigningOrder, RecipientRole } from '@systemise/prisma/generated/types';
 import { z } from 'zod';
 
 import { ZDocumentExternalIdSchema, ZDocumentTitleSchema } from '../document-router/schema';

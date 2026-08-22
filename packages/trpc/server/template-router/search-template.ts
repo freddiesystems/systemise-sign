@@ -1,4 +1,4 @@
-import { searchTemplatesWithKeyword } from '@documenso/lib/server-only/template/search-templates-with-keyword';
+import { searchTemplatesWithKeyword } from '@systemise/lib/server-only/template/search-templates-with-keyword';
 
 import { authenticatedProcedure } from '../trpc';
 import { ZSearchTemplateRequestSchema, ZSearchTemplateResponseSchema } from './search-template.types';

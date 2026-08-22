@@ -1,11 +1,11 @@
 import { CreateEmailIdentityCommand, SESv2Client } from '@aws-sdk/client-sesv2';
-import { DOCUMENSO_ENCRYPTION_KEY } from '@documenso/lib/constants/crypto';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { symmetricEncrypt } from '@documenso/lib/universal/crypto';
-import { generateDatabaseId } from '@documenso/lib/universal/id';
-import { generateEmailDomainRecords } from '@documenso/lib/utils/email-domains';
-import { env } from '@documenso/lib/utils/env';
-import { prisma } from '@documenso/prisma';
+import { SYSTEMISE_ENCRYPTION_KEY } from '@systemise/lib/constants/crypto';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { symmetricEncrypt } from '@systemise/lib/universal/crypto';
+import { generateDatabaseId } from '@systemise/lib/universal/id';
+import { generateEmailDomainRecords } from '@systemise/lib/utils/email-domains';
+import { env } from '@systemise/lib/utils/env';
+import { prisma } from '@systemise/prisma';
 import { EmailDomainStatus } from '@prisma/client';
 import { generateKeyPair } from 'crypto';
 import { promisify } from 'util';
@@ -61,13 +61,13 @@ type DomainRecord = {
 };
 
 export const createEmailDomain = async ({ domain, organisationId }: CreateEmailDomainOptions) => {
-  const encryptionKey = DOCUMENSO_ENCRYPTION_KEY;
+  const encryptionKey = SYSTEMISE_ENCRYPTION_KEY;
 
   if (!encryptionKey) {
-    throw new Error('Missing DOCUMENSO_ENCRYPTION_KEY');
+    throw new Error('Missing SYSTEMISE_ENCRYPTION_KEY');
   }
 
-  const selector = `documenso-${organisationId}`.replace(/[_.]/g, '-');
+  const selector = `systemise-${organisationId}`.replace(/[_.]/g, '-');
   const recordName = `${selector}._domainkey.${domain}`;
 
   // Check if domain already exists

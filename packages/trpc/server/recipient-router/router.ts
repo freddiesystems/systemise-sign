@@ -1,11 +1,11 @@
-import { completeDocumentWithToken } from '@documenso/lib/server-only/document/complete-document-with-token';
-import { rejectDocumentWithToken } from '@documenso/lib/server-only/document/reject-document-with-token';
-import { createEnvelopeRecipients } from '@documenso/lib/server-only/recipient/create-envelope-recipients';
-import { deleteEnvelopeRecipient } from '@documenso/lib/server-only/recipient/delete-envelope-recipient';
-import { getRecipientById } from '@documenso/lib/server-only/recipient/get-recipient-by-id';
-import { setDocumentRecipients } from '@documenso/lib/server-only/recipient/set-document-recipients';
-import { setTemplateRecipients } from '@documenso/lib/server-only/recipient/set-template-recipients';
-import { updateEnvelopeRecipients } from '@documenso/lib/server-only/recipient/update-envelope-recipients';
+import { completeDocumentWithToken } from '@systemise/lib/server-only/document/complete-document-with-token';
+import { rejectDocumentWithToken } from '@systemise/lib/server-only/document/reject-document-with-token';
+import { createEnvelopeRecipients } from '@systemise/lib/server-only/recipient/create-envelope-recipients';
+import { deleteEnvelopeRecipient } from '@systemise/lib/server-only/recipient/delete-envelope-recipient';
+import { getRecipientById } from '@systemise/lib/server-only/recipient/get-recipient-by-id';
+import { setDocumentRecipients } from '@systemise/lib/server-only/recipient/set-document-recipients';
+import { setTemplateRecipients } from '@systemise/lib/server-only/recipient/set-template-recipients';
+import { updateEnvelopeRecipients } from '@systemise/lib/server-only/recipient/update-envelope-recipients';
 import { EnvelopeType } from '@prisma/client';
 
 import { ZGenericSuccessResponse, ZSuccessResponseSchema } from '../schema';

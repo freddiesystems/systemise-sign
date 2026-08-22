@@ -1,8 +1,8 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import type { FindResultResponse } from '@documenso/lib/types/search-params';
-import { parseDocumentAuditLogData } from '@documenso/lib/utils/document-audit-logs';
-import { unsafeBuildEnvelopeIdQuery } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import type { FindResultResponse } from '@systemise/lib/types/search-params';
+import { parseDocumentAuditLogData } from '@systemise/lib/utils/document-audit-logs';
+import { unsafeBuildEnvelopeIdQuery } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 
 import { adminProcedure } from '../trpc';

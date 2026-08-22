@@ -1,7 +1,7 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { trpc } from '@documenso/trpc/react';
-import { SpinnerBox } from '@documenso/ui/primitives/spinner';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { trpc } from '@systemise/trpc/react';
+import { SpinnerBox } from '@systemise/ui/primitives/spinner';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 

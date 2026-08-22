@@ -1,10 +1,10 @@
-import { authClient } from '@documenso/auth/client';
-import { zEmail } from '@documenso/lib/utils/zod';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { authClient } from '@systemise/auth/client';
+import { zEmail } from '@systemise/lib/utils/zod';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

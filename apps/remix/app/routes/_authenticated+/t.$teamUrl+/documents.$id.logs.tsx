@@ -1,10 +1,10 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
-import { getEnvelopeById } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { getTeamByUrl } from '@documenso/lib/server-only/team/get-team';
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
-import { logDocumentAccess } from '@documenso/lib/utils/logger';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { Card } from '@documenso/ui/primitives/card';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
+import { getEnvelopeById } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { getTeamByUrl } from '@systemise/lib/server-only/team/get-team';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
+import { logDocumentAccess } from '@systemise/lib/utils/logger';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { Card } from '@systemise/ui/primitives/card';
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

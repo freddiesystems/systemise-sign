@@ -6,12 +6,12 @@ import {
   FIELD_DEFAULT_LINE_HEIGHT,
   type TNumberFieldMeta as NumberFieldMeta,
   ZNumberFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import { numberFormatValues } from '@documenso/ui/primitives/document-flow/field-items-advanced-settings/constants';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
-import { Separator } from '@documenso/ui/primitives/separator';
+} from '@systemise/lib/types/field-meta';
+import { numberFormatValues } from '@systemise/ui/primitives/document-flow/field-items-advanced-settings/constants';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
+import { Separator } from '@systemise/ui/primitives/separator';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { useEffect } from 'react';

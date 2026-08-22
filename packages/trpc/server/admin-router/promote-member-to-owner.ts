@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { generateDatabaseId } from '@documenso/lib/universal/id';
-import { getHighestOrganisationRoleInGroup } from '@documenso/lib/utils/organisations';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { generateDatabaseId } from '@systemise/lib/universal/id';
+import { getHighestOrganisationRoleInGroup } from '@systemise/lib/utils/organisations';
+import { prisma } from '@systemise/prisma';
 import { OrganisationGroupType, OrganisationMemberRole } from '@prisma/client';
 
 import { adminProcedure } from '../trpc';

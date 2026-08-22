@@ -1,6 +1,6 @@
-import type { TCachedLicense } from '@documenso/lib/types/license';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import type { TCachedLicense } from '@systemise/lib/types/license';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { AlertTriangleIcon, KeyRoundIcon } from 'lucide-react';
 import { Link } from 'react-router';

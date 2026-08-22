@@ -1,6 +1,6 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { trpc } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { trpc } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -10,8 +10,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { OrganisationGroupType, OrganisationMemberRole, TeamMemberRole } from '@prisma/client';
 

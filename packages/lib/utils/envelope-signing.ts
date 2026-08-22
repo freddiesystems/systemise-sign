@@ -1,23 +1,23 @@
-import { validateCheckboxLength } from '@documenso/lib/advanced-fields-validation/validate-checkbox';
-import { validateDropdownField } from '@documenso/lib/advanced-fields-validation/validate-dropdown';
-import { validateNumberField } from '@documenso/lib/advanced-fields-validation/validate-number';
-import { validateTextField } from '@documenso/lib/advanced-fields-validation/validate-text';
-import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@documenso/lib/constants/date-formats';
-import { isBase64Image } from '@documenso/lib/constants/signatures';
-import { DEFAULT_DOCUMENT_TIME_ZONE } from '@documenso/lib/constants/time-zones';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import type { TDocumentMeta } from '@documenso/lib/types/document-meta';
+import { validateCheckboxLength } from '@systemise/lib/advanced-fields-validation/validate-checkbox';
+import { validateDropdownField } from '@systemise/lib/advanced-fields-validation/validate-dropdown';
+import { validateNumberField } from '@systemise/lib/advanced-fields-validation/validate-number';
+import { validateTextField } from '@systemise/lib/advanced-fields-validation/validate-text';
+import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@systemise/lib/constants/date-formats';
+import { isBase64Image } from '@systemise/lib/constants/signatures';
+import { DEFAULT_DOCUMENT_TIME_ZONE } from '@systemise/lib/constants/time-zones';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import type { TDocumentMeta } from '@systemise/lib/types/document-meta';
 import {
   ZCheckboxFieldMeta,
   ZDropdownFieldMeta,
   ZNumberFieldMeta,
   ZRadioFieldMeta,
   ZTextFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import { toCheckboxCustomText, toRadioCustomText } from '@documenso/lib/utils/fields';
-import { zEmail } from '@documenso/lib/utils/zod';
-import type { TSignEnvelopeFieldValue } from '@documenso/trpc/server/envelope-router/sign-envelope-field.types';
-import { checkboxValidationSigns } from '@documenso/ui/primitives/document-flow/field-items-advanced-settings/constants';
+} from '@systemise/lib/types/field-meta';
+import { toCheckboxCustomText, toRadioCustomText } from '@systemise/lib/utils/fields';
+import { zEmail } from '@systemise/lib/utils/zod';
+import type { TSignEnvelopeFieldValue } from '@systemise/trpc/server/envelope-router/sign-envelope-field.types';
+import { checkboxValidationSigns } from '@systemise/ui/primitives/document-flow/field-items-advanced-settings/constants';
 import type { Field } from '@prisma/client';
 import { FieldType } from '@prisma/client';
 import { DateTime } from 'luxon';

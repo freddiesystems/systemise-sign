@@ -1,7 +1,7 @@
-import { OrganisationProvider } from '@documenso/lib/client-only/providers/organisation';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { TrpcProvider } from '@documenso/trpc/react';
+import { OrganisationProvider } from '@systemise/lib/client-only/providers/organisation';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { TrpcProvider } from '@systemise/trpc/react';
 import { useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router';
 

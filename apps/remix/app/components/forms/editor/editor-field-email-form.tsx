@@ -4,8 +4,8 @@ import {
   FIELD_DEFAULT_GENERIC_ALIGN,
   FIELD_EMAIL_META_DEFAULT_VALUES,
   ZEmailFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import { Form } from '@documenso/ui/primitives/form/form';
+} from '@systemise/lib/types/field-meta';
+import { Form } from '@systemise/ui/primitives/form/form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useEffect } from 'react';
 import { useForm, useWatch } from 'react-hook-form';

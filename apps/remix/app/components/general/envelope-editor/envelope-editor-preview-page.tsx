@@ -1,17 +1,17 @@
-import { useCurrentEnvelopeEditor } from '@documenso/lib/client-only/providers/envelope-editor-provider';
+import { useCurrentEnvelopeEditor } from '@systemise/lib/client-only/providers/envelope-editor-provider';
 import {
   EnvelopeRenderProvider,
   useCurrentEnvelopeRender,
-} from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { PDF_VIEWER_ERROR_MESSAGES } from '@documenso/lib/constants/pdf-viewer-i18n';
-import { ZFieldAndMetaSchema } from '@documenso/lib/types/field-meta';
-import { extractFieldInsertionValues } from '@documenso/lib/utils/envelope-signing';
-import { toCheckboxCustomText } from '@documenso/lib/utils/fields';
-import { extractInitials } from '@documenso/lib/utils/recipient-formatter';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { RecipientSelector } from '@documenso/ui/primitives/recipient-selector';
-import { Separator } from '@documenso/ui/primitives/separator';
+} from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { PDF_VIEWER_ERROR_MESSAGES } from '@systemise/lib/constants/pdf-viewer-i18n';
+import { ZFieldAndMetaSchema } from '@systemise/lib/types/field-meta';
+import { extractFieldInsertionValues } from '@systemise/lib/utils/envelope-signing';
+import { toCheckboxCustomText } from '@systemise/lib/utils/fields';
+import { extractInitials } from '@systemise/lib/utils/recipient-formatter';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { RecipientSelector } from '@systemise/ui/primitives/recipient-selector';
+import { Separator } from '@systemise/ui/primitives/separator';
 import type { Faker } from '@faker-js/faker';
 import { Trans } from '@lingui/react/macro';
 import { FieldType, SigningStatus } from '@prisma/client';

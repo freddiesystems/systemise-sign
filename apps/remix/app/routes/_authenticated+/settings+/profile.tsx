@@ -1,7 +1,7 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { AnimatePresence } from 'framer-motion';

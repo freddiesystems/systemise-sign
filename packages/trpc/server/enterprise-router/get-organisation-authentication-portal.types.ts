@@ -1,4 +1,4 @@
-import { OrganisationAuthenticationPortalSchema } from '@documenso/prisma/generated/zod/modelSchema/OrganisationAuthenticationPortalSchema';
+import { OrganisationAuthenticationPortalSchema } from '@systemise/prisma/generated/zod/modelSchema/OrganisationAuthenticationPortalSchema';
 import { z } from 'zod';
 
 export const ZGetOrganisationAuthenticationPortalRequestSchema = z.object({

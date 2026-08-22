@@ -1,9 +1,9 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getDocumentByToken } from '@documenso/lib/server-only/document/get-document-by-token';
-import { signFieldWithToken } from '@documenso/lib/server-only/field/sign-field-with-token';
-import { getRecipientByToken } from '@documenso/lib/server-only/recipient/get-recipient-by-token';
-import { extractDocumentAuthMethods } from '@documenso/lib/utils/document-auth';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getDocumentByToken } from '@systemise/lib/server-only/document/get-document-by-token';
+import { signFieldWithToken } from '@systemise/lib/server-only/field/sign-field-with-token';
+import { getRecipientByToken } from '@systemise/lib/server-only/recipient/get-recipient-by-token';
+import { extractDocumentAuthMethods } from '@systemise/lib/utils/document-auth';
+import { prisma } from '@systemise/prisma';
 import { FieldType, ReadStatus, SigningStatus } from '@prisma/client';
 
 import { procedure } from '../trpc';

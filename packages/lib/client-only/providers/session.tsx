@@ -1,7 +1,7 @@
-import { authClient } from '@documenso/auth/client';
-import type { SessionUser } from '@documenso/auth/server/lib/session/session';
-import { trpc } from '@documenso/trpc/client';
-import type { TGetOrganisationSessionResponse } from '@documenso/trpc/server/organisation-router/get-organisation-session.types';
+import { authClient } from '@systemise/auth/client';
+import type { SessionUser } from '@systemise/auth/server/lib/session/session';
+import { trpc } from '@systemise/trpc/client';
+import type { TGetOrganisationSessionResponse } from '@systemise/trpc/server/organisation-router/get-organisation-session.types';
 import type { Session } from '@prisma/client';
 import type React from 'react';
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';

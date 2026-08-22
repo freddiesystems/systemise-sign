@@ -1,22 +1,22 @@
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getDocumentDataUrlForPdfViewer } from '@documenso/lib/utils/envelope-download';
-import { sortFieldsByPosition } from '@documenso/lib/utils/fields';
-import { isSignatureFieldType } from '@documenso/prisma/guards/is-signature-field';
-import { trpc } from '@documenso/trpc/react';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getDocumentDataUrlForPdfViewer } from '@systemise/lib/utils/envelope-download';
+import { sortFieldsByPosition } from '@systemise/lib/utils/fields';
+import { isSignatureFieldType } from '@systemise/prisma/guards/is-signature-field';
+import { trpc } from '@systemise/trpc/react';
 import type {
   TRemovedSignedFieldWithTokenMutationSchema,
   TSignFieldWithTokenMutationSchema,
-} from '@documenso/trpc/server/field-router/schema';
-import { DocumentReadOnlyFields } from '@documenso/ui/components/document/document-read-only-fields';
-import { FieldToolTip } from '@documenso/ui/components/field/field-tooltip';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { ElementVisible } from '@documenso/ui/primitives/element-visible';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { SignaturePadDialog } from '@documenso/ui/primitives/signature-pad/signature-pad-dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/trpc/server/field-router/schema';
+import { DocumentReadOnlyFields } from '@systemise/ui/components/document/document-read-only-fields';
+import { FieldToolTip } from '@systemise/ui/components/field/field-tooltip';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { ElementVisible } from '@systemise/ui/primitives/element-visible';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { SignaturePadDialog } from '@systemise/ui/primitives/signature-pad/signature-pad-dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

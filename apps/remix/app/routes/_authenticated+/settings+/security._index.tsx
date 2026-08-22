@@ -1,8 +1,8 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { prisma } from '@documenso/prisma';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { prisma } from '@systemise/prisma';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
@@ -35,7 +35,7 @@ export async function loader({ request }: Route.LoaderArgs) {
   // });
 
   // const providers = accounts.map((account) => account.provider);
-  // let hasEmailPasswordAccount = providers.includes('DOCUMENSO');
+  // let hasEmailPasswordAccount = providers.includes('SYSTEMISE');
 
   const hasEmailPasswordAccount: boolean = await prisma.user
     .count({

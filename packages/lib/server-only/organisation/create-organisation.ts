@@ -1,5 +1,5 @@
-import { createCustomer } from '@documenso/ee/server-only/stripe/create-customer';
-import { prisma } from '@documenso/prisma';
+import { createCustomer } from '@systemise/ee/server-only/stripe/create-customer';
+import { prisma } from '@systemise/prisma';
 import { OrganisationMemberRole, OrganisationType, Prisma } from '@prisma/client';
 
 import { IS_BILLING_ENABLED } from '../../constants/app';

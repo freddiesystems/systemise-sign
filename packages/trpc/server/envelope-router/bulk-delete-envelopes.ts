@@ -1,7 +1,7 @@
-import { deleteDocument } from '@documenso/lib/server-only/document/delete-document';
-import { getMultipleEnvelopeWhereInput } from '@documenso/lib/server-only/envelope/get-envelopes-by-ids';
-import { deleteTemplate } from '@documenso/lib/server-only/template/delete-template';
-import { prisma } from '@documenso/prisma';
+import { deleteDocument } from '@systemise/lib/server-only/document/delete-document';
+import { getMultipleEnvelopeWhereInput } from '@systemise/lib/server-only/envelope/get-envelopes-by-ids';
+import { deleteTemplate } from '@systemise/lib/server-only/template/delete-template';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 import pMap from 'p-map';
 

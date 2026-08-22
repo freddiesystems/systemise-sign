@@ -1,6 +1,6 @@
-import { mailer } from '@documenso/email/mailer';
-import { RecipientExpiredTemplate } from '@documenso/email/templates/recipient-expired';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { RecipientExpiredTemplate } from '@systemise/email/templates/recipient-expired';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { createElement } from 'react';
 

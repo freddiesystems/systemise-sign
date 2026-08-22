@@ -1,5 +1,5 @@
-import { nanoid, prefixedId } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
+import { nanoid, prefixedId } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
 import type { DocumentDistributionMethod, DocumentSigningOrder } from '@prisma/client';
 import {
   DocumentSource,

@@ -1,7 +1,7 @@
-import { trpc } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
-import { PopoverHover } from '@documenso/ui/primitives/popover';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { trpc } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
+import { PopoverHover } from '@systemise/ui/primitives/popover';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

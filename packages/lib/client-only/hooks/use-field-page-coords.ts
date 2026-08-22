@@ -1,5 +1,5 @@
-import { getBoundingClientRect } from '@documenso/lib/client-only/get-bounding-client-rect';
-import { PDF_VIEWER_CONTENT_SELECTOR, PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
+import { getBoundingClientRect } from '@systemise/lib/client-only/get-bounding-client-rect';
+import { PDF_VIEWER_CONTENT_SELECTOR, PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
 import type { Field } from '@prisma/client';
 import { useCallback, useEffect, useState } from 'react';
 

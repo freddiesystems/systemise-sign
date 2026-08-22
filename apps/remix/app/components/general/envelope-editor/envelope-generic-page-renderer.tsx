@@ -1,12 +1,12 @@
-import { usePageRenderer } from '@documenso/lib/client-only/hooks/use-page-renderer';
+import { usePageRenderer } from '@systemise/lib/client-only/hooks/use-page-renderer';
 import {
   type PageRenderData,
   useCurrentEnvelopeRender,
-} from '@documenso/lib/client-only/providers/envelope-render-provider';
-import type { TEnvelope } from '@documenso/lib/types/envelope';
-import { renderField } from '@documenso/lib/universal/field-renderer/render-field';
-import { getClientSideFieldTranslations } from '@documenso/lib/utils/fields';
-import { EnvelopeRecipientFieldTooltip } from '@documenso/ui/components/document/envelope-recipient-field-tooltip';
+} from '@systemise/lib/client-only/providers/envelope-render-provider';
+import type { TEnvelope } from '@systemise/lib/types/envelope';
+import { renderField } from '@systemise/lib/universal/field-renderer/render-field';
+import { getClientSideFieldTranslations } from '@systemise/lib/utils/fields';
+import { EnvelopeRecipientFieldTooltip } from '@systemise/ui/components/document/envelope-recipient-field-tooltip';
 import { useLingui } from '@lingui/react/macro';
 import { DocumentStatus, type Recipient, SigningStatus } from '@prisma/client';
 import type Konva from 'konva';

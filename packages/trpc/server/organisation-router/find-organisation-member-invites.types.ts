@@ -1,5 +1,5 @@
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
-import { OrganisationMemberInviteSchema } from '@documenso/prisma/generated/zod/modelSchema/OrganisationMemberInviteSchema';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
+import { OrganisationMemberInviteSchema } from '@systemise/prisma/generated/zod/modelSchema/OrganisationMemberInviteSchema';
 import { OrganisationMemberInviteStatus } from '@prisma/client';
 import { z } from 'zod';
 

@@ -1,10 +1,10 @@
-import LogoImage from '@documenso/assets/logo.png';
-import { authClient } from '@documenso/auth/client';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import { Sheet, SheetContent } from '@documenso/ui/primitives/sheet';
-import { ThemeSwitcher } from '@documenso/ui/primitives/theme-switcher';
+import LogoImage from '@systemise/assets/logo.png';
+import { authClient } from '@systemise/auth/client';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import { Sheet, SheetContent } from '@systemise/ui/primitives/sheet';
+import { ThemeSwitcher } from '@systemise/ui/primitives/theme-switcher';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { ReadStatus } from '@prisma/client';
 import { useMemo } from 'react';

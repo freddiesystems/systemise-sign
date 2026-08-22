@@ -1,20 +1,20 @@
-import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@documenso/lib/constants/trpc';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import type { TRecipientActionAuth } from '@documenso/lib/types/document-auth';
-import { ZCheckboxFieldMeta } from '@documenso/lib/types/field-meta';
-import { fromCheckboxValue, toCheckboxValue } from '@documenso/lib/universal/field-checkbox';
-import type { FieldWithSignatureAndFieldMeta } from '@documenso/prisma/types/field-with-signature-and-fieldmeta';
-import { trpc } from '@documenso/trpc/react';
+import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@systemise/lib/constants/trpc';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import type { TRecipientActionAuth } from '@systemise/lib/types/document-auth';
+import { ZCheckboxFieldMeta } from '@systemise/lib/types/field-meta';
+import { fromCheckboxValue, toCheckboxValue } from '@systemise/lib/universal/field-checkbox';
+import type { FieldWithSignatureAndFieldMeta } from '@systemise/prisma/types/field-with-signature-and-fieldmeta';
+import { trpc } from '@systemise/trpc/react';
 import type {
   TRemovedSignedFieldWithTokenMutationSchema,
   TSignFieldWithTokenMutationSchema,
-} from '@documenso/trpc/server/field-router/schema';
-import { FieldToolTip } from '@documenso/ui/components/field/field-tooltip';
-import { cn } from '@documenso/ui/lib/utils';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
-import { checkboxValidationSigns } from '@documenso/ui/primitives/document-flow/field-items-advanced-settings/constants';
-import { Label } from '@documenso/ui/primitives/label';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/trpc/server/field-router/schema';
+import { FieldToolTip } from '@systemise/ui/components/field/field-tooltip';
+import { cn } from '@systemise/ui/lib/utils';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
+import { checkboxValidationSigns } from '@systemise/ui/primitives/document-flow/field-items-advanced-settings/constants';
+import { Label } from '@systemise/ui/primitives/label';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Loader } from 'lucide-react';

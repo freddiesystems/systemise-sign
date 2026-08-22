@@ -1,5 +1,5 @@
-import { updateEnvelope } from '@documenso/lib/server-only/envelope/update-envelope';
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
+import { updateEnvelope } from '@systemise/lib/server-only/envelope/update-envelope';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
 
 import { authenticatedProcedure } from '../trpc';
 import {

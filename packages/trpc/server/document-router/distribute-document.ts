@@ -1,6 +1,6 @@
-import { sendDocument } from '@documenso/lib/server-only/document/send-document';
-import { updateDocumentMeta } from '@documenso/lib/server-only/document-meta/upsert-document-meta';
-import { mapEnvelopeToDocumentLite } from '@documenso/lib/utils/document';
+import { sendDocument } from '@systemise/lib/server-only/document/send-document';
+import { updateDocumentMeta } from '@systemise/lib/server-only/document-meta/upsert-document-meta';
+import { mapEnvelopeToDocumentLite } from '@systemise/lib/utils/document';
 
 import { authenticatedProcedure } from '../trpc';
 import {

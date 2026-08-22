@@ -1,6 +1,6 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { buildTeamWhereQuery } from '@documenso/lib/utils/teams';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { buildTeamWhereQuery } from '@systemise/lib/utils/teams';
+import { prisma } from '@systemise/prisma';
 
 import { authenticatedProcedure } from '../../trpc';
 import {

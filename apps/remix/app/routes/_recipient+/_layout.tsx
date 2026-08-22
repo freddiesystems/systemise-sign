@@ -1,6 +1,6 @@
-import { useOptionalSession } from '@documenso/lib/client-only/providers/session';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { useOptionalSession } from '@systemise/lib/client-only/providers/session';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { i18n } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';

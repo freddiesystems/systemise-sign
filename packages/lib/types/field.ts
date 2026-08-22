@@ -1,4 +1,4 @@
-import { FieldSchema } from '@documenso/prisma/generated/zod/modelSchema/FieldSchema';
+import { FieldSchema } from '@systemise/prisma/generated/zod/modelSchema/FieldSchema';
 import { FieldType, Prisma } from '@prisma/client';
 import { z } from 'zod';
 

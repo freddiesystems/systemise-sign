@@ -1,11 +1,11 @@
-import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/organisations';
-import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/teams';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { normalizeBrandingColors } from '@documenso/lib/utils/normalize-branding-colors';
-import { buildOrganisationWhereQuery } from '@documenso/lib/utils/organisations';
-import { type SanitizeBrandingCssWarning, sanitizeBrandingCss } from '@documenso/lib/utils/sanitize-branding-css';
-import { buildTeamWhereQuery } from '@documenso/lib/utils/teams';
-import { prisma } from '@documenso/prisma';
+import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/organisations';
+import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/teams';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { normalizeBrandingColors } from '@systemise/lib/utils/normalize-branding-colors';
+import { buildOrganisationWhereQuery } from '@systemise/lib/utils/organisations';
+import { type SanitizeBrandingCssWarning, sanitizeBrandingCss } from '@systemise/lib/utils/sanitize-branding-css';
+import { buildTeamWhereQuery } from '@systemise/lib/utils/teams';
+import { prisma } from '@systemise/prisma';
 import { OrganisationType, Prisma } from '@prisma/client';
 
 import { authenticatedProcedure } from '../trpc';

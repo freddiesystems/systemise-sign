@@ -1,6 +1,6 @@
-import { mailer } from '@documenso/email/mailer';
-import { ResetPasswordTemplate } from '@documenso/email/templates/reset-password';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { ResetPasswordTemplate } from '@systemise/email/templates/reset-password';
+import { prisma } from '@systemise/prisma';
 import { createElement } from 'react';
 
 import { NEXT_PUBLIC_WEBAPP_URL } from '../../constants/app';

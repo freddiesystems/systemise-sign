@@ -1,8 +1,8 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
-import { getTeamByUrl } from '@documenso/lib/server-only/team/get-team';
-import { canExecuteTeamAction } from '@documenso/lib/utils/teams';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
+import { getTeamByUrl } from '@systemise/lib/server-only/team/get-team';
+import { canExecuteTeamAction } from '@systemise/lib/utils/teams';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { BracesIcon, Globe2Icon, GroupIcon, Settings2Icon, SettingsIcon, Users2Icon, WebhookIcon } from 'lucide-react';

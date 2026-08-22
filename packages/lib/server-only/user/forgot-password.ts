@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import crypto from 'crypto';
 
 import { ONE_HOUR } from '../../constants/time';

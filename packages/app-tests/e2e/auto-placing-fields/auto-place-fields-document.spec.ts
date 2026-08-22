@@ -1,6 +1,6 @@
-import { prisma } from '@documenso/prisma';
-import { RecipientRole } from '@documenso/prisma/client';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { prisma } from '@systemise/prisma';
+import { RecipientRole } from '@systemise/prisma/client';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, type Page, test } from '@playwright/test';
 import path from 'path';
 
@@ -106,7 +106,7 @@ test.describe('PDF Placeholders with single recipient', () => {
         where: { envelopeId },
       });
 
-      const placeholderRecipient = recipients.find((recipient) => recipient.email === 'recipient.1@documenso.com');
+      const placeholderRecipient = recipients.find((recipient) => recipient.email === 'recipient.1@systemise.dev');
 
       const defaultRecipient = recipients.find((recipient) => recipient.email === user.email);
 
@@ -128,7 +128,7 @@ test.describe('PDF Placeholders with single recipient', () => {
 
     // V2 editor shows recipients on the upload page under "Recipients" heading.
     await expect(page.getByRole('heading', { name: 'Recipients' })).toBeVisible();
-    await expect(page.getByTestId('signer-email-input').first()).toHaveValue('recipient.1@documenso.com');
+    await expect(page.getByTestId('signer-email-input').first()).toHaveValue('recipient.1@systemise.dev');
     await expect(page.getByLabel('Name').first()).toHaveValue('Recipient 1');
   });
 
@@ -175,11 +175,11 @@ test.describe('PDF Placeholders with multiple recipients', () => {
     // V2 editor shows recipients on the upload page.
     await expect(page.getByRole('heading', { name: 'Recipients' })).toBeVisible();
 
-    await expect(page.getByTestId('signer-email-input').first()).toHaveValue('recipient.1@documenso.com');
+    await expect(page.getByTestId('signer-email-input').first()).toHaveValue('recipient.1@systemise.dev');
 
-    await expect(page.getByTestId('signer-email-input').nth(1)).toHaveValue('recipient.2@documenso.com');
+    await expect(page.getByTestId('signer-email-input').nth(1)).toHaveValue('recipient.2@systemise.dev');
 
-    await expect(page.getByTestId('signer-email-input').nth(2)).toHaveValue('recipient.3@documenso.com');
+    await expect(page.getByTestId('signer-email-input').nth(2)).toHaveValue('recipient.3@systemise.dev');
 
     // Verify recipients via the database for name validation since the v2 editor
     // only shows the "Name" label on the first recipient row.

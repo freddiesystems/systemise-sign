@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { Envelope, TemplateDirectLink } from '@prisma/client';
 import { EnvelopeType, type TeamProfile, TemplateType } from '@prisma/client';
 

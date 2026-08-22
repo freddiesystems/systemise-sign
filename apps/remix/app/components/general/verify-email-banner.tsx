@@ -1,8 +1,8 @@
-import { authClient } from '@documenso/auth/client';
-import { ONE_DAY, ONE_SECOND } from '@documenso/lib/constants/time';
-import { Button } from '@documenso/ui/primitives/button';
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { authClient } from '@systemise/auth/client';
+import { ONE_DAY, ONE_SECOND } from '@systemise/lib/constants/time';
+import { Button } from '@systemise/ui/primitives/button';
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

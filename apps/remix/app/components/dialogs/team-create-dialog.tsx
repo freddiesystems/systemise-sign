@@ -1,13 +1,13 @@
-import { useUpdateSearchParams } from '@documenso/lib/client-only/hooks/use-update-search-params';
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { IS_BILLING_ENABLED, NEXT_PUBLIC_WEBAPP_URL, SUPPORT_EMAIL } from '@documenso/lib/constants/app';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { trpc } from '@documenso/trpc/react';
-import { ZCreateTeamRequestSchema } from '@documenso/trpc/server/team-router/create-team.types';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
+import { useUpdateSearchParams } from '@systemise/lib/client-only/hooks/use-update-search-params';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { IS_BILLING_ENABLED, NEXT_PUBLIC_WEBAPP_URL, SUPPORT_EMAIL } from '@systemise/lib/constants/app';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { trpc } from '@systemise/trpc/react';
+import { ZCreateTeamRequestSchema } from '@systemise/trpc/server/team-router/create-team.types';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
 import {
   Dialog,
   DialogContent,
@@ -16,11 +16,11 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { SpinnerBox } from '@documenso/ui/primitives/spinner';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { SpinnerBox } from '@systemise/ui/primitives/spinner';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

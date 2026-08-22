@@ -1,12 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { ALIGNMENT_TEST_FIELDS } from '@documenso/app-tests/constants/field-alignment-pdf';
-import { FIELD_META_TEST_FIELDS } from '@documenso/app-tests/constants/field-meta-pdf';
-import { OVERFLOW_TEST_FIELDS } from '@documenso/app-tests/constants/field-overflow-pdf';
-import { isBase64Image } from '@documenso/lib/constants/signatures';
-import { incrementDocumentId, incrementTemplateId } from '@documenso/lib/server-only/envelope/increment-id';
-import { nanoid, prefixedId } from '@documenso/lib/universal/id';
+import { ALIGNMENT_TEST_FIELDS } from '@systemise/app-tests/constants/field-alignment-pdf';
+import { FIELD_META_TEST_FIELDS } from '@systemise/app-tests/constants/field-meta-pdf';
+import { OVERFLOW_TEST_FIELDS } from '@systemise/app-tests/constants/field-overflow-pdf';
+import { isBase64Image } from '@systemise/lib/constants/signatures';
+import { incrementDocumentId, incrementTemplateId } from '@systemise/lib/server-only/envelope/increment-id';
+import { nanoid, prefixedId } from '@systemise/lib/universal/id';
 import { DIRECT_TEMPLATE_RECIPIENT_EMAIL, DIRECT_TEMPLATE_RECIPIENT_NAME } from '../../lib/constants/direct-templates';
 import { prisma } from '..';
 import {
@@ -37,13 +37,13 @@ export const seedDatabase = async () => {
 
   const exampleUserExists = await prisma.user.findFirst({
     where: {
-      email: 'example@documenso.com',
+      email: 'example@systemise.dev',
     },
   });
 
   const adminUserExists = await prisma.user.findFirst({
     where: {
-      email: 'admin@documenso.com',
+      email: 'admin@systemise.dev',
     },
   });
 
@@ -53,12 +53,12 @@ export const seedDatabase = async () => {
 
   const exampleUser = await seedUser({
     name: 'Example User',
-    email: 'example@documenso.com',
+    email: 'example@systemise.dev',
   });
 
   const adminUser = await seedUser({
     name: 'Admin User',
-    email: 'admin@documenso.com',
+    email: 'admin@systemise.dev',
     isAdmin: true,
   });
 

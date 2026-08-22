@@ -1,7 +1,7 @@
-import { ZRecipientAuthOptionsSchema } from '@documenso/lib/types/document-auth';
-import { createDocumentAuthOptions, createRecipientAuthOptions } from '@documenso/lib/utils/document-auth';
-import { seedPendingDocumentNoFields, seedPendingDocumentWithFullFields } from '@documenso/prisma/seed/documents';
-import { seedTestEmail, seedUser } from '@documenso/prisma/seed/users';
+import { ZRecipientAuthOptionsSchema } from '@systemise/lib/types/document-auth';
+import { createDocumentAuthOptions, createRecipientAuthOptions } from '@systemise/lib/utils/document-auth';
+import { seedPendingDocumentNoFields, seedPendingDocumentWithFullFields } from '@systemise/prisma/seed/documents';
+import { seedTestEmail, seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 import { FieldType } from '@prisma/client';
 

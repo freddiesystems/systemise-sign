@@ -1,5 +1,5 @@
-import { ZDocumentEmailSettingsSchema } from '@documenso/lib/types/document-email';
-import { zEmail } from '@documenso/lib/utils/zod';
+import { ZDocumentEmailSettingsSchema } from '@systemise/lib/types/document-email';
+import { zEmail } from '@systemise/lib/utils/zod';
 import { DocumentDistributionMethod } from '@prisma/client';
 import { z } from 'zod';
 

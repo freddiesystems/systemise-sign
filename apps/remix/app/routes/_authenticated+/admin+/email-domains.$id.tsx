@@ -1,5 +1,5 @@
-import { generateEmailDomainRecords } from '@documenso/lib/utils/email-domains';
-import { trpc } from '@documenso/trpc/react';
+import { generateEmailDomainRecords } from '@systemise/lib/utils/email-domains';
+import { trpc } from '@systemise/trpc/react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -10,12 +10,12 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@documenso/ui/primitives/alert-dialog';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
-import type { DataTableColumnDef } from '@documenso/ui/primitives/data-table';
-import { DataTable } from '@documenso/ui/primitives/data-table';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/alert-dialog';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
+import type { DataTableColumnDef } from '@systemise/ui/primitives/data-table';
+import { DataTable } from '@systemise/ui/primitives/data-table';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

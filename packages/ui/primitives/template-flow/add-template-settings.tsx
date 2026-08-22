@@ -1,32 +1,32 @@
-import { useAutoSave } from '@documenso/lib/client-only/hooks/use-autosave';
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { DATE_FORMATS, DEFAULT_DOCUMENT_DATE_FORMAT } from '@documenso/lib/constants/date-formats';
-import { DOCUMENT_DISTRIBUTION_METHODS, DOCUMENT_SIGNATURE_TYPES } from '@documenso/lib/constants/document';
-import { SUPPORTED_LANGUAGES } from '@documenso/lib/constants/i18n';
-import { DEFAULT_DOCUMENT_TIME_ZONE, TIME_ZONES } from '@documenso/lib/constants/time-zones';
-import { ZDocumentEmailSettingsSchema } from '@documenso/lib/types/document-email';
-import type { TDocumentMetaDateFormat } from '@documenso/lib/types/document-meta';
-import type { TRecipientLite } from '@documenso/lib/types/recipient';
-import type { TTemplate } from '@documenso/lib/types/template';
-import { extractDocumentAuthMethods } from '@documenso/lib/utils/document-auth';
-import { extractTeamSignatureSettings } from '@documenso/lib/utils/teams';
-import { trpc } from '@documenso/trpc/react';
+import { useAutoSave } from '@systemise/lib/client-only/hooks/use-autosave';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { DATE_FORMATS, DEFAULT_DOCUMENT_DATE_FORMAT } from '@systemise/lib/constants/date-formats';
+import { DOCUMENT_DISTRIBUTION_METHODS, DOCUMENT_SIGNATURE_TYPES } from '@systemise/lib/constants/document';
+import { SUPPORTED_LANGUAGES } from '@systemise/lib/constants/i18n';
+import { DEFAULT_DOCUMENT_TIME_ZONE, TIME_ZONES } from '@systemise/lib/constants/time-zones';
+import { ZDocumentEmailSettingsSchema } from '@systemise/lib/types/document-email';
+import type { TDocumentMetaDateFormat } from '@systemise/lib/types/document-meta';
+import type { TRecipientLite } from '@systemise/lib/types/recipient';
+import type { TTemplate } from '@systemise/lib/types/template';
+import { extractDocumentAuthMethods } from '@systemise/lib/utils/document-auth';
+import { extractTeamSignatureSettings } from '@systemise/lib/utils/teams';
+import { trpc } from '@systemise/trpc/react';
 import {
   DocumentGlobalAuthAccessSelect,
   DocumentGlobalAuthAccessTooltip,
-} from '@documenso/ui/components/document/document-global-auth-access-select';
+} from '@systemise/ui/components/document/document-global-auth-access-select';
 import {
   DocumentGlobalAuthActionSelect,
   DocumentGlobalAuthActionTooltip,
-} from '@documenso/ui/components/document/document-global-auth-action-select';
-import { DocumentSendEmailMessageHelper } from '@documenso/ui/components/document/document-send-email-message-helper';
+} from '@systemise/ui/components/document/document-global-auth-action-select';
+import { DocumentSendEmailMessageHelper } from '@systemise/ui/components/document/document-send-email-message-helper';
 import {
   DocumentVisibilitySelect,
   DocumentVisibilityTooltip,
-} from '@documenso/ui/components/document/document-visibility-select';
-import { TemplateTypeSelect, TemplateTypeTooltip } from '@documenso/ui/components/template/template-type-select';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@documenso/ui/primitives/accordion';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
+} from '@systemise/ui/components/document/document-visibility-select';
+import { TemplateTypeSelect, TemplateTypeTooltip } from '@systemise/ui/components/template/template-type-select';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@systemise/ui/primitives/accordion';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import {

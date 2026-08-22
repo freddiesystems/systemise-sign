@@ -1,5 +1,5 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { prisma } from '@systemise/prisma';
 
 import { adminProcedure } from '../trpc';
 import { ZGetEmailDomainRequestSchema, ZGetEmailDomainResponseSchema } from './get-email-domain.types';

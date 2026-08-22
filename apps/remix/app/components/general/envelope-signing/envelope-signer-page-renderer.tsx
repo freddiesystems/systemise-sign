@@ -1,23 +1,23 @@
-import { usePageRenderer } from '@documenso/lib/client-only/hooks/use-page-renderer';
+import { usePageRenderer } from '@systemise/lib/client-only/hooks/use-page-renderer';
 import {
   type PageRenderData,
   useCurrentEnvelopeRender,
-} from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { useOptionalSession } from '@documenso/lib/client-only/providers/session';
-import { DIRECT_TEMPLATE_RECIPIENT_EMAIL } from '@documenso/lib/constants/direct-templates';
-import { isBase64Image } from '@documenso/lib/constants/signatures';
-import type { TRecipientActionAuth } from '@documenso/lib/types/document-auth';
-import type { TEnvelope } from '@documenso/lib/types/envelope';
-import { ZFullFieldSchema } from '@documenso/lib/types/field';
-import { createSpinner } from '@documenso/lib/universal/field-renderer/field-generic-items';
-import { renderField } from '@documenso/lib/universal/field-renderer/render-field';
-import { isFieldUnsignedAndRequired } from '@documenso/lib/utils/advanced-fields-helpers';
-import { getClientSideFieldTranslations } from '@documenso/lib/utils/fields';
-import { extractInitials } from '@documenso/lib/utils/recipient-formatter';
-import type { TSignEnvelopeFieldValue } from '@documenso/trpc/server/envelope-router/sign-envelope-field.types';
-import { EnvelopeRecipientFieldTooltip } from '@documenso/ui/components/document/envelope-recipient-field-tooltip';
-import { EnvelopeFieldToolTip } from '@documenso/ui/components/field/envelope-field-tooltip';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { useOptionalSession } from '@systemise/lib/client-only/providers/session';
+import { DIRECT_TEMPLATE_RECIPIENT_EMAIL } from '@systemise/lib/constants/direct-templates';
+import { isBase64Image } from '@systemise/lib/constants/signatures';
+import type { TRecipientActionAuth } from '@systemise/lib/types/document-auth';
+import type { TEnvelope } from '@systemise/lib/types/envelope';
+import { ZFullFieldSchema } from '@systemise/lib/types/field';
+import { createSpinner } from '@systemise/lib/universal/field-renderer/field-generic-items';
+import { renderField } from '@systemise/lib/universal/field-renderer/render-field';
+import { isFieldUnsignedAndRequired } from '@systemise/lib/utils/advanced-fields-helpers';
+import { getClientSideFieldTranslations } from '@systemise/lib/utils/fields';
+import { extractInitials } from '@systemise/lib/utils/recipient-formatter';
+import type { TSignEnvelopeFieldValue } from '@systemise/trpc/server/envelope-router/sign-envelope-field.types';
+import { EnvelopeRecipientFieldTooltip } from '@systemise/ui/components/document/envelope-recipient-field-tooltip';
+import { EnvelopeFieldToolTip } from '@systemise/ui/components/field/envelope-field-tooltip';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { type Field, FieldType, type Recipient, RecipientRole, type Signature, SigningStatus } from '@prisma/client';
 import type Konva from 'konva';

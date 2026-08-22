@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { Context } from 'hono';
 
 import { getSession } from './get-session';

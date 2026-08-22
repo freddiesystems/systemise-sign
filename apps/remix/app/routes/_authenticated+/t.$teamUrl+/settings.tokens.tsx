@@ -1,6 +1,6 @@
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

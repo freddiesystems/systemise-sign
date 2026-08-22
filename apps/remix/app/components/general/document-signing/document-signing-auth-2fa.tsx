@@ -1,10 +1,10 @@
-import { AppError } from '@documenso/lib/errors/app-error';
-import { DocumentAuth, type TRecipientActionAuth } from '@documenso/lib/types/document-auth';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { DialogFooter } from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { PinInput, PinInputGroup, PinInputSlot } from '@documenso/ui/primitives/pin-input';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { DocumentAuth, type TRecipientActionAuth } from '@systemise/lib/types/document-auth';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { DialogFooter } from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { PinInput, PinInputGroup, PinInputSlot } from '@systemise/ui/primitives/pin-input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans } from '@lingui/react/macro';
 import { RecipientRole } from '@prisma/client';

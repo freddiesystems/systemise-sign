@@ -1,6 +1,6 @@
-import { mailer } from '@documenso/email/mailer';
-import { DocumentPendingEmailTemplate } from '@documenso/email/templates/document-pending';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { DocumentPendingEmailTemplate } from '@systemise/email/templates/document-pending';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { EnvelopeType } from '@prisma/client';
 import { createElement } from 'react';

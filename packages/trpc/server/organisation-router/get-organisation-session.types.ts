@@ -1,8 +1,8 @@
-import { ZOrganisationSchema } from '@documenso/lib/types/organisation';
-import { OrganisationMemberRole, TeamMemberRole } from '@documenso/prisma/generated/types';
-import SubscriptionSchema from '@documenso/prisma/generated/zod/modelSchema/SubscriptionSchema';
-import { TeamEmailSchema } from '@documenso/prisma/generated/zod/modelSchema/TeamEmailSchema';
-import TeamSchema from '@documenso/prisma/generated/zod/modelSchema/TeamSchema';
+import { ZOrganisationSchema } from '@systemise/lib/types/organisation';
+import { OrganisationMemberRole, TeamMemberRole } from '@systemise/prisma/generated/types';
+import SubscriptionSchema from '@systemise/prisma/generated/zod/modelSchema/SubscriptionSchema';
+import { TeamEmailSchema } from '@systemise/prisma/generated/zod/modelSchema/TeamEmailSchema';
+import TeamSchema from '@systemise/prisma/generated/zod/modelSchema/TeamSchema';
 import { z } from 'zod';
 
 export const ZGetOrganisationSessionResponseSchema = ZOrganisationSchema.extend({

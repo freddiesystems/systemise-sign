@@ -1,6 +1,6 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { seedTeamEmailVerification } from '@documenso/prisma/seed/teams';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { seedTeamEmailVerification } from '@systemise/prisma/seed/teams';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin } from '../fixtures/authentication';
@@ -18,9 +18,9 @@ test('[TEAMS]: send team email request', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Add email' }).click();
   await page.getByPlaceholder('eg. Legal').click();
-  await page.getByPlaceholder('eg. Legal').fill('test@test.documenso.com');
+  await page.getByPlaceholder('eg. Legal').fill('test@test.systemise.dev');
   await page.getByPlaceholder('example@example.com').click();
-  await page.getByPlaceholder('example@example.com').fill('test@test.documenso.com');
+  await page.getByPlaceholder('example@example.com').fill('test@test.systemise.dev');
   await page.getByRole('button', { name: 'Add' }).click();
 
   await expect(
@@ -32,7 +32,7 @@ test('[TEAMS]: accept team email request', async ({ page }) => {
   const { user, team } = await seedUser();
 
   const teamEmailVerification = await seedTeamEmailVerification({
-    email: `team-email-verification--${team.url}@test.documenso.com`,
+    email: `team-email-verification--${team.url}@test.systemise.dev`,
     teamId: team.id,
   });
 

@@ -1,4 +1,4 @@
-import { Button } from '@documenso/ui/primitives/button';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -6,9 +6,9 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';

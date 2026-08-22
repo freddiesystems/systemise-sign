@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { DocumentStatus, EnvelopeType } from '@prisma/client';
 import { match } from 'ts-pattern';
 

@@ -1,4 +1,4 @@
-import { ZRecipientActionAuthSchema } from '@documenso/lib/types/document-auth';
+import { ZRecipientActionAuthSchema } from '@systemise/lib/types/document-auth';
 import {
   ZFieldHeightSchema,
   ZFieldPageNumberSchema,
@@ -6,8 +6,8 @@ import {
   ZFieldPageYSchema,
   ZFieldSchema,
   ZFieldWidthSchema,
-} from '@documenso/lib/types/field';
-import { ZFieldAndMetaSchema, ZFieldMetaSchema } from '@documenso/lib/types/field-meta';
+} from '@systemise/lib/types/field';
+import { ZFieldAndMetaSchema, ZFieldMetaSchema } from '@systemise/lib/types/field-meta';
 import { FieldType } from '@prisma/client';
 import { z } from 'zod';
 

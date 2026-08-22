@@ -1,8 +1,8 @@
-import { mailer } from '@documenso/email/mailer';
-import { TeamDeleteEmailTemplate } from '@documenso/email/templates/team-delete';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { TeamDeleteEmailTemplate } from '@systemise/email/templates/team-delete';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { OrganisationGroupType, type Team } from '@prisma/client';
 import { createElement } from 'react';

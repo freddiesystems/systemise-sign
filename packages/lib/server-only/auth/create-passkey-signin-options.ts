@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { generateAuthenticationOptions } from '@simplewebauthn/server';
 import { DateTime } from 'luxon';
 

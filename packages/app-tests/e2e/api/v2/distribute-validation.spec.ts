@@ -1,15 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createApiToken } from '@documenso/lib/server-only/public-api/create-api-token';
-import { EnvelopeType, FieldType, RecipientRole } from '@documenso/prisma/client';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createApiToken } from '@systemise/lib/server-only/public-api/create-api-token';
+import { EnvelopeType, FieldType, RecipientRole } from '@systemise/prisma/client';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type {
   TCreateEnvelopePayload,
   TCreateEnvelopeResponse,
-} from '@documenso/trpc/server/envelope-router/create-envelope.types';
-import type { TCreateEnvelopeRecipientsRequest } from '@documenso/trpc/server/envelope-router/envelope-recipients/create-envelope-recipients.types';
-import type { TGetEnvelopeResponse } from '@documenso/trpc/server/envelope-router/get-envelope.types';
+} from '@systemise/trpc/server/envelope-router/create-envelope.types';
+import type { TCreateEnvelopeRecipientsRequest } from '@systemise/trpc/server/envelope-router/envelope-recipients/create-envelope-recipients.types';
+import type { TGetEnvelopeResponse } from '@systemise/trpc/server/envelope-router/get-envelope.types';
 import { type APIRequestContext, expect, test } from '@playwright/test';
 import type { Team, User } from '@prisma/client';
 

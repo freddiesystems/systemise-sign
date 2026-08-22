@@ -6,10 +6,10 @@ import {
   DEFAULT_STANDARD_FONT_SIZE,
   MIN_HANDWRITING_FONT_SIZE,
   MIN_STANDARD_FONT_SIZE,
-} from '@documenso/lib/constants/pdf';
-import { fromCheckboxValue } from '@documenso/lib/universal/field-checkbox';
-import { isSignatureFieldType } from '@documenso/prisma/guards/is-signature-field';
-import type { FieldWithSignature } from '@documenso/prisma/types/field-with-signature';
+} from '@systemise/lib/constants/pdf';
+import { fromCheckboxValue } from '@systemise/lib/universal/field-checkbox';
+import { isSignatureFieldType } from '@systemise/prisma/guards/is-signature-field';
+import type { FieldWithSignature } from '@systemise/prisma/types/field-with-signature';
 import fontkit from '@pdf-lib/fontkit';
 import { FieldType } from '@prisma/client';
 import { match, P } from 'ts-pattern';

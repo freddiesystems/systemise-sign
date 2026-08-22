@@ -1,13 +1,13 @@
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
-import { Separator } from '@documenso/ui/primitives/separator';
+} from '@systemise/ui/primitives/dropdown-menu';
+import { Separator } from '@systemise/ui/primitives/separator';
 import { Plural, Trans } from '@lingui/react/macro';
 import { EnvelopeType, RecipientRole } from '@prisma/client';
 import { BanIcon, DownloadCloudIcon } from 'lucide-react';

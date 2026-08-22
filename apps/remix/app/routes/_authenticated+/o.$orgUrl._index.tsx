@@ -1,19 +1,19 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { TEAM_MEMBER_ROLE_MAP } from '@documenso/lib/constants/teams-translations';
-import { formatAvatarUrl } from '@documenso/lib/utils/avatars';
-import { canExecuteOrganisationAction } from '@documenso/lib/utils/organisations';
-import { canExecuteTeamAction, formatTeamUrl } from '@documenso/lib/utils/teams';
-import type { TGetOrganisationSessionResponse } from '@documenso/trpc/server/organisation-router/get-organisation-session.types';
-import { Avatar, AvatarFallback, AvatarImage } from '@documenso/ui/primitives/avatar';
-import { Button } from '@documenso/ui/primitives/button';
-import { Card, CardContent } from '@documenso/ui/primitives/card';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { TEAM_MEMBER_ROLE_MAP } from '@systemise/lib/constants/teams-translations';
+import { formatAvatarUrl } from '@systemise/lib/utils/avatars';
+import { canExecuteOrganisationAction } from '@systemise/lib/utils/organisations';
+import { canExecuteTeamAction, formatTeamUrl } from '@systemise/lib/utils/teams';
+import type { TGetOrganisationSessionResponse } from '@systemise/trpc/server/organisation-router/get-organisation-session.types';
+import { Avatar, AvatarFallback, AvatarImage } from '@systemise/ui/primitives/avatar';
+import { Button } from '@systemise/ui/primitives/button';
+import { Card, CardContent } from '@systemise/ui/primitives/card';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
+} from '@systemise/ui/primitives/dropdown-menu';
 import { Trans, useLingui } from '@lingui/react/macro';
 import {
   ArrowRight,

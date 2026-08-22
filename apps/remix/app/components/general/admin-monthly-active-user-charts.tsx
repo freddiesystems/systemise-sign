@@ -1,4 +1,4 @@
-import type { GetMonthlyActiveUsersResult } from '@documenso/lib/server-only/admin/get-users-stats';
+import type { GetMonthlyActiveUsersResult } from '@systemise/lib/server-only/admin/get-users-stats';
 import { DateTime } from 'luxon';
 import type { TooltipProps } from 'recharts';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';

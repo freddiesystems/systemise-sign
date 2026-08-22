@@ -1,5 +1,5 @@
-import { mailer } from '@documenso/email/mailer';
-import { OrganisationDeleteEmailTemplate } from '@documenso/email/templates/organisation-delete';
+import { mailer } from '@systemise/email/mailer';
+import { OrganisationDeleteEmailTemplate } from '@systemise/email/templates/organisation-delete';
 import { msg } from '@lingui/core/macro';
 import { createElement } from 'react';
 

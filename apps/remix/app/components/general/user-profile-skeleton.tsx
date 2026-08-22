@@ -1,7 +1,7 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { VerifiedIcon } from '@documenso/ui/icons/verified';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { VerifiedIcon } from '@systemise/ui/icons/verified';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { File, User2 } from 'lucide-react';
 

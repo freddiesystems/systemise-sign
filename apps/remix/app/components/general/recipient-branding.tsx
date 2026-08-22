@@ -1,4 +1,4 @@
-import type { TCssVarsSchema } from '@documenso/lib/types/css-vars';
+import type { TCssVarsSchema } from '@systemise/lib/types/css-vars';
 import { useEffect } from 'react';
 
 import { toNativeCssVarsString } from '~/utils/css-vars';

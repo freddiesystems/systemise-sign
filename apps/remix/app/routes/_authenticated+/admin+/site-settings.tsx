@@ -1,11 +1,11 @@
-import { getSiteSettings } from '@documenso/lib/server-only/site-settings/get-site-settings';
+import { getSiteSettings } from '@systemise/lib/server-only/site-settings/get-site-settings';
 import {
   SITE_SETTINGS_BANNER_ID,
   ZSiteSettingsBannerSchema,
-} from '@documenso/lib/server-only/site-settings/schemas/banner';
-import { trpc as trpcReact } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
-import { ColorPicker } from '@documenso/ui/primitives/color-picker';
+} from '@systemise/lib/server-only/site-settings/schemas/banner';
+import { trpc as trpcReact } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
+import { ColorPicker } from '@systemise/ui/primitives/color-picker';
 import {
   Form,
   FormControl,
@@ -14,10 +14,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@documenso/ui/primitives/form/form';
-import { Switch } from '@documenso/ui/primitives/switch';
-import { Textarea } from '@documenso/ui/primitives/textarea';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/form/form';
+import { Switch } from '@systemise/ui/primitives/switch';
+import { Textarea } from '@systemise/ui/primitives/textarea';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

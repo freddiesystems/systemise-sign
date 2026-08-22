@@ -1,8 +1,8 @@
 import {
   DIRECT_TEMPLATE_RECIPIENT_EMAIL,
   DIRECT_TEMPLATE_RECIPIENT_NAME,
-} from '@documenso/lib/constants/direct-templates';
-import { prisma } from '@documenso/prisma';
+} from '@systemise/lib/constants/direct-templates';
+import { prisma } from '@systemise/prisma';
 import type { Recipient } from '@prisma/client';
 import { EnvelopeType, RecipientRole } from '@prisma/client';
 

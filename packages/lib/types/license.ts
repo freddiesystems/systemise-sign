@@ -81,4 +81,4 @@ export const ZCachedLicenseSchema = z.object({
 
 export type TCachedLicense = z.infer<typeof ZCachedLicenseSchema>;
 
-export const LICENSE_FILE_NAME = '.documenso-license.json';
+export const LICENSE_FILE_NAME = '.systemise-license.json';

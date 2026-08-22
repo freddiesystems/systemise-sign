@@ -1,7 +1,7 @@
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
-import type { Stripe } from '@documenso/lib/server-only/stripe';
-import { stripe } from '@documenso/lib/server-only/stripe';
-import { env } from '@documenso/lib/utils/env';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
+import type { Stripe } from '@systemise/lib/server-only/stripe';
+import { stripe } from '@systemise/lib/server-only/stripe';
+import { env } from '@systemise/lib/utils/env';
 import { match } from 'ts-pattern';
 
 import { onSubscriptionCreated } from './on-subscription-created';

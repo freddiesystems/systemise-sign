@@ -1,8 +1,8 @@
-import { AppError } from '@documenso/lib/errors/app-error';
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { AvatarWithText } from '@documenso/ui/primitives/avatar';
-import { Button } from '@documenso/ui/primitives/button';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { AvatarWithText } from '@systemise/ui/primitives/avatar';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -11,8 +11,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

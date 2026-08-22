@@ -1,17 +1,17 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import type { TEnvelope } from '@documenso/lib/types/envelope';
-import { isDocumentCompleted } from '@documenso/lib/utils/document';
-import { getEnvelopeItemPermissions, mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { trpc as trpcReact } from '@documenso/trpc/react';
-import { DocumentShareButton } from '@documenso/ui/components/document/document-share-button';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import type { TEnvelope } from '@systemise/lib/types/envelope';
+import { isDocumentCompleted } from '@systemise/lib/utils/document';
+import { getEnvelopeItemPermissions, mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { trpc as trpcReact } from '@systemise/trpc/react';
+import { DocumentShareButton } from '@systemise/ui/components/document/document-share-button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
+} from '@systemise/ui/primitives/dropdown-menu';
 import { Trans } from '@lingui/react/macro';
 import { DocumentStatus, EnvelopeType } from '@prisma/client';
 import {

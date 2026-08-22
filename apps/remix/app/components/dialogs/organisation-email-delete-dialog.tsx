@@ -1,7 +1,7 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -10,8 +10,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { useState } from 'react';
 

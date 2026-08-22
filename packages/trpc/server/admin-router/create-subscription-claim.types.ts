@@ -1,4 +1,4 @@
-import { ZClaimFlagsSchema } from '@documenso/lib/types/subscription';
+import { ZClaimFlagsSchema } from '@systemise/lib/types/subscription';
 import { z } from 'zod';
 
 export const ZCreateSubscriptionClaimRequestSchema = z.object({

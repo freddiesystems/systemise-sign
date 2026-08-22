@@ -1,16 +1,16 @@
-import { APP_DOCUMENT_UPLOAD_SIZE_LIMIT } from '@documenso/lib/constants/app';
+import { APP_DOCUMENT_UPLOAD_SIZE_LIMIT } from '@systemise/lib/constants/app';
 import {
   TEMPLATE_RECIPIENT_EMAIL_PLACEHOLDER_REGEX,
   TEMPLATE_RECIPIENT_NAME_PLACEHOLDER_REGEX,
-} from '@documenso/lib/constants/template';
-import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION, SKIP_QUERY_BATCH_META } from '@documenso/lib/constants/trpc';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { type TRecipientLite, ZRecipientEmailSchema } from '@documenso/lib/types/recipient';
-import { putPdfFile } from '@documenso/lib/universal/upload/put-file';
-import { trpc } from '@documenso/trpc/react';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
+} from '@systemise/lib/constants/template';
+import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION, SKIP_QUERY_BATCH_META } from '@systemise/lib/constants/trpc';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { type TRecipientLite, ZRecipientEmailSchema } from '@systemise/lib/types/recipient';
+import { putPdfFile } from '@systemise/lib/universal/upload/put-file';
+import { trpc } from '@systemise/trpc/react';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
 import {
   Dialog,
   DialogClose,
@@ -20,12 +20,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { SpinnerBox } from '@documenso/ui/primitives/spinner';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { SpinnerBox } from '@systemise/ui/primitives/spinner';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

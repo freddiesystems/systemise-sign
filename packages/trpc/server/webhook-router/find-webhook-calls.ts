@@ -1,8 +1,8 @@
-import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/teams';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import type { FindResultResponse } from '@documenso/lib/types/search-params';
-import { buildTeamWhereQuery } from '@documenso/lib/utils/teams';
-import { prisma } from '@documenso/prisma';
+import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/teams';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import type { FindResultResponse } from '@systemise/lib/types/search-params';
+import { buildTeamWhereQuery } from '@systemise/lib/utils/teams';
+import { prisma } from '@systemise/prisma';
 import type { Prisma, WebhookCallStatus, WebhookTriggerEvents } from '@prisma/client';
 
 import { authenticatedProcedure } from '../trpc';

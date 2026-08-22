@@ -1,9 +1,9 @@
-import { TEAM_MEMBER_ROLE_HIERARCHY } from '@documenso/lib/constants/teams';
-import { EXTENDED_TEAM_MEMBER_ROLE_MAP } from '@documenso/lib/constants/teams-translations';
-import { isTeamRoleWithinUserHierarchy } from '@documenso/lib/utils/teams';
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { TEAM_MEMBER_ROLE_HIERARCHY } from '@systemise/lib/constants/teams';
+import { EXTENDED_TEAM_MEMBER_ROLE_MAP } from '@systemise/lib/constants/teams-translations';
+import { isTeamRoleWithinUserHierarchy } from '@systemise/lib/utils/teams';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -12,10 +12,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

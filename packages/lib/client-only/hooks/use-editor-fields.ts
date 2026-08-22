@@ -1,7 +1,7 @@
-import { getPdfPagesCount } from '@documenso/lib/constants/pdf-viewer';
-import type { TEditorEnvelope } from '@documenso/lib/types/envelope-editor';
-import { ZFieldMetaSchema } from '@documenso/lib/types/field-meta';
-import { nanoid } from '@documenso/lib/universal/id';
+import { getPdfPagesCount } from '@systemise/lib/constants/pdf-viewer';
+import type { TEditorEnvelope } from '@systemise/lib/types/envelope-editor';
+import { ZFieldMetaSchema } from '@systemise/lib/types/field-meta';
+import { nanoid } from '@systemise/lib/universal/id';
 import { zodResolver } from '@hookform/resolvers/zod';
 import type { Field } from '@prisma/client';
 import { FieldType } from '@prisma/client';

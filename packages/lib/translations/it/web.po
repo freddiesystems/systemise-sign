@@ -6,13 +6,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: it\n"
-"Project-Id-Version: documenso-app\n"
+"Project-Id-Version: systemise-app\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2026-05-13 06:46\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: documenso-app\n"
+"X-Crowdin-Project: systemise-app\n"
 "X-Crowdin-Project-ID: 694691\n"
 "X-Crowdin-Language: it\n"
 "X-Crowdin-File: web.po\n"
@@ -5897,7 +5897,7 @@ msgstr "Se ci sono problemi con il tuo abbonamento, contattaci a <0>{SUPPORT_EMA
 
 #: apps/remix/app/routes/embed+/v2+/authoring+/_layout.tsx
 msgid "If you are using staging, ensure that you have set the host prop on the embedding component to the staging domain (https://staging.systemise.dev)"
-msgstr "Se stai utilizzando l’ambiente di staging, assicurati di aver impostato la proprietà host del componente di embedding sul dominio di staging (https:\\/\\/stg-app.documenso.com)"
+msgstr "Se stai utilizzando l’ambiente di staging, assicurati di aver impostato la proprietà host del componente di embedding sul dominio di staging (https:\\/\\/stg-app.systemise.dev)"
 
 #: packages/email/template-components/template-access-auth-2fa.tsx
 msgid "If you didn't request this verification code, you can safely ignore this email."

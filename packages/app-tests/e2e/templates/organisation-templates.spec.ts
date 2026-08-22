@@ -1,10 +1,10 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createTeam } from '@documenso/lib/server-only/team/create-team';
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
-import { seedTeamMember } from '@documenso/prisma/seed/teams';
-import { seedBlankTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createTeam } from '@systemise/lib/server-only/team/create-team';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
+import { seedTeamMember } from '@systemise/prisma/seed/teams';
+import { seedBlankTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 import { TemplateType } from '@prisma/client';
@@ -370,7 +370,7 @@ test.describe('Organisation Templates - Use from different team', () => {
     // Add a recipient to the org template so we can use it.
     await prisma.recipient.create({
       data: {
-        email: 'recipient@test.documenso.com',
+        email: 'recipient@test.systemise.dev',
         name: 'Recipient',
         token: Math.random().toString().slice(2, 7),
         envelopeId: orgTemplate.id,

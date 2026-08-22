@@ -1,7 +1,7 @@
-import { useLimits } from '@documenso/ee/server-only/limits/provider/client';
-import { trpc as trpcReact } from '@documenso/trpc/react';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { useLimits } from '@systemise/ee/server-only/limits/provider/client';
+import { trpc as trpcReact } from '@systemise/trpc/react';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -11,9 +11,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Input } from '@documenso/ui/primitives/input';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Input } from '@systemise/ui/primitives/input';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { DocumentStatus, EnvelopeType } from '@prisma/client';

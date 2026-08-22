@@ -1,10 +1,10 @@
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import type { TFieldAndMeta } from '@documenso/lib/types/field-meta';
-import type { ApiRequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import { getFileServerSide } from '@documenso/lib/universal/upload/get-file.server';
-import { putPdfFileServerSide } from '@documenso/lib/universal/upload/put-file.server';
-import { createDocumentAuditLogData } from '@documenso/lib/utils/document-audit-logs';
-import { prisma } from '@documenso/prisma';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import type { TFieldAndMeta } from '@systemise/lib/types/field-meta';
+import type { ApiRequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import { getFileServerSide } from '@systemise/lib/universal/upload/get-file.server';
+import { putPdfFileServerSide } from '@systemise/lib/universal/upload/put-file.server';
+import { createDocumentAuditLogData } from '@systemise/lib/utils/document-audit-logs';
+import { prisma } from '@systemise/prisma';
 import { PDF } from '@libpdf/core';
 import { EnvelopeType } from '@prisma/client';
 

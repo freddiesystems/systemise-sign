@@ -1,8 +1,8 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import type { TEnvelope } from '@documenso/lib/types/envelope';
-import { isDocumentCompleted } from '@documenso/lib/utils/document';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { Button } from '@documenso/ui/primitives/button';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import type { TEnvelope } from '@systemise/lib/types/envelope';
+import { isDocumentCompleted } from '@systemise/lib/utils/document';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { Button } from '@systemise/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { DocumentStatus, RecipientRole, SigningStatus } from '@prisma/client';
 import { CheckCircle, Download, EyeIcon, Pencil } from 'lucide-react';

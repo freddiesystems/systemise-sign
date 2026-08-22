@@ -1,20 +1,20 @@
-import { EnvelopeRenderProvider } from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { PDF_VIEWER_ERROR_MESSAGES } from '@documenso/lib/constants/pdf-viewer-i18n';
-import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@documenso/lib/constants/trpc';
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
-import { getDocumentDataUrlForPdfViewer } from '@documenso/lib/utils/envelope-download';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { trpc } from '@documenso/trpc/react';
+import { EnvelopeRenderProvider } from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { PDF_VIEWER_ERROR_MESSAGES } from '@systemise/lib/constants/pdf-viewer-i18n';
+import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@systemise/lib/constants/trpc';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
+import { getDocumentDataUrlForPdfViewer } from '@systemise/lib/utils/envelope-download';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { trpc } from '@systemise/trpc/react';
 import {
   DocumentReadOnlyFields,
   mapFieldsWithRecipients,
-} from '@documenso/ui/components/document/document-read-only-fields';
-import { cn } from '@documenso/ui/lib/utils';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
-import { Card, CardContent } from '@documenso/ui/primitives/card';
-import { Spinner } from '@documenso/ui/primitives/spinner';
+} from '@systemise/ui/components/document/document-read-only-fields';
+import { cn } from '@systemise/ui/lib/utils';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
+import { Card, CardContent } from '@systemise/ui/primitives/card';
+import { Spinner } from '@systemise/ui/primitives/spinner';
 import { msg } from '@lingui/core/macro';
 import { Plural, Trans, useLingui } from '@lingui/react/macro';
 import { DocumentStatus } from '@prisma/client';

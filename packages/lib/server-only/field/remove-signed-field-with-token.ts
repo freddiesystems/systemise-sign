@@ -1,8 +1,8 @@
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import type { RequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import { createDocumentAuditLogData } from '@documenso/lib/utils/document-audit-logs';
-import { assertRecipientNotExpired } from '@documenso/lib/utils/recipients';
-import { prisma } from '@documenso/prisma';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import type { RequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import { createDocumentAuditLogData } from '@systemise/lib/utils/document-audit-logs';
+import { assertRecipientNotExpired } from '@systemise/lib/utils/recipients';
+import { prisma } from '@systemise/prisma';
 import { DocumentStatus, RecipientRole, SigningStatus } from '@prisma/client';
 
 export type RemovedSignedFieldWithTokenOptions = {

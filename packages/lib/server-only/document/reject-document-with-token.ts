@@ -1,5 +1,5 @@
-import { jobs } from '@documenso/lib/jobs/client';
-import { prisma } from '@documenso/prisma';
+import { jobs } from '@systemise/lib/jobs/client';
+import { prisma } from '@systemise/prisma';
 import { DocumentStatus, EnvelopeType, SigningStatus } from '@prisma/client';
 
 import { AppError, AppErrorCode } from '../../errors/app-error';

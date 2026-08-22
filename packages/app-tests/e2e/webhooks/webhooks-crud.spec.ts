@@ -1,8 +1,8 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { alphaid } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { alphaid } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 import { WebhookCallStatus, WebhookTriggerEvents } from '@prisma/client';
 
@@ -62,7 +62,7 @@ test('[WEBHOOKS]: create webhook', async ({ page }) => {
   await page.getByText('document.created').click();
 
   // Click outside the triggers field to close the dropdown
-  await page.getByText('The URL for Documenso to send webhook events to.').click();
+  await page.getByText('The URL for Systemise to send webhook events to.').click();
 
   // Fill in the form
   await page.getByLabel('Secret').fill('secret');
@@ -240,7 +240,7 @@ test('[WEBHOOKS]: update webhook', async ({ page }) => {
   await page.waitForTimeout(200);
 
   // Click outside to close the dropdown
-  await page.getByText('The URL for Documenso to send webhook events to.').click();
+  await page.getByText('The URL for Systemise to send webhook events to.').click();
 
   // Submit the form
   await page.getByRole('button', { name: 'Update' }).click();

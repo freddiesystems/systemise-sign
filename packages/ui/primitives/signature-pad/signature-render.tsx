@@ -1,4 +1,4 @@
-import { isBase64Image, SIGNATURE_CANVAS_DPI } from '@documenso/lib/constants/signatures';
+import { isBase64Image, SIGNATURE_CANVAS_DPI } from '@systemise/lib/constants/signatures';
 import { useEffect, useRef } from 'react';
 
 import { cn } from '../../lib/utils';

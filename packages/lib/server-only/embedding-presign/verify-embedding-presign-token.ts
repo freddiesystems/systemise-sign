@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { JWTPayload } from 'jose';
 import { decodeJwt, jwtVerify } from 'jose';
 

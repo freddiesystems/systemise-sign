@@ -1,10 +1,10 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { TEAM_MEMBER_ROLE_HIERARCHY } from '@documenso/lib/constants/teams';
-import { TEAM_MEMBER_ROLE_MAP } from '@documenso/lib/constants/teams-translations';
-import { canExecuteOrganisationAction } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { TEAM_MEMBER_ROLE_HIERARCHY } from '@systemise/lib/constants/teams';
+import { TEAM_MEMBER_ROLE_MAP } from '@systemise/lib/constants/teams-translations';
+import { canExecuteOrganisationAction } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -13,7 +13,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
+} from '@systemise/ui/primitives/dialog';
 import {
   Form,
   FormControl,
@@ -22,11 +22,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { TeamMemberRole } from '@prisma/client';

@@ -1,6 +1,6 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 
-const LEGACY_DELETED_ACCOUNT_EMAIL = 'deleted-account@documenso.com';
+const LEGACY_DELETED_ACCOUNT_EMAIL = 'deleted-account@systemise.dev';
 
 export const deletedServiceAccountEmail = () => {
   try {

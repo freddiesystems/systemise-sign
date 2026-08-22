@@ -1,4 +1,4 @@
-import { checkboxValidationSigns } from '@documenso/ui/primitives/document-flow/field-items-advanced-settings/constants';
+import { checkboxValidationSigns } from '@systemise/ui/primitives/document-flow/field-items-advanced-settings/constants';
 import { match } from 'ts-pattern';
 
 import type { TCheckboxFieldMeta } from '../types/field-meta';

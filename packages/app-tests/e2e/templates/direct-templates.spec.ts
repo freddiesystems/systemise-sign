@@ -1,11 +1,11 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createDocumentAuthOptions } from '@documenso/lib/utils/document-auth';
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { formatDirectTemplatePath } from '@documenso/lib/utils/templates';
-import { prisma } from '@documenso/prisma';
-import { seedTeam } from '@documenso/prisma/seed/teams';
-import { seedDirectTemplate, seedTemplate } from '@documenso/prisma/seed/templates';
-import { seedTestEmail, seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createDocumentAuthOptions } from '@systemise/lib/utils/document-auth';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { formatDirectTemplatePath } from '@systemise/lib/utils/templates';
+import { prisma } from '@systemise/prisma';
+import { seedTeam } from '@systemise/prisma/seed/teams';
+import { seedDirectTemplate, seedTemplate } from '@systemise/prisma/seed/templates';
+import { seedTestEmail, seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 import { DocumentSigningOrder, RecipientRole } from '@prisma/client';
 import { customAlphabet } from 'nanoid';
@@ -217,7 +217,7 @@ test('[DIRECT_TEMPLATES]: use direct template link with 1 recipient', async ({ p
   await expect(page.getByRole('heading', { name: 'General' })).toBeVisible();
 
   await page.waitForTimeout(100);
-  await page.getByPlaceholder('recipient@documenso.com').fill(seedTestEmail());
+  await page.getByPlaceholder('recipient@systemise.dev').fill(seedTestEmail());
 
   await page.getByRole('button', { name: 'Continue' }).click();
 
@@ -276,7 +276,7 @@ test('[DIRECT_TEMPLATES]: V1 use direct template link with 2 recipients with nex
   await expect(page.getByRole('heading', { name: 'General' })).toBeVisible();
 
   await page.waitForTimeout(100);
-  await page.getByPlaceholder('recipient@documenso.com').fill(seedTestEmail());
+  await page.getByPlaceholder('recipient@systemise.dev').fill(seedTestEmail());
 
   await page.getByRole('button', { name: 'Continue' }).click();
   await page.getByRole('button', { name: 'Complete' }).click();

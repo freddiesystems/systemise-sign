@@ -1,4 +1,4 @@
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
 import { z } from 'zod';
 
 export const ZFindUnsealedDocumentsRequestSchema = ZFindSearchParamsSchema.pick({

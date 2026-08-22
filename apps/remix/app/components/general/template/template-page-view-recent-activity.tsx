@@ -1,6 +1,6 @@
-import { trpc } from '@documenso/trpc/react';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { trpc } from '@systemise/trpc/react';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { DocumentSource } from '@prisma/client';
 import { Loader } from 'lucide-react';

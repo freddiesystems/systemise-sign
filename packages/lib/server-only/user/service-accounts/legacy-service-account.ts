@@ -1,6 +1,6 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 
-const LEGACY_SERVICE_ACCOUNT_EMAIL = 'serviceaccount@documenso.com';
+const LEGACY_SERVICE_ACCOUNT_EMAIL = 'serviceaccount@systemise.dev';
 
 export const legacyServiceAccountEmail = () => {
   try {

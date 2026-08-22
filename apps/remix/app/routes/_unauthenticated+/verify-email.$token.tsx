@@ -1,8 +1,8 @@
-import { authClient } from '@documenso/auth/client';
-import { useOptionalSession } from '@documenso/lib/client-only/providers/session';
-import { EMAIL_VERIFICATION_STATE } from '@documenso/lib/constants/email';
-import { Button } from '@documenso/ui/primitives/button';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { authClient } from '@systemise/auth/client';
+import { useOptionalSession } from '@systemise/lib/client-only/providers/session';
+import { EMAIL_VERIFICATION_STATE } from '@systemise/lib/constants/email';
+import { Button } from '@systemise/ui/primitives/button';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

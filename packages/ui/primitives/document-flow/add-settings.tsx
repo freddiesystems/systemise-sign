@@ -1,32 +1,32 @@
-import { useAutoSave } from '@documenso/lib/client-only/hooks/use-autosave';
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { DATE_FORMATS, DEFAULT_DOCUMENT_DATE_FORMAT } from '@documenso/lib/constants/date-formats';
-import { DOCUMENT_SIGNATURE_TYPES } from '@documenso/lib/constants/document';
-import { SUPPORTED_LANGUAGES } from '@documenso/lib/constants/i18n';
-import { DEFAULT_DOCUMENT_TIME_ZONE, TIME_ZONES } from '@documenso/lib/constants/time-zones';
-import type { TDocument } from '@documenso/lib/types/document';
-import type { TRecipientLite } from '@documenso/lib/types/recipient';
-import { extractDocumentAuthMethods } from '@documenso/lib/utils/document-auth';
-import { extractTeamSignatureSettings } from '@documenso/lib/utils/teams';
+import { useAutoSave } from '@systemise/lib/client-only/hooks/use-autosave';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { DATE_FORMATS, DEFAULT_DOCUMENT_DATE_FORMAT } from '@systemise/lib/constants/date-formats';
+import { DOCUMENT_SIGNATURE_TYPES } from '@systemise/lib/constants/document';
+import { SUPPORTED_LANGUAGES } from '@systemise/lib/constants/i18n';
+import { DEFAULT_DOCUMENT_TIME_ZONE, TIME_ZONES } from '@systemise/lib/constants/time-zones';
+import type { TDocument } from '@systemise/lib/types/document';
+import type { TRecipientLite } from '@systemise/lib/types/recipient';
+import { extractDocumentAuthMethods } from '@systemise/lib/utils/document-auth';
+import { extractTeamSignatureSettings } from '@systemise/lib/utils/teams';
 import {
   DocumentGlobalAuthAccessSelect,
   DocumentGlobalAuthAccessTooltip,
-} from '@documenso/ui/components/document/document-global-auth-access-select';
+} from '@systemise/ui/components/document/document-global-auth-access-select';
 import {
   DocumentGlobalAuthActionSelect,
   DocumentGlobalAuthActionTooltip,
-} from '@documenso/ui/components/document/document-global-auth-action-select';
+} from '@systemise/ui/components/document/document-global-auth-action-select';
 import {
   DocumentReadOnlyFields,
   mapFieldsWithRecipients,
-} from '@documenso/ui/components/document/document-read-only-fields';
+} from '@systemise/ui/components/document/document-read-only-fields';
 import {
   DocumentVisibilitySelect,
   DocumentVisibilityTooltip,
-} from '@documenso/ui/components/document/document-visibility-select';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@documenso/ui/primitives/accordion';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { MultiSelectCombobox } from '@documenso/ui/primitives/multi-select-combobox';
+} from '@systemise/ui/components/document/document-visibility-select';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@systemise/ui/primitives/accordion';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { MultiSelectCombobox } from '@systemise/ui/primitives/multi-select-combobox';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { DocumentStatus, DocumentVisibility, type Field, SendStatus, TeamMemberRole } from '@prisma/client';

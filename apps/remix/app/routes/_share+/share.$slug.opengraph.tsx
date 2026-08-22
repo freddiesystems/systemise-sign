@@ -1,6 +1,6 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { getRecipientOrSenderByShareLinkSlug } from '@documenso/lib/server-only/document/get-recipient-or-sender-by-share-link-slug';
-import { svgToPng } from '@documenso/lib/utils/images/svg-to-png';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { getRecipientOrSenderByShareLinkSlug } from '@systemise/lib/server-only/document/get-recipient-or-sender-by-share-link-slug';
+import { svgToPng } from '@systemise/lib/utils/images/svg-to-png';
 import satori from 'satori';
 import { match, P } from 'ts-pattern';
 

@@ -1,9 +1,9 @@
-import { AppError } from '@documenso/lib/errors/app-error';
-import { disableTwoFactorAuthentication } from '@documenso/lib/server-only/2fa/disable-2fa';
-import { enableTwoFactorAuthentication } from '@documenso/lib/server-only/2fa/enable-2fa';
-import { setupTwoFactorAuthentication } from '@documenso/lib/server-only/2fa/setup-2fa';
-import { viewBackupCodes } from '@documenso/lib/server-only/2fa/view-backup-codes';
-import { prisma } from '@documenso/prisma';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { disableTwoFactorAuthentication } from '@systemise/lib/server-only/2fa/disable-2fa';
+import { enableTwoFactorAuthentication } from '@systemise/lib/server-only/2fa/enable-2fa';
+import { setupTwoFactorAuthentication } from '@systemise/lib/server-only/2fa/setup-2fa';
+import { viewBackupCodes } from '@systemise/lib/server-only/2fa/view-backup-codes';
+import { prisma } from '@systemise/prisma';
 import { sValidator } from '@hono/standard-validator';
 import { Hono } from 'hono';
 

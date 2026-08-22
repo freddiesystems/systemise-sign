@@ -1,4 +1,4 @@
-import { cn } from '@documenso/ui/lib/utils';
+import { cn } from '@systemise/ui/lib/utils';
 import type React from 'react';
 
 export type SettingsHeaderProps = {

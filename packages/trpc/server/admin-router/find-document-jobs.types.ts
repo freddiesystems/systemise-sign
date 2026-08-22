@@ -1,5 +1,5 @@
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
-import BackgroundJobSchema from '@documenso/prisma/generated/zod/modelSchema/BackgroundJobSchema';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
+import BackgroundJobSchema from '@systemise/prisma/generated/zod/modelSchema/BackgroundJobSchema';
 import { z } from 'zod';
 
 export const ZFindDocumentJobsRequestSchema = ZFindSearchParamsSchema.extend({

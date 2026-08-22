@@ -1,6 +1,6 @@
-import { ZRecipientActionAuthTypesSchema, ZRecipientAuthOptionsSchema } from '@documenso/lib/types/document-auth';
-import type { TEditorEnvelope } from '@documenso/lib/types/envelope-editor';
-import { ZRecipientEmailSchema } from '@documenso/lib/types/recipient';
+import { ZRecipientActionAuthTypesSchema, ZRecipientAuthOptionsSchema } from '@systemise/lib/types/document-auth';
+import type { TEditorEnvelope } from '@systemise/lib/types/envelope-editor';
+import { ZRecipientEmailSchema } from '@systemise/lib/types/recipient';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { DocumentSigningOrder, RecipientRole } from '@prisma/client';
 import { useId } from 'react';

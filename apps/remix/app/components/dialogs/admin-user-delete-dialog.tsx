@@ -1,8 +1,8 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { trpc } from '@documenso/trpc/react';
-import type { TGetUserResponse } from '@documenso/trpc/server/admin-router/get-user.types';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { trpc } from '@systemise/trpc/react';
+import type { TGetUserResponse } from '@systemise/trpc/server/admin-router/get-user.types';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -11,9 +11,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Input } from '@documenso/ui/primitives/input';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Input } from '@systemise/ui/primitives/input';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

@@ -1,7 +1,7 @@
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@documenso/ui/primitives/command';
-import { Popover, PopoverContent, PopoverTrigger } from '@documenso/ui/primitives/popover';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@systemise/ui/primitives/command';
+import { Popover, PopoverContent, PopoverTrigger } from '@systemise/ui/primitives/popover';
 import { Trans } from '@lingui/react/macro';
 import { Role } from '@prisma/client';
 import { Check, ChevronsUpDown } from 'lucide-react';

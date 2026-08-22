@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getEnvelopeWhereInput } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { getOrganisationTemplateWhereInput } from '@documenso/lib/server-only/template/get-organisation-template-by-id';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getEnvelopeWhereInput } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { getOrganisationTemplateWhereInput } from '@systemise/lib/server-only/template/get-organisation-template-by-id';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 
 import { maybeAuthenticatedProcedure } from '../trpc';

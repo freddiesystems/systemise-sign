@@ -1,11 +1,11 @@
-import type { Template } from '@documenso/prisma/types/template-legacy-schema';
-import { trpc } from '@documenso/trpc/react';
+import type { Template } from '@systemise/prisma/types/template-legacy-schema';
+import { trpc } from '@systemise/trpc/react';
 import {
   MAX_TEMPLATE_PUBLIC_DESCRIPTION_LENGTH,
   MAX_TEMPLATE_PUBLIC_TITLE_LENGTH,
-} from '@documenso/trpc/server/template-router/schema';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
-import { Button } from '@documenso/ui/primitives/button';
+} from '@systemise/trpc/server/template-router/schema';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -15,12 +15,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@documenso/ui/primitives/table';
-import { Textarea } from '@documenso/ui/primitives/textarea';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@systemise/ui/primitives/table';
+import { Textarea } from '@systemise/ui/primitives/textarea';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

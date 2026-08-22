@@ -1,6 +1,6 @@
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
-import { OrganisationMemberRole, TeamMemberRole } from '@documenso/prisma/generated/types';
-import OrganisationMemberSchema from '@documenso/prisma/generated/zod/modelSchema/OrganisationMemberSchema';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
+import { OrganisationMemberRole, TeamMemberRole } from '@systemise/prisma/generated/types';
+import OrganisationMemberSchema from '@systemise/prisma/generated/zod/modelSchema/OrganisationMemberSchema';
 import { z } from 'zod';
 
 export const ZFindTeamMembersRequestSchema = ZFindSearchParamsSchema.extend({

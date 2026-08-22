@@ -1,9 +1,9 @@
-import type { DocumentAndSender } from '@documenso/lib/server-only/document/get-document-by-token';
-import type { getRecipientByToken } from '@documenso/lib/server-only/recipient/get-recipient-by-token';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
-import { Progress } from '@documenso/ui/primitives/progress';
+import type { DocumentAndSender } from '@systemise/lib/server-only/document/get-document-by-token';
+import type { getRecipientByToken } from '@systemise/lib/server-only/recipient/get-recipient-by-token';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
+import { Progress } from '@systemise/ui/primitives/progress';
 import { Trans } from '@lingui/react/macro';
 import { ReadStatus, RecipientRole, SigningStatus } from '@prisma/client';
 import { ArrowRight, EyeIcon, XCircle } from 'lucide-react';

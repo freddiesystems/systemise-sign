@@ -1,4 +1,4 @@
-import { findUsers } from '@documenso/lib/server-only/user/get-all-users';
+import { findUsers } from '@systemise/lib/server-only/user/get-all-users';
 import { Trans } from '@lingui/react/macro';
 
 import { AdminDashboardUsersTable } from '~/components/tables/admin-dashboard-users-table';

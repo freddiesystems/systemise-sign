@@ -1,10 +1,10 @@
-import { AppError } from '@documenso/lib/errors/app-error';
-import { DocumentAuth, type TRecipientActionAuth } from '@documenso/lib/types/document-auth';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { DialogFooter } from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { DocumentAuth, type TRecipientActionAuth } from '@systemise/lib/types/document-auth';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { DialogFooter } from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { useEffect, useState } from 'react';

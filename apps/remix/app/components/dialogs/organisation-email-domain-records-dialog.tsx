@@ -1,6 +1,6 @@
-import { CopyTextButton } from '@documenso/ui/components/common/copy-text-button';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { CopyTextButton } from '@systemise/ui/components/common/copy-text-button';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -10,10 +10,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import type * as DialogPrimitive from '@radix-ui/react-dialog';
 

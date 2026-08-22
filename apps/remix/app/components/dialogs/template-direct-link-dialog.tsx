@@ -1,15 +1,15 @@
-import { useLimits } from '@documenso/ee/server-only/limits/provider/client';
-import { useCopyToClipboard } from '@documenso/lib/client-only/hooks/use-copy-to-clipboard';
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { DIRECT_TEMPLATE_RECIPIENT_EMAIL } from '@documenso/lib/constants/direct-templates';
-import { RECIPIENT_ROLES_DESCRIPTION } from '@documenso/lib/constants/recipient-roles';
-import { DIRECT_TEMPLATE_DOCUMENTATION } from '@documenso/lib/constants/template';
-import type { TRecipientLite } from '@documenso/lib/types/recipient';
-import { formatDirectTemplatePath } from '@documenso/lib/utils/templates';
-import { trpc as trpcReact } from '@documenso/trpc/react';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { useLimits } from '@systemise/ee/server-only/limits/provider/client';
+import { useCopyToClipboard } from '@systemise/lib/client-only/hooks/use-copy-to-clipboard';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { DIRECT_TEMPLATE_RECIPIENT_EMAIL } from '@systemise/lib/constants/direct-templates';
+import { RECIPIENT_ROLES_DESCRIPTION } from '@systemise/lib/constants/recipient-roles';
+import { DIRECT_TEMPLATE_DOCUMENTATION } from '@systemise/lib/constants/template';
+import type { TRecipientLite } from '@systemise/lib/types/recipient';
+import { formatDirectTemplatePath } from '@systemise/lib/utils/templates';
+import { trpc as trpcReact } from '@systemise/trpc/react';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -18,13 +18,13 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { Switch } from '@documenso/ui/primitives/switch';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@documenso/ui/primitives/table';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { Switch } from '@systemise/ui/primitives/switch';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@systemise/ui/primitives/table';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

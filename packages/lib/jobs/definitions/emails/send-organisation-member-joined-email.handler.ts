@@ -1,6 +1,6 @@
-import { mailer } from '@documenso/email/mailer';
-import OrganisationJoinEmailTemplate from '@documenso/email/templates/organisation-join';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import OrganisationJoinEmailTemplate from '@systemise/email/templates/organisation-join';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { createElement } from 'react';
 

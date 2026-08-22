@@ -1,5 +1,5 @@
-import { RecipientStatusType } from '@documenso/lib/client-only/recipient-type';
-import { Avatar, AvatarFallback } from '@documenso/ui/primitives/avatar';
+import { RecipientStatusType } from '@systemise/lib/client-only/recipient-type';
+import { Avatar, AvatarFallback } from '@systemise/ui/primitives/avatar';
 
 const ZIndexes: { [key: string]: string } = {
   '10': 'z-10',

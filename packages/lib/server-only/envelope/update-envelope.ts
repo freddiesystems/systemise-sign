@@ -1,8 +1,8 @@
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import type { ApiRequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import type { CreateDocumentAuditLogDataResponse } from '@documenso/lib/utils/document-audit-logs';
-import { createDocumentAuditLogData } from '@documenso/lib/utils/document-audit-logs';
-import { prisma } from '@documenso/prisma';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import type { ApiRequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import type { CreateDocumentAuditLogDataResponse } from '@systemise/lib/utils/document-audit-logs';
+import { createDocumentAuditLogData } from '@systemise/lib/utils/document-audit-logs';
+import { prisma } from '@systemise/prisma';
 import type { DocumentMeta, DocumentVisibility, Prisma, TemplateType } from '@prisma/client';
 import { DocumentStatus, EnvelopeType, FolderType, WebhookTriggerEvents } from '@prisma/client';
 import { isDeepEqual } from 'remeda';

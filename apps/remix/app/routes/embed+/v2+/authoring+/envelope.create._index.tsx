@@ -1,22 +1,22 @@
-import { EnvelopeEditorProvider } from '@documenso/lib/client-only/providers/envelope-editor-provider';
-import type { SupportedLanguageCodes } from '@documenso/lib/constants/i18n';
-import { verifyEmbeddingPresignToken } from '@documenso/lib/server-only/embedding-presign/verify-embedding-presign-token';
-import { getTeamSettings } from '@documenso/lib/server-only/team/get-team-settings';
-import { ZDefaultRecipientsSchema } from '@documenso/lib/types/default-recipients';
-import type { TDocumentMetaDateFormat } from '@documenso/lib/types/document-meta';
-import type { TEditorEnvelope } from '@documenso/lib/types/envelope-editor';
+import { EnvelopeEditorProvider } from '@systemise/lib/client-only/providers/envelope-editor-provider';
+import type { SupportedLanguageCodes } from '@systemise/lib/constants/i18n';
+import { verifyEmbeddingPresignToken } from '@systemise/lib/server-only/embedding-presign/verify-embedding-presign-token';
+import { getTeamSettings } from '@systemise/lib/server-only/team/get-team-settings';
+import { ZDefaultRecipientsSchema } from '@systemise/lib/types/default-recipients';
+import type { TDocumentMetaDateFormat } from '@systemise/lib/types/document-meta';
+import type { TEditorEnvelope } from '@systemise/lib/types/envelope-editor';
 import {
   type TEmbedCreateEnvelopeAuthoring,
   ZEmbedCreateEnvelopeAuthoringSchema,
-} from '@documenso/lib/types/envelope-editor';
-import type { TEnvelopeFieldAndMeta } from '@documenso/lib/types/field-meta';
-import { extractDerivedDocumentMeta } from '@documenso/lib/utils/document';
-import { buildEmbeddedEditorOptions, buildEmbeddedFeatures } from '@documenso/lib/utils/embed-config';
-import { prisma } from '@documenso/prisma';
-import { trpc } from '@documenso/trpc/react';
-import type { TCreateEnvelopePayload } from '@documenso/trpc/server/envelope-router/create-envelope.types';
-import { Spinner } from '@documenso/ui/primitives/spinner';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/lib/types/envelope-editor';
+import type { TEnvelopeFieldAndMeta } from '@systemise/lib/types/field-meta';
+import { extractDerivedDocumentMeta } from '@systemise/lib/utils/document';
+import { buildEmbeddedEditorOptions, buildEmbeddedFeatures } from '@systemise/lib/utils/embed-config';
+import { prisma } from '@systemise/prisma';
+import { trpc } from '@systemise/trpc/react';
+import type { TCreateEnvelopePayload } from '@systemise/trpc/server/envelope-router/create-envelope.types';
+import { Spinner } from '@systemise/ui/primitives/spinner';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { DocumentStatus, EnvelopeType, ReadStatus, SendStatus, SigningStatus } from '@prisma/client';
 import { CheckCircle2Icon } from 'lucide-react';

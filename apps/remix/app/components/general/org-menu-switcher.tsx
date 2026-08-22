@@ -1,24 +1,24 @@
-import { authClient } from '@documenso/auth/client';
-import { useOptionalCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { EXTENDED_ORGANISATION_MEMBER_ROLE_MAP } from '@documenso/lib/constants/organisations-translations';
-import { EXTENDED_TEAM_MEMBER_ROLE_MAP } from '@documenso/lib/constants/teams-translations';
-import { formatAvatarUrl } from '@documenso/lib/utils/avatars';
-import { isAdmin } from '@documenso/lib/utils/is-admin';
-import { canExecuteOrganisationAction } from '@documenso/lib/utils/organisations';
-import { extractInitials } from '@documenso/lib/utils/recipient-formatter';
-import { canExecuteTeamAction } from '@documenso/lib/utils/teams';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
-import { LanguageSwitcherDialog } from '@documenso/ui/components/common/language-switcher-dialog';
-import { cn } from '@documenso/ui/lib/utils';
-import { AvatarWithText } from '@documenso/ui/primitives/avatar';
-import { Button } from '@documenso/ui/primitives/button';
+import { authClient } from '@systemise/auth/client';
+import { useOptionalCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { EXTENDED_ORGANISATION_MEMBER_ROLE_MAP } from '@systemise/lib/constants/organisations-translations';
+import { EXTENDED_TEAM_MEMBER_ROLE_MAP } from '@systemise/lib/constants/teams-translations';
+import { formatAvatarUrl } from '@systemise/lib/utils/avatars';
+import { isAdmin } from '@systemise/lib/utils/is-admin';
+import { canExecuteOrganisationAction } from '@systemise/lib/utils/organisations';
+import { extractInitials } from '@systemise/lib/utils/recipient-formatter';
+import { canExecuteTeamAction } from '@systemise/lib/utils/teams';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
+import { LanguageSwitcherDialog } from '@systemise/ui/components/common/language-switcher-dialog';
+import { cn } from '@systemise/ui/lib/utils';
+import { AvatarWithText } from '@systemise/ui/primitives/avatar';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
+} from '@systemise/ui/primitives/dropdown-menu';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

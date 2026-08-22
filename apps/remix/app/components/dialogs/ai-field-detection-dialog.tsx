@@ -1,9 +1,9 @@
-import type { NormalizedFieldWithContext } from '@documenso/lib/server-only/ai/envelope/detect-fields/types';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from '@documenso/ui/primitives/dialog';
-import { Label } from '@documenso/ui/primitives/label';
-import { Textarea } from '@documenso/ui/primitives/textarea';
+import type { NormalizedFieldWithContext } from '@systemise/lib/server-only/ai/envelope/detect-fields/types';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from '@systemise/ui/primitives/dialog';
+import { Label } from '@systemise/ui/primitives/label';
+import { Textarea } from '@systemise/ui/primitives/textarea';
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

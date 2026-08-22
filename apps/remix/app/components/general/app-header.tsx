@@ -1,9 +1,9 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { getRootHref } from '@documenso/lib/utils/params';
-import { trpc } from '@documenso/trpc/react';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { getRootHref } from '@systemise/lib/utils/params';
+import { trpc } from '@systemise/trpc/react';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { ReadStatus } from '@prisma/client';
 import { InboxIcon, MenuIcon, SearchIcon } from 'lucide-react';
 import { type HTMLAttributes, useEffect, useState } from 'react';

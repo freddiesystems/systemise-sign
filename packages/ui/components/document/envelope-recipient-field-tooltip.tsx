@@ -1,5 +1,5 @@
-import { getBoundingClientRect } from '@documenso/lib/client-only/get-bounding-client-rect';
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
+import { getBoundingClientRect } from '@systemise/lib/client-only/get-bounding-client-rect';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
 import { Trans, useLingui } from '@lingui/react/macro';
 import type { Field, Recipient } from '@prisma/client';
 import { SigningStatus } from '@prisma/client';

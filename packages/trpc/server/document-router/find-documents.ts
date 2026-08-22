@@ -1,5 +1,5 @@
-import { findDocuments } from '@documenso/lib/server-only/document/find-documents';
-import { mapEnvelopesToDocumentMany } from '@documenso/lib/utils/document';
+import { findDocuments } from '@systemise/lib/server-only/document/find-documents';
+import { mapEnvelopesToDocumentMany } from '@systemise/lib/utils/document';
 
 import { authenticatedProcedure } from '../trpc';
 import { ZFindDocumentsMeta, ZFindDocumentsRequestSchema, ZFindDocumentsResponseSchema } from './find-documents.types';

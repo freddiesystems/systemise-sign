@@ -1,26 +1,26 @@
-import { useThrottleFn } from '@documenso/lib/client-only/hooks/use-throttle-fn';
-import { APP_I18N_OPTIONS } from '@documenso/lib/constants/i18n';
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
-import { ZSignDocumentEmbedDataSchema } from '@documenso/lib/types/embed-document-sign-schema';
-import { isFieldUnsignedAndRequired } from '@documenso/lib/utils/advanced-fields-helpers';
-import { getDocumentDataUrlForPdfViewer } from '@documenso/lib/utils/envelope-download';
-import { sortFieldsByPosition, validateFieldsInserted } from '@documenso/lib/utils/fields';
-import { dynamicActivate } from '@documenso/lib/utils/i18n';
-import { isSignatureFieldType } from '@documenso/prisma/guards/is-signature-field';
-import type { RecipientWithFields } from '@documenso/prisma/types/recipient-with-fields';
-import { trpc } from '@documenso/trpc/react';
+import { useThrottleFn } from '@systemise/lib/client-only/hooks/use-throttle-fn';
+import { APP_I18N_OPTIONS } from '@systemise/lib/constants/i18n';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
+import { ZSignDocumentEmbedDataSchema } from '@systemise/lib/types/embed-document-sign-schema';
+import { isFieldUnsignedAndRequired } from '@systemise/lib/utils/advanced-fields-helpers';
+import { getDocumentDataUrlForPdfViewer } from '@systemise/lib/utils/envelope-download';
+import { sortFieldsByPosition, validateFieldsInserted } from '@systemise/lib/utils/fields';
+import { dynamicActivate } from '@systemise/lib/utils/i18n';
+import { isSignatureFieldType } from '@systemise/prisma/guards/is-signature-field';
+import type { RecipientWithFields } from '@systemise/prisma/types/recipient-with-fields';
+import { trpc } from '@systemise/trpc/react';
 import {
   type DocumentField,
   DocumentReadOnlyFields,
-} from '@documenso/ui/components/document/document-read-only-fields';
-import { FieldToolTip } from '@documenso/ui/components/field/field-tooltip';
-import { Button } from '@documenso/ui/primitives/button';
-import { ElementVisible } from '@documenso/ui/primitives/element-visible';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { RadioGroup, RadioGroupItem } from '@documenso/ui/primitives/radio-group';
-import { SignaturePadDialog } from '@documenso/ui/primitives/signature-pad/signature-pad-dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/components/document/document-read-only-fields';
+import { FieldToolTip } from '@systemise/ui/components/field/field-tooltip';
+import { Button } from '@systemise/ui/primitives/button';
+import { ElementVisible } from '@systemise/ui/primitives/element-visible';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { RadioGroup, RadioGroupItem } from '@systemise/ui/primitives/radio-group';
+import { SignaturePadDialog } from '@systemise/ui/primitives/signature-pad/signature-pad-dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

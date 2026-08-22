@@ -1,9 +1,9 @@
-import { EnvelopeEditorProvider } from '@documenso/lib/client-only/providers/envelope-editor-provider';
-import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@documenso/lib/constants/trpc';
-import { formatDocumentsPath, formatTemplatesPath } from '@documenso/lib/utils/teams';
-import { trpc } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
-import { Spinner } from '@documenso/ui/primitives/spinner';
+import { EnvelopeEditorProvider } from '@systemise/lib/client-only/providers/envelope-editor-provider';
+import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@systemise/lib/constants/trpc';
+import { formatDocumentsPath, formatTemplatesPath } from '@systemise/lib/utils/teams';
+import { trpc } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
+import { Spinner } from '@systemise/ui/primitives/spinner';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';
 import { EnvelopeType } from '@prisma/client';

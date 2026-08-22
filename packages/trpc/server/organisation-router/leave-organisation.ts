@@ -1,9 +1,9 @@
-import { syncMemberCountWithStripeSeatPlan } from '@documenso/ee/server-only/stripe/update-subscription-item-quantity';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { jobs } from '@documenso/lib/jobs/client';
-import { buildOrganisationWhereQuery } from '@documenso/lib/utils/organisations';
-import { prisma } from '@documenso/prisma';
-import { OrganisationMemberInviteStatus } from '@documenso/prisma/client';
+import { syncMemberCountWithStripeSeatPlan } from '@systemise/ee/server-only/stripe/update-subscription-item-quantity';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { jobs } from '@systemise/lib/jobs/client';
+import { buildOrganisationWhereQuery } from '@systemise/lib/utils/organisations';
+import { prisma } from '@systemise/prisma';
+import { OrganisationMemberInviteStatus } from '@systemise/prisma/client';
 
 import { authenticatedProcedure } from '../trpc';
 import { ZLeaveOrganisationRequestSchema, ZLeaveOrganisationResponseSchema } from './leave-organisation.types';

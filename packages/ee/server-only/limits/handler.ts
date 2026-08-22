@@ -1,4 +1,4 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
 import { match } from 'ts-pattern';
 
 import { ERROR_CODES } from './errors';

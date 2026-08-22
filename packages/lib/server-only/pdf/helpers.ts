@@ -1,5 +1,5 @@
 import path from 'node:path';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
 import type { Recipient } from '@prisma/client';
 import { FieldType } from '@prisma/client';
 import { FontLibrary } from 'skia-canvas';

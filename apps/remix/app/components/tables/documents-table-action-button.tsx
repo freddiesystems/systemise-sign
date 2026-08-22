@@ -1,9 +1,9 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import type { TDocumentMany as TDocumentRow } from '@documenso/lib/types/document';
-import { isDocumentCompleted } from '@documenso/lib/utils/document';
-import { findRecipientByEmail } from '@documenso/lib/utils/recipients';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { Button } from '@documenso/ui/primitives/button';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import type { TDocumentMany as TDocumentRow } from '@systemise/lib/types/document';
+import { isDocumentCompleted } from '@systemise/lib/utils/document';
+import { findRecipientByEmail } from '@systemise/lib/utils/recipients';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { Button } from '@systemise/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { DocumentStatus, RecipientRole, SigningStatus } from '@prisma/client';
 import { CheckCircle, Download, Edit, EyeIcon, Pencil } from 'lucide-react';

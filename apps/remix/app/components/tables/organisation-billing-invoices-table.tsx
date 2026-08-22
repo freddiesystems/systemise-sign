@@ -1,9 +1,9 @@
-import { trpc } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
-import type { DataTableColumnDef } from '@documenso/ui/primitives/data-table';
-import { DataTable } from '@documenso/ui/primitives/data-table';
-import { Skeleton } from '@documenso/ui/primitives/skeleton';
-import { TableCell } from '@documenso/ui/primitives/table';
+import { trpc } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
+import type { DataTableColumnDef } from '@systemise/ui/primitives/data-table';
+import { DataTable } from '@systemise/ui/primitives/data-table';
+import { Skeleton } from '@systemise/ui/primitives/skeleton';
+import { TableCell } from '@systemise/ui/primitives/table';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

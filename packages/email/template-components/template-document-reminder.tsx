@@ -1,4 +1,4 @@
-import { RECIPIENT_ROLES_DESCRIPTION } from '@documenso/lib/constants/recipient-roles';
+import { RECIPIENT_ROLES_DESCRIPTION } from '@systemise/lib/constants/recipient-roles';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
 import { RecipientRole } from '@prisma/client';

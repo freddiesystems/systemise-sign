@@ -1,6 +1,6 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { canExecuteOrganisationAction } from '@documenso/lib/utils/organisations';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { canExecuteOrganisationAction } from '@systemise/lib/utils/organisations';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

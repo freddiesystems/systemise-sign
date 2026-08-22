@@ -1,4 +1,4 @@
-import { formatTeamUrl } from '@documenso/lib/utils/teams';
+import { formatTeamUrl } from '@systemise/lib/utils/teams';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 

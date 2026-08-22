@@ -1,9 +1,9 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { canExecuteOrganisationAction, isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { canExecuteOrganisationAction, isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

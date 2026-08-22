@@ -1,16 +1,16 @@
-import type { InternalClaimPlans } from '@documenso/ee/server-only/stripe/get-internal-claim-plans';
-import { useUpdateSearchParams } from '@documenso/lib/client-only/hooks/use-update-search-params';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
-import { AppError } from '@documenso/lib/errors/app-error';
-import { INTERNAL_CLAIM_ID } from '@documenso/lib/types/subscription';
-import { parseMessageDescriptorMacro } from '@documenso/lib/utils/i18n';
-import { isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import { ZCreateOrganisationRequestSchema } from '@documenso/trpc/server/organisation-router/create-organisation.types';
-import { cn } from '@documenso/ui/lib/utils';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
+import type { InternalClaimPlans } from '@systemise/ee/server-only/stripe/get-internal-claim-plans';
+import { useUpdateSearchParams } from '@systemise/lib/client-only/hooks/use-update-search-params';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { INTERNAL_CLAIM_ID } from '@systemise/lib/types/subscription';
+import { parseMessageDescriptorMacro } from '@systemise/lib/utils/i18n';
+import { isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import { ZCreateOrganisationRequestSchema } from '@systemise/trpc/server/organisation-router/create-organisation.types';
+import { cn } from '@systemise/ui/lib/utils';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -19,12 +19,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { SpinnerBox } from '@documenso/ui/primitives/spinner';
-import { Tabs, TabsList, TabsTrigger } from '@documenso/ui/primitives/tabs';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { SpinnerBox } from '@systemise/ui/primitives/spinner';
+import { Tabs, TabsList, TabsTrigger } from '@systemise/ui/primitives/tabs';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';

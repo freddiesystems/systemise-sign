@@ -1,9 +1,9 @@
-import { syncMemberCountWithStripeSeatPlan } from '@documenso/ee/server-only/stripe/update-subscription-item-quantity';
-import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/organisations';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getMemberOrganisationRole } from '@documenso/lib/server-only/team/get-member-roles';
-import { buildOrganisationWhereQuery, isOrganisationRoleWithinUserHierarchy } from '@documenso/lib/utils/organisations';
-import { prisma } from '@documenso/prisma';
+import { syncMemberCountWithStripeSeatPlan } from '@systemise/ee/server-only/stripe/update-subscription-item-quantity';
+import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/organisations';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getMemberOrganisationRole } from '@systemise/lib/server-only/team/get-member-roles';
+import { buildOrganisationWhereQuery, isOrganisationRoleWithinUserHierarchy } from '@systemise/lib/utils/organisations';
+import { prisma } from '@systemise/prisma';
 
 import { authenticatedProcedure } from '../trpc';
 import {

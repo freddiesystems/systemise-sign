@@ -3,8 +3,8 @@
  * we migrated Documents to Envelopes.
  */
 
-import { ZDocumentAuthOptionsSchema } from '@documenso/lib/types/document-auth';
-import { ZDocumentFormValuesSchema } from '@documenso/lib/types/document-form-values';
+import { ZDocumentAuthOptionsSchema } from '@systemise/lib/types/document-auth';
+import { ZDocumentFormValuesSchema } from '@systemise/lib/types/document-form-values';
 import { DocumentSource } from '@prisma/client';
 import { z } from 'zod';
 

@@ -1,7 +1,7 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { IS_BILLING_ENABLED, SUPPORT_EMAIL } from '@documenso/lib/constants/app';
-import { Button } from '@documenso/ui/primitives/button';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { IS_BILLING_ENABLED, SUPPORT_EMAIL } from '@systemise/lib/constants/app';
+import { Button } from '@systemise/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';
 import { HelpCircleIcon, Link2Icon, MailIcon } from 'lucide-react';

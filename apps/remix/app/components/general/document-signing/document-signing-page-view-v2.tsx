@@ -1,9 +1,9 @@
-import { useCurrentEnvelopeRender } from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { PDF_VIEWER_ERROR_MESSAGES } from '@documenso/lib/constants/pdf-viewer-i18n';
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { Separator } from '@documenso/ui/primitives/separator';
+import { useCurrentEnvelopeRender } from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { PDF_VIEWER_ERROR_MESSAGES } from '@systemise/lib/constants/pdf-viewer-i18n';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { Separator } from '@systemise/ui/primitives/separator';
 import { Plural, Trans, useLingui } from '@lingui/react/macro';
 import { EnvelopeType, RecipientRole } from '@prisma/client';
 import { motion } from 'framer-motion';

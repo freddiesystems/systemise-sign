@@ -1,7 +1,7 @@
-import { getHighestOrganisationRoleInGroup } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import type { TGetAdminOrganisationResponse } from '@documenso/trpc/server/admin-router/get-admin-organisation.types';
-import { Button } from '@documenso/ui/primitives/button';
+import { getHighestOrganisationRoleInGroup } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import type { TGetAdminOrganisationResponse } from '@systemise/trpc/server/admin-router/get-admin-organisation.types';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -10,10 +10,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { OrganisationMemberRole } from '@prisma/client';

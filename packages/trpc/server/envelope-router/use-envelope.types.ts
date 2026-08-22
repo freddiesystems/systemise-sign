@@ -1,6 +1,6 @@
-import { ZEnvelopeExpirationPeriod } from '@documenso/lib/constants/envelope-expiration';
-import { ZDocumentEmailSettingsSchema } from '@documenso/lib/types/document-email';
-import { ZDocumentFormValuesSchema } from '@documenso/lib/types/document-form-values';
+import { ZEnvelopeExpirationPeriod } from '@systemise/lib/constants/envelope-expiration';
+import { ZDocumentEmailSettingsSchema } from '@systemise/lib/types/document-email';
+import { ZDocumentFormValuesSchema } from '@systemise/lib/types/document-form-values';
 import {
   ZDocumentMetaDateFormatSchema,
   ZDocumentMetaDistributionMethodSchema,
@@ -12,10 +12,10 @@ import {
   ZDocumentMetaTimezoneSchema,
   ZDocumentMetaTypedSignatureEnabledSchema,
   ZDocumentMetaUploadSignatureEnabledSchema,
-} from '@documenso/lib/types/document-meta';
-import { ZEnvelopeAttachmentTypeSchema } from '@documenso/lib/types/envelope-attachment';
-import { ZFieldMetaPrefillFieldsSchema } from '@documenso/lib/types/field-meta';
-import { ZRecipientEmailSchema } from '@documenso/lib/types/recipient';
+} from '@systemise/lib/types/document-meta';
+import { ZEnvelopeAttachmentTypeSchema } from '@systemise/lib/types/envelope-attachment';
+import { ZFieldMetaPrefillFieldsSchema } from '@systemise/lib/types/field-meta';
+import { ZRecipientEmailSchema } from '@systemise/lib/types/recipient';
 import { z } from 'zod';
 import { zfd } from 'zod-form-data';
 

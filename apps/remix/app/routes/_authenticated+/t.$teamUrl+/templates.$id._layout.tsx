@@ -1,9 +1,9 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getEnvelopeById } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { getTeamByUrl } from '@documenso/lib/server-only/team/get-team';
-import { getOrganisationTemplateById } from '@documenso/lib/server-only/template/get-organisation-template-by-id';
-import { Button } from '@documenso/ui/primitives/button';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getEnvelopeById } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { getTeamByUrl } from '@systemise/lib/server-only/team/get-team';
+import { getOrganisationTemplateById } from '@systemise/lib/server-only/template/get-organisation-template-by-id';
+import { Button } from '@systemise/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';
 import { EnvelopeType } from '@prisma/client';

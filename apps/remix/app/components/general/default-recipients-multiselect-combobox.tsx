@@ -1,8 +1,8 @@
-import type { TDefaultRecipient } from '@documenso/lib/types/default-recipients';
-import { isRecipientEmailValidForSending } from '@documenso/lib/utils/recipients';
-import { trpc } from '@documenso/trpc/react';
-import { MultiSelect, type Option } from '@documenso/ui/primitives/multiselect';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import type { TDefaultRecipient } from '@systemise/lib/types/default-recipients';
+import { isRecipientEmailValidForSending } from '@systemise/lib/utils/recipients';
+import { trpc } from '@systemise/trpc/react';
+import { MultiSelect, type Option } from '@systemise/ui/primitives/multiselect';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans, useLingui as useLinguiMacro } from '@lingui/react/macro';

@@ -1,7 +1,7 @@
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
-import { getEnvelopeById } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
+import { getEnvelopeById } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 import { EnvelopeType } from '@prisma/client';
@@ -22,7 +22,7 @@ export const setupDocumentAndNavigateToSubjectStep = async (page: Page) => {
 
   await page.getByRole('button', { name: 'Continue' }).click();
 
-  await page.getByPlaceholder('Email').fill('recipient1@documenso.com');
+  await page.getByPlaceholder('Email').fill('recipient1@systemise.dev');
   await page.getByPlaceholder('Name').fill('Recipient 1');
 
   await page.getByRole('button', { name: 'Continue' }).click();

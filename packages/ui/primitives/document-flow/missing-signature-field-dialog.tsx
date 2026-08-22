@@ -1,4 +1,4 @@
-import { Button } from '@documenso/ui/primitives/button';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -6,7 +6,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@documenso/ui/primitives/dialog';
+} from '@systemise/ui/primitives/dialog';
 import { Trans } from '@lingui/react/macro';
 import { DialogClose } from '@radix-ui/react-dialog';
 

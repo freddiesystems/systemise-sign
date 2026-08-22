@@ -1,4 +1,4 @@
-import { ZEnvelopeFieldSchema } from '@documenso/lib/types/field';
+import { ZEnvelopeFieldSchema } from '@systemise/lib/types/field';
 import { z } from 'zod';
 
 import type { TrpcRouteMeta } from '../../trpc';

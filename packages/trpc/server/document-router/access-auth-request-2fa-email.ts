@@ -1,10 +1,10 @@
-import { TWO_FACTOR_EMAIL_EXPIRATION_MINUTES } from '@documenso/lib/server-only/2fa/email/constants';
-import { send2FATokenEmail } from '@documenso/lib/server-only/2fa/email/send-2fa-token-email';
-import { assertRateLimit } from '@documenso/lib/server-only/rate-limit/rate-limit-middleware';
-import { request2FAEmailRateLimit } from '@documenso/lib/server-only/rate-limit/rate-limits';
-import { DocumentAuth } from '@documenso/lib/types/document-auth';
-import { extractDocumentAuthMethods } from '@documenso/lib/utils/document-auth';
-import { prisma } from '@documenso/prisma';
+import { TWO_FACTOR_EMAIL_EXPIRATION_MINUTES } from '@systemise/lib/server-only/2fa/email/constants';
+import { send2FATokenEmail } from '@systemise/lib/server-only/2fa/email/send-2fa-token-email';
+import { assertRateLimit } from '@systemise/lib/server-only/rate-limit/rate-limit-middleware';
+import { request2FAEmailRateLimit } from '@systemise/lib/server-only/rate-limit/rate-limits';
+import { DocumentAuth } from '@systemise/lib/types/document-auth';
+import { extractDocumentAuthMethods } from '@systemise/lib/utils/document-auth';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 import { TRPCError } from '@trpc/server';
 import { DateTime } from 'luxon';

@@ -1,8 +1,8 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getEnvelopeWhereInput } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { UNSAFE_deleteEnvelopeItem } from '@documenso/lib/server-only/envelope-item/delete-envelope-item';
-import { getEnvelopeItemPermissions } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getEnvelopeWhereInput } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { UNSAFE_deleteEnvelopeItem } from '@systemise/lib/server-only/envelope-item/delete-envelope-item';
+import { getEnvelopeItemPermissions } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
 
 import { ZGenericSuccessResponse } from '../schema';
 import { authenticatedProcedure } from '../trpc';

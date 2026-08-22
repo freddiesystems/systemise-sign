@@ -1,7 +1,7 @@
-import { createDocumentAuthOptions } from '@documenso/lib/utils/document-auth';
-import { prisma } from '@documenso/prisma';
-import { seedPendingDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { createDocumentAuthOptions } from '@systemise/lib/utils/document-auth';
+import { prisma } from '@systemise/prisma';
+import { seedPendingDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin } from '../fixtures/authentication';
@@ -13,7 +13,7 @@ test('[DOCUMENT_AUTH]: should grant access when not required', async ({ page }) 
 
   const document = await seedPendingDocument(user, team.id, [
     recipientWithAccount,
-    'recipientwithoutaccount@documenso.com',
+    'recipientwithoutaccount@systemise.dev',
   ]);
 
   const recipients = await prisma.recipient.findMany({
@@ -38,7 +38,7 @@ test('[DOCUMENT_AUTH]: should allow or deny access when required', async ({ page
   const document = await seedPendingDocument(
     user,
     team.id,
-    [recipientWithAccount, 'recipientwithoutaccount@documenso.com'],
+    [recipientWithAccount, 'recipientwithoutaccount@systemise.dev'],
     {
       createDocumentOptions: {
         authOptions: createDocumentAuthOptions({

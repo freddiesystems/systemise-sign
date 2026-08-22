@@ -1,12 +1,12 @@
-import { isTemplateRecipientEmailPlaceholder } from '@documenso/lib/constants/template';
+import { isTemplateRecipientEmailPlaceholder } from '@systemise/lib/constants/template';
 import {
   ZRecipientAccessAuthSchema,
   ZRecipientAccessAuthTypesSchema,
   ZRecipientActionAuthSchema,
   ZRecipientActionAuthTypesSchema,
-} from '@documenso/lib/types/document-auth';
-import { ZRecipientLiteSchema, ZRecipientSchema } from '@documenso/lib/types/recipient';
-import { zEmail } from '@documenso/lib/utils/zod';
+} from '@systemise/lib/types/document-auth';
+import { ZRecipientLiteSchema, ZRecipientSchema } from '@systemise/lib/types/recipient';
+import { zEmail } from '@systemise/lib/utils/zod';
 import { RecipientRole } from '@prisma/client';
 import { z } from 'zod';
 

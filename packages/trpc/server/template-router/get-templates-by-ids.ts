@@ -1,8 +1,8 @@
-import { getMultipleEnvelopeWhereInput } from '@documenso/lib/server-only/envelope/get-envelopes-by-ids';
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { mapFieldToLegacyField } from '@documenso/lib/utils/fields';
-import { mapRecipientToLegacyRecipient } from '@documenso/lib/utils/recipients';
-import { prisma } from '@documenso/prisma';
+import { getMultipleEnvelopeWhereInput } from '@systemise/lib/server-only/envelope/get-envelopes-by-ids';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { mapFieldToLegacyField } from '@systemise/lib/utils/fields';
+import { mapRecipientToLegacyRecipient } from '@systemise/lib/utils/recipients';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 
 import { authenticatedProcedure } from '../trpc';

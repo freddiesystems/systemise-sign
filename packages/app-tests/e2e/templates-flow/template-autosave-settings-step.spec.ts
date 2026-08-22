@@ -1,7 +1,7 @@
-import { getTemplateById } from '@documenso/lib/server-only/template/get-template-by-id';
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { seedBlankTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { getTemplateById } from '@systemise/lib/server-only/template/get-template-by-id';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { seedBlankTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 
@@ -206,7 +206,7 @@ test.describe('AutoSave Settings Step - Templates', () => {
   test('should autosave the redirect URL change', async ({ page }) => {
     const { user, template, team } = await setupTemplate(page);
 
-    const newRedirectUrl = 'https://documenso.com/test/';
+    const newRedirectUrl = 'https://systemise.dev/test/';
 
     await page.getByRole('button', { name: 'Advanced Options' }).click();
 

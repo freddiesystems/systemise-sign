@@ -1,14 +1,14 @@
-import { getOrganisationAuthenticationPortalOptions } from '@documenso/auth/server/lib/utils/organisation-portal';
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
+import { getOrganisationAuthenticationPortalOptions } from '@systemise/auth/server/lib/utils/organisation-portal';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
 import {
   ORGANISATION_ACCOUNT_LINK_VERIFICATION_TOKEN_IDENTIFIER,
   ORGANISATION_USER_ACCOUNT_TYPE,
-} from '@documenso/lib/constants/organisations';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { addUserToOrganisation } from '@documenso/lib/server-only/organisation/accept-organisation-invitation';
-import { ZOrganisationAccountLinkMetadataSchema } from '@documenso/lib/types/organisation';
-import type { RequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import { prisma } from '@documenso/prisma';
+} from '@systemise/lib/constants/organisations';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { addUserToOrganisation } from '@systemise/lib/server-only/organisation/accept-organisation-invitation';
+import { ZOrganisationAccountLinkMetadataSchema } from '@systemise/lib/types/organisation';
+import type { RequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import { prisma } from '@systemise/prisma';
 import { UserSecurityAuditLogType } from '@prisma/client';
 
 export interface LinkOrganisationAccountOptions {

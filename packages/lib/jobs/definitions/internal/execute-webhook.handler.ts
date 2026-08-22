@@ -1,5 +1,5 @@
-import { executeWebhookCall } from '@documenso/lib/server-only/webhooks/execute-webhook-call';
-import { prisma } from '@documenso/prisma';
+import { executeWebhookCall } from '@systemise/lib/server-only/webhooks/execute-webhook-call';
+import { prisma } from '@systemise/prisma';
 import type { Prisma } from '@prisma/client';
 import { WebhookCallStatus } from '@prisma/client';
 

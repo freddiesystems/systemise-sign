@@ -1,9 +1,9 @@
-import { AppError, genericErrorCodeToTrpcErrorCodeMap } from '@documenso/lib/errors/app-error';
-import { getApiTokenByToken } from '@documenso/lib/server-only/public-api/get-api-token-by-token';
-import type { TrpcApiLog } from '@documenso/lib/types/api-logs';
-import type { ApiRequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import { alphaid } from '@documenso/lib/universal/id';
-import { isAdmin } from '@documenso/lib/utils/is-admin';
+import { AppError, genericErrorCodeToTrpcErrorCodeMap } from '@systemise/lib/errors/app-error';
+import { getApiTokenByToken } from '@systemise/lib/server-only/public-api/get-api-token-by-token';
+import type { TrpcApiLog } from '@systemise/lib/types/api-logs';
+import type { ApiRequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import { alphaid } from '@systemise/lib/universal/id';
+import { isAdmin } from '@systemise/lib/utils/is-admin';
 import { initTRPC, TRPCError } from '@trpc/server';
 import type { AnyZodObject } from 'zod';
 
@@ -82,7 +82,7 @@ export const authenticatedMiddleware = t.middleware(async ({ ctx, next, path, me
 
   const isApiV2 = Boolean(meta?.openapi?.path);
 
-  // Taken from `authenticatedMiddleware` in `@documenso/api/v1/middleware/authenticated.ts`.
+  // Taken from `authenticatedMiddleware` in `@systemise/api/v1/middleware/authenticated.ts`.
   if (authorizationHeader && isApiV2) {
     // Support for both "Authorization: Bearer api_xxx" and "Authorization: api_xxx"
     const [token] = (authorizationHeader || '').split('Bearer ').filter((s) => s.length > 0);
@@ -180,7 +180,7 @@ export const maybeAuthenticatedMiddleware = t.middleware(async ({ ctx, next, pat
 
   const isApiV2 = Boolean(meta?.openapi?.path);
 
-  // Taken from `authenticatedMiddleware` in `@documenso/api/v1/middleware/authenticated.ts`.
+  // Taken from `authenticatedMiddleware` in `@systemise/api/v1/middleware/authenticated.ts`.
   if (authorizationHeader && isApiV2) {
     // Support for both "Authorization: Bearer api_xxx" and "Authorization: api_xxx"
     const [token] = (authorizationHeader || '').split('Bearer ').filter((s) => s.length > 0);

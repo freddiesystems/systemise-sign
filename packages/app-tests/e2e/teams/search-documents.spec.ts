@@ -1,9 +1,9 @@
-import { generateDatabaseId } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
-import { seedDocuments, seedTeamDocuments } from '@documenso/prisma/seed/documents';
-import { seedOrganisationMembers } from '@documenso/prisma/seed/organisations';
-import { seedTeam, seedTeamMember } from '@documenso/prisma/seed/teams';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { generateDatabaseId } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
+import { seedDocuments, seedTeamDocuments } from '@systemise/prisma/seed/documents';
+import { seedOrganisationMembers } from '@systemise/prisma/seed/organisations';
+import { seedTeam, seedTeamMember } from '@systemise/prisma/seed/teams';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 import { DocumentStatus, OrganisationMemberRole, TeamMemberRole } from '@prisma/client';
 

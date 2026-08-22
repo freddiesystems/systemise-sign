@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 
 export interface GetRecipientByTokenOptions {
   token: string;

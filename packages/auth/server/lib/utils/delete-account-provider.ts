@@ -1,5 +1,5 @@
-import { ORGANISATION_USER_ACCOUNT_TYPE } from '@documenso/lib/constants/organisations';
-import { prisma } from '@documenso/prisma';
+import { ORGANISATION_USER_ACCOUNT_TYPE } from '@systemise/lib/constants/organisations';
+import { prisma } from '@systemise/prisma';
 import { UserSecurityAuditLogType } from '@prisma/client';
 import type { Context } from 'hono';
 

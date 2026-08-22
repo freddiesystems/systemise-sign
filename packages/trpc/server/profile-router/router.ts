@@ -1,10 +1,10 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import type { SetAvatarImageOptions } from '@documenso/lib/server-only/profile/set-avatar-image';
-import { setAvatarImage } from '@documenso/lib/server-only/profile/set-avatar-image';
-import { deleteUser } from '@documenso/lib/server-only/user/delete-user';
-import { findUserSecurityAuditLogs } from '@documenso/lib/server-only/user/find-user-security-audit-logs';
-import { submitSupportTicket } from '@documenso/lib/server-only/user/submit-support-ticket';
-import { updateProfile } from '@documenso/lib/server-only/user/update-profile';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import type { SetAvatarImageOptions } from '@systemise/lib/server-only/profile/set-avatar-image';
+import { setAvatarImage } from '@systemise/lib/server-only/profile/set-avatar-image';
+import { deleteUser } from '@systemise/lib/server-only/user/delete-user';
+import { findUserSecurityAuditLogs } from '@systemise/lib/server-only/user/find-user-security-audit-logs';
+import { submitSupportTicket } from '@systemise/lib/server-only/user/submit-support-ticket';
+import { updateProfile } from '@systemise/lib/server-only/user/update-profile';
 
 import { authenticatedProcedure, router } from '../trpc';
 import {

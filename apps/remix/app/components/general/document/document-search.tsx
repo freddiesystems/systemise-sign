@@ -1,5 +1,5 @@
-import { useDebouncedValue } from '@documenso/lib/client-only/hooks/use-debounced-value';
-import { Input } from '@documenso/ui/primitives/input';
+import { useDebouncedValue } from '@systemise/lib/client-only/hooks/use-debounced-value';
+import { Input } from '@systemise/ui/primitives/input';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { useCallback, useEffect, useState } from 'react';

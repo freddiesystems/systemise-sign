@@ -1,10 +1,10 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
-import { putFile } from '@documenso/lib/universal/upload/put-file';
-import type { SanitizeBrandingCssWarning } from '@documenso/lib/utils/sanitize-branding-css';
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
+import { putFile } from '@systemise/lib/universal/upload/put-file';
+import type { SanitizeBrandingCssWarning } from '@systemise/lib/utils/sanitize-branding-css';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { plural } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { Loader } from 'lucide-react';

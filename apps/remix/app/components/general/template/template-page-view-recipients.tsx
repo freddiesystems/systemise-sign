@@ -1,8 +1,8 @@
-import { RECIPIENT_ROLES_DESCRIPTION } from '@documenso/lib/constants/recipient-roles';
-import { isTemplateRecipientEmailPlaceholder } from '@documenso/lib/constants/template';
-import type { TRecipientLite } from '@documenso/lib/types/recipient';
-import { extractInitials } from '@documenso/lib/utils/recipient-formatter';
-import { AvatarWithText } from '@documenso/ui/primitives/avatar';
+import { RECIPIENT_ROLES_DESCRIPTION } from '@systemise/lib/constants/recipient-roles';
+import { isTemplateRecipientEmailPlaceholder } from '@systemise/lib/constants/template';
+import type { TRecipientLite } from '@systemise/lib/types/recipient';
+import { extractInitials } from '@systemise/lib/utils/recipient-formatter';
+import { AvatarWithText } from '@systemise/ui/primitives/avatar';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

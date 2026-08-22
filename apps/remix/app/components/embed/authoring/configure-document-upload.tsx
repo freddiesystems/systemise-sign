@@ -1,9 +1,9 @@
-import { APP_DOCUMENT_UPLOAD_SIZE_LIMIT } from '@documenso/lib/constants/app';
-import { buildDropzoneRejectionDescription } from '@documenso/ui/lib/handle-dropzone-rejection';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { APP_DOCUMENT_UPLOAD_SIZE_LIMIT } from '@systemise/lib/constants/app';
+import { buildDropzoneRejectionDescription } from '@systemise/ui/lib/handle-dropzone-rejection';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

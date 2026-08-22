@@ -1,4 +1,4 @@
-import { createEnvelopeRecipients } from '@documenso/lib/server-only/recipient/create-envelope-recipients';
+import { createEnvelopeRecipients } from '@systemise/lib/server-only/recipient/create-envelope-recipients';
 
 import { authenticatedProcedure } from '../../trpc';
 import {

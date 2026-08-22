@@ -1,5 +1,5 @@
-import { createOrganisation } from '@documenso/lib/server-only/organisation/create-organisation';
-import { internalClaims } from '@documenso/lib/types/subscription';
+import { createOrganisation } from '@systemise/lib/server-only/organisation/create-organisation';
+import { internalClaims } from '@systemise/lib/types/subscription';
 import { OrganisationType } from '@prisma/client';
 
 import { adminProcedure } from '../trpc';

@@ -1,4 +1,4 @@
-import type { FieldWithSignature } from '@documenso/prisma/types/field-with-signature';
+import type { FieldWithSignature } from '@systemise/prisma/types/field-with-signature';
 import { PDF } from '@libpdf/core';
 import { groupBy } from 'remeda';
 

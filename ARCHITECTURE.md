@@ -1,10 +1,10 @@
-# Documenso Architecture
+# Systemise Architecture
 
-This document provides a high-level overview of the Documenso codebase to help humans and agents understand how the application is structured.
+This document provides a high-level overview of the Systemise codebase to help humans and agents understand how the application is structured.
 
 ## Overview
 
-Documenso is an open-source document signing platform built as a **monorepo** using npm workspaces and Turborepo. The application enables users to create, send, and sign documents electronically.
+Systemise is an open-source document signing platform built as a **monorepo** using npm workspaces and Turborepo. The application enables users to create, send, and sign documents electronically.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -41,32 +41,32 @@ Documenso is an open-source document signing platform built as a **monorepo** us
 
 | Package                    | Description                                              | Port |
 | -------------------------- | -------------------------------------------------------- | ---- |
-| `@documenso/remix`         | Main application - React Router (Remix) with Hono server | 3000 |
-| `@documenso/documentation` | Documentation site (Next.js + Nextra)                    | 3002 |
-| `@documenso/openpage-api`  | Public analytics API                                     | 3003 |
+| `@systemise/remix`         | Main application - React Router (Remix) with Hono server | 3000 |
+| `@systemise/documentation` | Documentation site (Next.js + Nextra)                    | 3002 |
+| `@systemise/openpage-api`  | Public analytics API                                     | 3003 |
 
 ### Core Packages (`packages/`)
 
 | Package              | Description                                               |
 | -------------------- | --------------------------------------------------------- |
-| `@documenso/lib`     | Core business logic (server-only, client-only, universal) |
-| `@documenso/trpc`    | tRPC API layer with OpenAPI support (API V2)              |
-| `@documenso/api`     | REST API layer using ts-rest (API V1)                     |
-| `@documenso/prisma`  | Database layer (Prisma ORM + Kysely)                      |
-| `@documenso/ui`      | UI component library (Shadcn + Radix + Tailwind)          |
-| `@documenso/email`   | Email templates and mailer (React Email)                  |
-| `@documenso/auth`    | Authentication (OAuth via Arctic, WebAuthn/Passkeys)      |
-| `@documenso/signing` | PDF signing (Local P12, Google Cloud KMS)                 |
-| `@documenso/ee`      | Enterprise Edition features                               |
-| `@documenso/assets`  | Static assets                                             |
+| `@systemise/lib`     | Core business logic (server-only, client-only, universal) |
+| `@systemise/trpc`    | tRPC API layer with OpenAPI support (API V2)              |
+| `@systemise/api`     | REST API layer using ts-rest (API V1)                     |
+| `@systemise/prisma`  | Database layer (Prisma ORM + Kysely)                      |
+| `@systemise/ui`      | UI component library (Shadcn + Radix + Tailwind)          |
+| `@systemise/email`   | Email templates and mailer (React Email)                  |
+| `@systemise/auth`    | Authentication (OAuth via Arctic, WebAuthn/Passkeys)      |
+| `@systemise/signing` | PDF signing (Local P12, Google Cloud KMS)                 |
+| `@systemise/ee`      | Enterprise Edition features                               |
+| `@systemise/assets`  | Static assets                                             |
 
 ### Supporting Packages
 
 | Package                      | Description               |
 | ---------------------------- | ------------------------- |
-| `@documenso/app-tests`       | E2E tests (Playwright)    |
-| `@documenso/tailwind-config` | Shared Tailwind config    |
-| `@documenso/tsconfig`        | Shared TypeScript configs |
+| `@systemise/app-tests`       | E2E tests (Playwright)    |
+| `@systemise/tailwind-config` | Shared Tailwind config    |
+| `@systemise/tsconfig`        | Shared TypeScript configs |
 
 ## Tech Stack
 
@@ -293,7 +293,7 @@ Hono Server (apps/remix/server/)
 ## Key Directories
 
 ```
-documenso/
+systemise/
 ├── apps/
 │   └── remix/
 │       ├── app/

@@ -1,10 +1,10 @@
 import path from 'node:path';
-import { prisma } from '@documenso/prisma';
-import { DocumentVisibility, FolderType, TeamMemberRole } from '@documenso/prisma/client';
-import { seedBlankDocument, seedTeamDocuments } from '@documenso/prisma/seed/documents';
-import { seedBlankFolder } from '@documenso/prisma/seed/folders';
-import { seedTeamMember } from '@documenso/prisma/seed/teams';
-import { seedBlankTemplate } from '@documenso/prisma/seed/templates';
+import { prisma } from '@systemise/prisma';
+import { DocumentVisibility, FolderType, TeamMemberRole } from '@systemise/prisma/client';
+import { seedBlankDocument, seedTeamDocuments } from '@systemise/prisma/seed/documents';
+import { seedBlankFolder } from '@systemise/prisma/seed/folders';
+import { seedTeamMember } from '@systemise/prisma/seed/teams';
+import { seedBlankTemplate } from '@systemise/prisma/seed/templates';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin } from '../fixtures/authentication';
@@ -87,15 +87,15 @@ test('[TEAMS]: can create a document inside a document folder', async ({ page })
     page.getByRole('button', { name: 'Document (Legacy)' }).click(),
   ]);
 
-  await fileChooser.setFiles(path.join(__dirname, '../../../assets/documenso-supporter-pledge.pdf'));
+  await fileChooser.setFiles(path.join(__dirname, '../../../assets/systemise-supporter-pledge.pdf'));
 
   await page.waitForTimeout(3000);
 
-  await expectTextToBeVisible(page, 'documenso-supporter-pledge.pdf');
+  await expectTextToBeVisible(page, 'systemise-supporter-pledge.pdf');
 
   await page.goto(`/t/${team.url}/documents/f/${teamFolder.id}`);
 
-  await expectTextToBeVisible(page, 'documenso-supporter-pledge.pdf');
+  await expectTextToBeVisible(page, 'systemise-supporter-pledge.pdf');
 });
 
 test('[TEAMS]: can pin a document folder', async ({ page }) => {
@@ -402,16 +402,16 @@ test('[TEAMS]: can create a template inside a template folder', async ({ page })
     page.getByRole('button', { name: 'Template (Legacy)' }).click(),
   ]);
 
-  await fileChooser.setFiles(path.join(__dirname, '../../../assets/documenso-supporter-pledge.pdf'));
+  await fileChooser.setFiles(path.join(__dirname, '../../../assets/systemise-supporter-pledge.pdf'));
 
   await page.waitForTimeout(3000);
 
   // Expect redirect.
-  await expectTextToBeVisible(page, 'documenso-supporter-pledge.pdf');
+  await expectTextToBeVisible(page, 'systemise-supporter-pledge.pdf');
 
   // Return to folder and verify file is visible.
   await page.goto(`/t/${team.url}/templates/f/${folder.id}`);
-  await expectTextToBeVisible(page, 'documenso-supporter-pledge.pdf');
+  await expectTextToBeVisible(page, 'systemise-supporter-pledge.pdf');
 });
 
 test('[TEAMS]: can pin a template folder', async ({ page }) => {
@@ -886,11 +886,11 @@ test('[TEAMS]: documents inherit folder visibility', async ({ page }) => {
     page.getByRole('button', { name: 'Document (Legacy)' }).click(),
   ]);
 
-  await fileChooser.setFiles(path.join(__dirname, '../../../assets/documenso-supporter-pledge.pdf'));
+  await fileChooser.setFiles(path.join(__dirname, '../../../assets/systemise-supporter-pledge.pdf'));
 
   await page.waitForTimeout(3000);
 
-  await expectTextToBeVisible(page, 'documenso-supporter-pledge.pdf');
+  await expectTextToBeVisible(page, 'systemise-supporter-pledge.pdf');
 
   await expect(page.getByRole('combobox').filter({ hasText: 'Admins only' })).toBeVisible();
 });

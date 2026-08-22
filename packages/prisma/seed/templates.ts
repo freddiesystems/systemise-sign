@@ -4,9 +4,9 @@ import path from 'node:path';
 import {
   DIRECT_TEMPLATE_RECIPIENT_EMAIL,
   DIRECT_TEMPLATE_RECIPIENT_NAME,
-} from '@documenso/lib/constants/direct-templates';
-import { incrementTemplateId } from '@documenso/lib/server-only/envelope/increment-id';
-import { prefixedId } from '@documenso/lib/universal/id';
+} from '@systemise/lib/constants/direct-templates';
+import { incrementTemplateId } from '@systemise/lib/server-only/envelope/increment-id';
+import { prefixedId } from '@systemise/lib/universal/id';
 
 import { prisma } from '..';
 import type { Prisma, User } from '../client';
@@ -121,7 +121,7 @@ export const seedTemplate = async (options: SeedTemplateOptions) => {
       teamId,
       recipients: {
         create: {
-          email: 'recipient.1@documenso.com',
+          email: 'recipient.1@systemise.dev',
           name: 'Recipient 1',
           token: Math.random().toString().slice(2, 7),
           sendStatus: SendStatus.NOT_SENT,

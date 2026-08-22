@@ -1,8 +1,8 @@
-import { ZEnvelopeExpirationPeriod } from '@documenso/lib/constants/envelope-expiration';
-import { ZDocumentSchema } from '@documenso/lib/types/document';
-import { ZDocumentAccessAuthTypesSchema, ZDocumentActionAuthTypesSchema } from '@documenso/lib/types/document-auth';
-import { ZDocumentEmailSettingsSchema } from '@documenso/lib/types/document-email';
-import { ZDocumentFormValuesSchema } from '@documenso/lib/types/document-form-values';
+import { ZEnvelopeExpirationPeriod } from '@systemise/lib/constants/envelope-expiration';
+import { ZDocumentSchema } from '@systemise/lib/types/document';
+import { ZDocumentAccessAuthTypesSchema, ZDocumentActionAuthTypesSchema } from '@systemise/lib/types/document-auth';
+import { ZDocumentEmailSettingsSchema } from '@systemise/lib/types/document-email';
+import { ZDocumentFormValuesSchema } from '@systemise/lib/types/document-form-values';
 import {
   ZDocumentMetaDateFormatSchema,
   ZDocumentMetaDistributionMethodSchema,
@@ -14,16 +14,16 @@ import {
   ZDocumentMetaTimezoneSchema,
   ZDocumentMetaTypedSignatureEnabledSchema,
   ZDocumentMetaUploadSignatureEnabledSchema,
-} from '@documenso/lib/types/document-meta';
-import { ZEnvelopeSchema } from '@documenso/lib/types/envelope';
-import { ZEnvelopeAttachmentTypeSchema } from '@documenso/lib/types/envelope-attachment';
-import { ZFieldMetaPrefillFieldsSchema } from '@documenso/lib/types/field-meta';
-import { ZRecipientEmailSchema } from '@documenso/lib/types/recipient';
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
-import { ZTemplateLiteSchema, ZTemplateManySchema, ZTemplateSchema } from '@documenso/lib/types/template';
-import { zEmail } from '@documenso/lib/utils/zod';
-import { LegacyTemplateDirectLinkSchema } from '@documenso/prisma/types/template-legacy-schema';
-import { ZDocumentExternalIdSchema } from '@documenso/trpc/server/document-router/schema';
+} from '@systemise/lib/types/document-meta';
+import { ZEnvelopeSchema } from '@systemise/lib/types/envelope';
+import { ZEnvelopeAttachmentTypeSchema } from '@systemise/lib/types/envelope-attachment';
+import { ZFieldMetaPrefillFieldsSchema } from '@systemise/lib/types/field-meta';
+import { ZRecipientEmailSchema } from '@systemise/lib/types/recipient';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
+import { ZTemplateLiteSchema, ZTemplateManySchema, ZTemplateSchema } from '@systemise/lib/types/template';
+import { zEmail } from '@systemise/lib/utils/zod';
+import { LegacyTemplateDirectLinkSchema } from '@systemise/prisma/types/template-legacy-schema';
+import { ZDocumentExternalIdSchema } from '@systemise/trpc/server/document-router/schema';
 import { DocumentSigningOrder, DocumentVisibility, TemplateType } from '@prisma/client';
 import { z } from 'zod';
 import { zfd } from 'zod-form-data';

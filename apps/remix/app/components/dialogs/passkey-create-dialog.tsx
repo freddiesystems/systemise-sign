@@ -1,8 +1,8 @@
-import { MAXIMUM_PASSKEYS } from '@documenso/lib/constants/auth';
-import { AppError } from '@documenso/lib/errors/app-error';
-import { trpc } from '@documenso/trpc/react';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { MAXIMUM_PASSKEYS } from '@systemise/lib/constants/auth';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { trpc } from '@systemise/trpc/react';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -11,10 +11,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Plural, Trans, useLingui } from '@lingui/react/macro';
 import type * as DialogPrimitive from '@radix-ui/react-dialog';

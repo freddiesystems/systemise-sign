@@ -1,7 +1,7 @@
-import { mailer } from '@documenso/email/mailer';
-import DocumentInviteEmailTemplate from '@documenso/email/templates/document-invite';
-import { isRecipientEmailValidForSending } from '@documenso/lib/utils/recipients';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import DocumentInviteEmailTemplate from '@systemise/email/templates/document-invite';
+import { isRecipientEmailValidForSending } from '@systemise/lib/utils/recipients';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import {
   DocumentSource,

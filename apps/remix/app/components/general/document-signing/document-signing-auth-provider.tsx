@@ -1,14 +1,14 @@
-import type { SessionUser } from '@documenso/auth/server/lib/session/session';
-import { MAXIMUM_PASSKEYS } from '@documenso/lib/constants/auth';
+import type { SessionUser } from '@systemise/auth/server/lib/session/session';
+import { MAXIMUM_PASSKEYS } from '@systemise/lib/constants/auth';
 import type {
   TDocumentAuthOptions,
   TRecipientAccessAuthTypes,
   TRecipientActionAuthTypes,
   TRecipientAuthOptions,
-} from '@documenso/lib/types/document-auth';
-import { DocumentAuth } from '@documenso/lib/types/document-auth';
-import { extractDocumentAuthMethods } from '@documenso/lib/utils/document-auth';
-import { trpc } from '@documenso/trpc/react';
+} from '@systemise/lib/types/document-auth';
+import { DocumentAuth } from '@systemise/lib/types/document-auth';
+import { extractDocumentAuthMethods } from '@systemise/lib/utils/document-auth';
+import { trpc } from '@systemise/trpc/react';
 import { type Envelope, FieldType, type Passkey, type Recipient } from '@prisma/client';
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 

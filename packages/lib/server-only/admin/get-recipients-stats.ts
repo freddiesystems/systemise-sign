@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { ReadStatus, SendStatus, SigningStatus } from '@prisma/client';
 
 export const getRecipientsStats = async () => {

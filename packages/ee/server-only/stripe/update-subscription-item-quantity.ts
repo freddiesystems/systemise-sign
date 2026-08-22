@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { stripe } from '@documenso/lib/server-only/stripe';
-import { appLog } from '@documenso/lib/utils/debugger';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { stripe } from '@systemise/lib/server-only/stripe';
+import { appLog } from '@systemise/lib/utils/debugger';
+import { prisma } from '@systemise/prisma';
 import type { OrganisationClaim, Subscription } from '@prisma/client';
 import type Stripe from 'stripe';
 

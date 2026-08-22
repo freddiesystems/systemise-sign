@@ -1,8 +1,8 @@
-import { PDF_SIZE_A4_72PPI } from '@documenso/lib/constants/pdf';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { generateAuditLogPdf } from '@documenso/lib/server-only/pdf/generate-audit-log-pdf';
-import { unsafeBuildEnvelopeIdQuery } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
+import { PDF_SIZE_A4_72PPI } from '@systemise/lib/constants/pdf';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { generateAuditLogPdf } from '@systemise/lib/server-only/pdf/generate-audit-log-pdf';
+import { unsafeBuildEnvelopeIdQuery } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 
 import { adminProcedure } from '../trpc';

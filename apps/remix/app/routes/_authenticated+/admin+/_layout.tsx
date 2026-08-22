@@ -1,8 +1,8 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
-import { LicenseClient } from '@documenso/lib/server-only/license/license-client';
-import { isAdmin } from '@documenso/lib/utils/is-admin';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
+import { LicenseClient } from '@systemise/lib/server-only/license/license-client';
+import { isAdmin } from '@systemise/lib/utils/is-admin';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { msg } from '@lingui/core/macro';
 import { Trans } from '@lingui/react/macro';
 import {

@@ -1,6 +1,6 @@
-import { mailer } from '@documenso/email/mailer';
-import { DocumentSuperDeleteEmailTemplate } from '@documenso/email/templates/document-super-delete';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { DocumentSuperDeleteEmailTemplate } from '@systemise/email/templates/document-super-delete';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { createElement } from 'react';
 

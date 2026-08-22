@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { Passkey } from '@prisma/client';
 import { Prisma } from '@prisma/client';
 

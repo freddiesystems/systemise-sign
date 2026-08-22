@@ -1,6 +1,6 @@
-import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@documenso/lib/constants/date-formats';
-import { DEFAULT_DOCUMENT_TIME_ZONE } from '@documenso/lib/constants/time-zones';
-import { prisma } from '@documenso/prisma';
+import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@systemise/lib/constants/date-formats';
+import { DEFAULT_DOCUMENT_TIME_ZONE } from '@systemise/lib/constants/time-zones';
+import { prisma } from '@systemise/prisma';
 import { expect, test } from '@playwright/test';
 import { DocumentStatus, FieldType } from '@prisma/client';
 import { DateTime } from 'luxon';
@@ -14,7 +14,7 @@ test.describe('V2 envelope field insertion during signing', () => {
     const now = DateTime.now().setZone(DEFAULT_DOCUMENT_TIME_ZONE);
 
     const { envelope, distributeResult } = await apiSeedPendingDocument(request, {
-      recipients: [{ email: 'signer-date@test.documenso.com', name: 'Date Signer' }],
+      recipients: [{ email: 'signer-date@test.systemise.dev', name: 'Date Signer' }],
       fieldsPerRecipient: [
         [
           { type: FieldType.DATE, page: 1, positionX: 5, positionY: 5, width: 5, height: 5 },
@@ -108,7 +108,7 @@ test.describe('V2 envelope field insertion during signing', () => {
   }) => {
     const now = DateTime.now().setZone(DEFAULT_DOCUMENT_TIME_ZONE);
 
-    const recipientEmail = 'signer-multi@test.documenso.com';
+    const recipientEmail = 'signer-multi@test.systemise.dev';
 
     const { envelope, distributeResult } = await apiSeedPendingDocument(request, {
       recipients: [{ email: recipientEmail, name: 'Multi Signer' }],

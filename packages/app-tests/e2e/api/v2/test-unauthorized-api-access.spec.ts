@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createApiToken } from '@documenso/lib/server-only/public-api/create-api-token';
-import { nanoid } from '@documenso/lib/universal/id';
-import { mapSecondaryIdToDocumentId, mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createApiToken } from '@systemise/lib/server-only/public-api/create-api-token';
+import { nanoid } from '@systemise/lib/universal/id';
+import { mapSecondaryIdToDocumentId, mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
 import {
   DocumentStatus,
   DocumentVisibility,
@@ -17,23 +17,23 @@ import {
   SendStatus,
   SigningStatus,
   TeamMemberRole,
-} from '@documenso/prisma/client';
+} from '@systemise/prisma/client';
 import {
   seedBlankDocument,
   seedCompletedDocument,
   seedDraftDocument,
   seedPendingDocument,
-} from '@documenso/prisma/seed/documents';
-import { seedBlankFolder } from '@documenso/prisma/seed/folders';
-import { seedTeamMember } from '@documenso/prisma/seed/teams';
-import { seedBlankTemplate, seedTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
-import type { TCreateEnvelopeItemsPayload } from '@documenso/trpc/server/envelope-router/create-envelope-items.types';
-import type { TFindEnvelopesResponse } from '@documenso/trpc/server/envelope-router/find-envelopes.types';
+} from '@systemise/prisma/seed/documents';
+import { seedBlankFolder } from '@systemise/prisma/seed/folders';
+import { seedTeamMember } from '@systemise/prisma/seed/teams';
+import { seedBlankTemplate, seedTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
+import type { TCreateEnvelopeItemsPayload } from '@systemise/trpc/server/envelope-router/create-envelope-items.types';
+import type { TFindEnvelopesResponse } from '@systemise/trpc/server/envelope-router/find-envelopes.types';
 import type {
   TUseEnvelopePayload,
   TUseEnvelopeResponse,
-} from '@documenso/trpc/server/envelope-router/use-envelope.types';
+} from '@systemise/trpc/server/envelope-router/use-envelope.types';
 import { expect, test } from '@playwright/test';
 import type { Team, User } from '@prisma/client';
 

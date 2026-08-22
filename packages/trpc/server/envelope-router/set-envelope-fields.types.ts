@@ -4,8 +4,8 @@ import {
   ZClampedFieldPositionYSchema,
   ZClampedFieldWidthSchema,
   ZEnvelopeFieldSchema,
-} from '@documenso/lib/types/field';
-import { ZFieldMetaSchema } from '@documenso/lib/types/field-meta';
+} from '@systemise/lib/types/field';
+import { ZFieldMetaSchema } from '@systemise/lib/types/field-meta';
 import { EnvelopeType, FieldType } from '@prisma/client';
 import { z } from 'zod';
 

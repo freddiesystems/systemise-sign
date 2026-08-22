@@ -1,7 +1,7 @@
-import { prisma } from '@documenso/prisma';
-import { FieldType } from '@documenso/prisma/client';
-import { seedPendingDocumentWithFullFields } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { prisma } from '@systemise/prisma';
+import { FieldType } from '@systemise/prisma/client';
+import { seedPendingDocumentWithFullFields } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin } from '../fixtures/authentication';
@@ -14,7 +14,7 @@ test('[ENVELOPE_EXPIRATION]: expired recipient is redirected to expired page', a
 
   const { recipients } = await seedPendingDocumentWithFullFields({
     owner: user,
-    recipients: ['expired-recipient@test.documenso.com'],
+    recipients: ['expired-recipient@test.systemise.dev'],
     teamId: team.id,
   });
 
@@ -38,7 +38,7 @@ test('[ENVELOPE_EXPIRATION]: non-expired recipient can access signing page', asy
 
   const { recipients } = await seedPendingDocumentWithFullFields({
     owner: user,
-    recipients: ['active-recipient@test.documenso.com'],
+    recipients: ['active-recipient@test.systemise.dev'],
     teamId: team.id,
   });
 
@@ -60,7 +60,7 @@ test('[ENVELOPE_EXPIRATION]: recipient with null expiresAt can sign normally', a
 
   const { recipients } = await seedPendingDocumentWithFullFields({
     owner: user,
-    recipients: ['null-expiry@test.documenso.com'],
+    recipients: ['null-expiry@test.systemise.dev'],
     teamId: team.id,
   });
 

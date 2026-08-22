@@ -1,10 +1,10 @@
-import { APP_I18N_OPTIONS } from '@documenso/lib/constants/i18n';
-import { verifyEmbeddingPresignToken } from '@documenso/lib/server-only/embedding-presign/verify-embedding-presign-token';
-import { getOrganisationClaimByTeamId } from '@documenso/lib/server-only/organisation/get-organisation-claims';
-import { ZBaseEmbedAuthoringSchema } from '@documenso/lib/types/embed-authoring-base-schema';
-import { dynamicActivate } from '@documenso/lib/utils/i18n';
-import { TrpcProvider } from '@documenso/trpc/react';
-import { Spinner } from '@documenso/ui/primitives/spinner';
+import { APP_I18N_OPTIONS } from '@systemise/lib/constants/i18n';
+import { verifyEmbeddingPresignToken } from '@systemise/lib/server-only/embedding-presign/verify-embedding-presign-token';
+import { getOrganisationClaimByTeamId } from '@systemise/lib/server-only/organisation/get-organisation-claims';
+import { ZBaseEmbedAuthoringSchema } from '@systemise/lib/types/embed-authoring-base-schema';
+import { dynamicActivate } from '@systemise/lib/utils/i18n';
+import { TrpcProvider } from '@systemise/trpc/react';
+import { Spinner } from '@systemise/ui/primitives/spinner';
 import { Trans } from '@lingui/react/macro';
 import { useLayoutEffect, useState } from 'react';
 import { Outlet, useLoaderData } from 'react-router';

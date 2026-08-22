@@ -1,4 +1,4 @@
-import { createPasskey } from '@documenso/lib/server-only/auth/create-passkey';
+import { createPasskey } from '@systemise/lib/server-only/auth/create-passkey';
 import type { RegistrationResponseJSON } from '@simplewebauthn/server';
 
 import { authenticatedProcedure } from '../trpc';

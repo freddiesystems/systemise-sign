@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { verifyEmbeddingPresignToken } from '@documenso/lib/server-only/embedding-presign/verify-embedding-presign-token';
-import { createEnvelope } from '@documenso/lib/server-only/envelope/create-envelope';
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { verifyEmbeddingPresignToken } from '@systemise/lib/server-only/embedding-presign/verify-embedding-presign-token';
+import { createEnvelope } from '@systemise/lib/server-only/envelope/create-envelope';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
 import { EnvelopeType } from '@prisma/client';
 
 import { procedure } from '../trpc';

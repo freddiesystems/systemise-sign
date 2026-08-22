@@ -2,12 +2,12 @@ import {
   DEFAULT_FIELD_FONT_SIZE,
   type TRadioFieldMeta as RadioFieldMeta,
   ZRadioFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
-import { Separator } from '@documenso/ui/primitives/separator';
+} from '@systemise/lib/types/field-meta';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
+import { Separator } from '@systemise/ui/primitives/separator';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { PlusIcon, Trash } from 'lucide-react';

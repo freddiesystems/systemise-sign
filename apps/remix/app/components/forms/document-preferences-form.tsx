@@ -1,28 +1,28 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { DATE_FORMATS } from '@documenso/lib/constants/date-formats';
-import { DOCUMENT_SIGNATURE_TYPES, DocumentSignatureType } from '@documenso/lib/constants/document';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { DATE_FORMATS } from '@systemise/lib/constants/date-formats';
+import { DOCUMENT_SIGNATURE_TYPES, DocumentSignatureType } from '@systemise/lib/constants/document';
 import {
   type TEnvelopeExpirationPeriod,
   ZEnvelopeExpirationPeriod,
-} from '@documenso/lib/constants/envelope-expiration';
-import { type TEnvelopeReminderSettings, ZEnvelopeReminderSettings } from '@documenso/lib/constants/envelope-reminder';
-import { isValidLanguageCode, SUPPORTED_LANGUAGE_CODES, SUPPORTED_LANGUAGES } from '@documenso/lib/constants/i18n';
-import { TIME_ZONES } from '@documenso/lib/constants/time-zones';
-import type { TDefaultRecipients } from '@documenso/lib/types/default-recipients';
-import { ZDefaultRecipientsSchema } from '@documenso/lib/types/default-recipients';
-import { type TDocumentMetaDateFormat, ZDocumentMetaTimezoneSchema } from '@documenso/lib/types/document-meta';
-import { isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { recipientAbbreviation } from '@documenso/lib/utils/recipient-formatter';
-import { extractTeamSignatureSettings } from '@documenso/lib/utils/teams';
-import { DocumentSignatureSettingsTooltip } from '@documenso/ui/components/document/document-signature-settings-tooltip';
-import { ExpirationPeriodPicker } from '@documenso/ui/components/document/expiration-period-picker';
-import { ReminderSettingsPicker } from '@documenso/ui/components/document/reminder-settings-picker';
-import { RecipientRoleSelect } from '@documenso/ui/components/recipient/recipient-role-select';
-import { Alert } from '@documenso/ui/primitives/alert';
-import { AvatarWithText } from '@documenso/ui/primitives/avatar';
-import { Button } from '@documenso/ui/primitives/button';
-import { Combobox } from '@documenso/ui/primitives/combobox';
+} from '@systemise/lib/constants/envelope-expiration';
+import { type TEnvelopeReminderSettings, ZEnvelopeReminderSettings } from '@systemise/lib/constants/envelope-reminder';
+import { isValidLanguageCode, SUPPORTED_LANGUAGE_CODES, SUPPORTED_LANGUAGES } from '@systemise/lib/constants/i18n';
+import { TIME_ZONES } from '@systemise/lib/constants/time-zones';
+import type { TDefaultRecipients } from '@systemise/lib/types/default-recipients';
+import { ZDefaultRecipientsSchema } from '@systemise/lib/types/default-recipients';
+import { type TDocumentMetaDateFormat, ZDocumentMetaTimezoneSchema } from '@systemise/lib/types/document-meta';
+import { isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { recipientAbbreviation } from '@systemise/lib/utils/recipient-formatter';
+import { extractTeamSignatureSettings } from '@systemise/lib/utils/teams';
+import { DocumentSignatureSettingsTooltip } from '@systemise/ui/components/document/document-signature-settings-tooltip';
+import { ExpirationPeriodPicker } from '@systemise/ui/components/document/expiration-period-picker';
+import { ReminderSettingsPicker } from '@systemise/ui/components/document/reminder-settings-picker';
+import { RecipientRoleSelect } from '@systemise/ui/components/recipient/recipient-role-select';
+import { Alert } from '@systemise/ui/primitives/alert';
+import { AvatarWithText } from '@systemise/ui/primitives/avatar';
+import { Button } from '@systemise/ui/primitives/button';
+import { Combobox } from '@systemise/ui/primitives/combobox';
 import {
   Form,
   FormControl,
@@ -31,9 +31,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@documenso/ui/primitives/form/form';
-import { MultiSelectCombobox } from '@documenso/ui/primitives/multi-select-combobox';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
+} from '@systemise/ui/primitives/form/form';
+import { MultiSelectCombobox } from '@systemise/ui/primitives/multi-select-combobox';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg, t } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

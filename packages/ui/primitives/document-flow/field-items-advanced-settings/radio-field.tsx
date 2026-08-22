@@ -1,10 +1,10 @@
-import { validateRadioField } from '@documenso/lib/advanced-fields-validation/validate-radio';
-import type { TRadioFieldMeta as RadioFieldMeta } from '@documenso/lib/types/field-meta';
-import { Button } from '@documenso/ui/primitives/button';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { Switch } from '@documenso/ui/primitives/switch';
+import { validateRadioField } from '@systemise/lib/advanced-fields-validation/validate-radio';
+import type { TRadioFieldMeta as RadioFieldMeta } from '@systemise/lib/types/field-meta';
+import { Button } from '@systemise/ui/primitives/button';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { Switch } from '@systemise/ui/primitives/switch';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

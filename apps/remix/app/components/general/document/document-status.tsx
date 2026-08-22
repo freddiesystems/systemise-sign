@@ -1,6 +1,6 @@
-import type { ExtendedDocumentStatus } from '@documenso/prisma/types/extended-document-status';
-import { SignatureIcon } from '@documenso/ui/icons/signature';
-import { cn } from '@documenso/ui/lib/utils';
+import type { ExtendedDocumentStatus } from '@systemise/prisma/types/extended-document-status';
+import { SignatureIcon } from '@systemise/ui/icons/signature';
+import { cn } from '@systemise/ui/lib/utils';
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

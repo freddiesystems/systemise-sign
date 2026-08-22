@@ -1,9 +1,9 @@
-import { downloadFile } from '@documenso/lib/client-only/download-file';
-import { base64 } from '@documenso/lib/universal/base64';
-import { trpc } from '@documenso/trpc/react';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { downloadFile } from '@systemise/lib/client-only/download-file';
+import { base64 } from '@systemise/lib/universal/base64';
+import { trpc } from '@systemise/trpc/react';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

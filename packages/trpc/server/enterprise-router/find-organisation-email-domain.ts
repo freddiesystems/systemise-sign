@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import type { FindResultResponse } from '@documenso/lib/types/search-params';
-import { buildOrganisationWhereQuery } from '@documenso/lib/utils/organisations';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import type { FindResultResponse } from '@systemise/lib/types/search-params';
+import { buildOrganisationWhereQuery } from '@systemise/lib/utils/organisations';
+import { prisma } from '@systemise/prisma';
 import type { EmailDomainStatus } from '@prisma/client';
 import { Prisma } from '@prisma/client';
 

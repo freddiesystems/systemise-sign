@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { TemplateType } from '@prisma/client';
 import { EnvelopeType, type Prisma } from '@prisma/client';
 

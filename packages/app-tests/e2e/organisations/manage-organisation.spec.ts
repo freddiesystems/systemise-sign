@@ -1,7 +1,7 @@
-import { createTeam } from '@documenso/lib/server-only/team/create-team';
-import { nanoid } from '@documenso/lib/universal/id';
-import { seedOrganisationMembers } from '@documenso/prisma/seed/organisations';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { createTeam } from '@systemise/lib/server-only/team/create-team';
+import { nanoid } from '@systemise/lib/universal/id';
+import { seedOrganisationMembers } from '@systemise/prisma/seed/organisations';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin, apiSignout } from '../fixtures/authentication';
@@ -85,11 +85,11 @@ test('[ORGANISATIONS]: inherit members', async ({ page }) => {
     inheritMembers: false,
   });
 
-  const memberEmail = `member-${nanoid()}@test.documenso.com`;
-  const memberEmail2 = `member-2-${nanoid()}@test.documenso.com`;
-  const memberEmail3 = `member-3-${nanoid()}@test.documenso.com`;
-  const managerEmail = `manager-${nanoid()}@test.documenso.com`;
-  const adminEmail = `admin-${nanoid()}@test.documenso.com`;
+  const memberEmail = `member-${nanoid()}@test.systemise.dev`;
+  const memberEmail2 = `member-2-${nanoid()}@test.systemise.dev`;
+  const memberEmail3 = `member-3-${nanoid()}@test.systemise.dev`;
+  const managerEmail = `manager-${nanoid()}@test.systemise.dev`;
+  const adminEmail = `admin-${nanoid()}@test.systemise.dev`;
   const ownerEmail = user.email;
 
   await seedOrganisationMembers({
@@ -204,16 +204,16 @@ test('[ORGANISATIONS]: manage groups and members', async ({ page }) => {
     inheritMembers: false,
   });
 
-  const memberEmail1 = `member-1-${nanoid()}@test.documenso.com`;
-  const memberEmail2 = `member-2-${nanoid()}@test.documenso.com`;
-  const memberEmail3 = `member-3-${nanoid()}@test.documenso.com`;
-  const memberEmail4 = `member-4-${nanoid()}@test.documenso.com`;
-  const memberEmail5 = `member-5-${nanoid()}@test.documenso.com`;
-  const memberEmail6 = `member-6-${nanoid()}@test.documenso.com`;
+  const memberEmail1 = `member-1-${nanoid()}@test.systemise.dev`;
+  const memberEmail2 = `member-2-${nanoid()}@test.systemise.dev`;
+  const memberEmail3 = `member-3-${nanoid()}@test.systemise.dev`;
+  const memberEmail4 = `member-4-${nanoid()}@test.systemise.dev`;
+  const memberEmail5 = `member-5-${nanoid()}@test.systemise.dev`;
+  const memberEmail6 = `member-6-${nanoid()}@test.systemise.dev`;
 
-  const adminEmail1 = `admin-1-${nanoid()}@test.documenso.com`;
-  const adminEmail2 = `admin-2-${nanoid()}@test.documenso.com`;
-  const adminEmail3 = `admin-3-${nanoid()}@test.documenso.com`;
+  const adminEmail1 = `admin-1-${nanoid()}@test.systemise.dev`;
+  const adminEmail2 = `admin-2-${nanoid()}@test.systemise.dev`;
+  const adminEmail3 = `admin-3-${nanoid()}@test.systemise.dev`;
 
   const ownerEmail = user.email;
 
@@ -516,7 +516,7 @@ test('[ORGANISATIONS]: leave organisation', async ({ page }) => {
     isPersonalOrganisation: false,
   });
 
-  const memberEmail = `member-${nanoid()}@test.documenso.com`;
+  const memberEmail = `member-${nanoid()}@test.systemise.dev`;
 
   await seedOrganisationMembers({
     members: [

@@ -1,5 +1,5 @@
-import { nanoid } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
+import { nanoid } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
 import { expect, type Page, test } from '@playwright/test';
 
 import {

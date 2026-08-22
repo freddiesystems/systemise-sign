@@ -1,10 +1,10 @@
-import type { TCachedLicense } from '@documenso/lib/types/license';
-import { SUBSCRIPTION_CLAIM_FEATURE_FLAGS } from '@documenso/lib/types/subscription';
-import { trpc } from '@documenso/trpc/react';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import type { TCachedLicense } from '@systemise/lib/types/license';
+import { SUBSCRIPTION_CLAIM_FEATURE_FLAGS } from '@systemise/lib/types/subscription';
+import { trpc } from '@systemise/trpc/react';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import {
   ArrowRightIcon,

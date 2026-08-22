@@ -1,6 +1,6 @@
-import { mailer } from '@documenso/email/mailer';
-import { ForgotPasswordTemplate } from '@documenso/email/templates/forgot-password';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { ForgotPasswordTemplate } from '@systemise/email/templates/forgot-password';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { createElement } from 'react';
 

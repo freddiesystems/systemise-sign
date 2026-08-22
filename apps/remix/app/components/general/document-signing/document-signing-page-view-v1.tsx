@@ -1,27 +1,27 @@
-import { useAnalytics } from '@documenso/lib/client-only/hooks/use-analytics';
-import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@documenso/lib/constants/date-formats';
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
-import { DEFAULT_DOCUMENT_TIME_ZONE } from '@documenso/lib/constants/time-zones';
-import type { DocumentAndSender } from '@documenso/lib/server-only/document/get-document-by-token';
-import type { TRecipientAccessAuth } from '@documenso/lib/types/document-auth';
+import { useAnalytics } from '@systemise/lib/client-only/hooks/use-analytics';
+import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@systemise/lib/constants/date-formats';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
+import { DEFAULT_DOCUMENT_TIME_ZONE } from '@systemise/lib/constants/time-zones';
+import type { DocumentAndSender } from '@systemise/lib/server-only/document/get-document-by-token';
+import type { TRecipientAccessAuth } from '@systemise/lib/types/document-auth';
 import {
   ZCheckboxFieldMeta,
   ZDropdownFieldMeta,
   ZNumberFieldMeta,
   ZRadioFieldMeta,
   ZTextFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import type { CompletedField } from '@documenso/lib/types/fields';
-import { isFieldUnsignedAndRequired } from '@documenso/lib/utils/advanced-fields-helpers';
-import { getDocumentDataUrlForPdfViewer } from '@documenso/lib/utils/envelope-download';
-import { validateFieldsInserted } from '@documenso/lib/utils/fields';
-import type { FieldWithSignatureAndFieldMeta } from '@documenso/prisma/types/field-with-signature-and-fieldmeta';
-import type { RecipientWithFields } from '@documenso/prisma/types/recipient-with-fields';
-import { trpc } from '@documenso/trpc/react';
-import { DocumentReadOnlyFields } from '@documenso/ui/components/document/document-read-only-fields';
-import { Button } from '@documenso/ui/primitives/button';
-import { Card, CardContent } from '@documenso/ui/primitives/card';
-import { ElementVisible } from '@documenso/ui/primitives/element-visible';
+} from '@systemise/lib/types/field-meta';
+import type { CompletedField } from '@systemise/lib/types/fields';
+import { isFieldUnsignedAndRequired } from '@systemise/lib/utils/advanced-fields-helpers';
+import { getDocumentDataUrlForPdfViewer } from '@systemise/lib/utils/envelope-download';
+import { validateFieldsInserted } from '@systemise/lib/utils/fields';
+import type { FieldWithSignatureAndFieldMeta } from '@systemise/prisma/types/field-with-signature-and-fieldmeta';
+import type { RecipientWithFields } from '@systemise/prisma/types/recipient-with-fields';
+import { trpc } from '@systemise/trpc/react';
+import { DocumentReadOnlyFields } from '@systemise/ui/components/document/document-read-only-fields';
+import { Button } from '@systemise/ui/primitives/button';
+import { Card, CardContent } from '@systemise/ui/primitives/card';
+import { ElementVisible } from '@systemise/ui/primitives/element-visible';
 import { Trans } from '@lingui/react/macro';
 import type { Field } from '@prisma/client';
 import { FieldType, RecipientRole } from '@prisma/client';

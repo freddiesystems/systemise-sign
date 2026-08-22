@@ -1,9 +1,9 @@
-import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/teams';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getMemberRoles } from '@documenso/lib/server-only/team/get-member-roles';
-import { buildTeamWhereQuery, isTeamRoleWithinUserHierarchy } from '@documenso/lib/utils/teams';
-import { prisma } from '@documenso/prisma';
-import { OrganisationGroupType } from '@documenso/prisma/generated/types';
+import { TEAM_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/teams';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getMemberRoles } from '@systemise/lib/server-only/team/get-member-roles';
+import { buildTeamWhereQuery, isTeamRoleWithinUserHierarchy } from '@systemise/lib/utils/teams';
+import { prisma } from '@systemise/prisma';
+import { OrganisationGroupType } from '@systemise/prisma/generated/types';
 
 import { authenticatedProcedure } from '../trpc';
 import { ZUpdateTeamGroupRequestSchema, ZUpdateTeamGroupResponseSchema } from './update-team-group.types';

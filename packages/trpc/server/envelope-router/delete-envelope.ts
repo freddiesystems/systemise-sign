@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { deleteDocument } from '@documenso/lib/server-only/document/delete-document';
-import { deleteTemplate } from '@documenso/lib/server-only/template/delete-template';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { deleteDocument } from '@systemise/lib/server-only/document/delete-document';
+import { deleteTemplate } from '@systemise/lib/server-only/template/delete-template';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 import { match } from 'ts-pattern';
 

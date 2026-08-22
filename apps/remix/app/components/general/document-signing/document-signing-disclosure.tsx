@@ -1,4 +1,4 @@
-import { cn } from '@documenso/ui/lib/utils';
+import { cn } from '@systemise/ui/lib/utils';
 
 import { Trans } from '@lingui/react/macro';
 import type { HTMLAttributes } from 'react';

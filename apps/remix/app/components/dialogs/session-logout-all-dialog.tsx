@@ -1,5 +1,5 @@
-import { authClient } from '@documenso/auth/client';
-import { Button } from '@documenso/ui/primitives/button';
+import { authClient } from '@systemise/auth/client';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -9,8 +9,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { useState } from 'react';
 

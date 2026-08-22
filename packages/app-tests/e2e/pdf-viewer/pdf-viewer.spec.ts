@@ -1,18 +1,18 @@
 import path from 'node:path';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createEmbeddingPresignToken } from '@documenso/lib/server-only/embedding-presign/create-embedding-presign-token';
-import { createApiToken } from '@documenso/lib/server-only/public-api/create-api-token';
-import { prefixedId } from '@documenso/lib/universal/id';
-import { mapSecondaryIdToDocumentId, mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { formatDirectTemplatePath } from '@documenso/lib/utils/templates';
-import { prisma } from '@documenso/prisma';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createEmbeddingPresignToken } from '@systemise/lib/server-only/embedding-presign/create-embedding-presign-token';
+import { createApiToken } from '@systemise/lib/server-only/public-api/create-api-token';
+import { prefixedId } from '@systemise/lib/universal/id';
+import { mapSecondaryIdToDocumentId, mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { formatDirectTemplatePath } from '@systemise/lib/utils/templates';
+import { prisma } from '@systemise/prisma';
 import {
   seedBlankDocument,
   seedCompletedDocument,
   seedPendingDocumentWithFullFields,
-} from '@documenso/prisma/seed/documents';
-import { seedBlankTemplate, seedDirectTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+} from '@systemise/prisma/seed/documents';
+import { seedBlankTemplate, seedDirectTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 import { FieldType } from '@prisma/client';
 
@@ -110,14 +110,14 @@ test.describe('PDF Viewer Rendering', () => {
       const { recipients: recipientsV1 } = await seedPendingDocumentWithFullFields({
         owner: user,
         teamId: team.id,
-        recipients: ['signer-v1@test.documenso.com'],
+        recipients: ['signer-v1@test.systemise.dev'],
         fields: [FieldType.SIGNATURE],
       });
 
       const { document: documentV2, recipients: recipientsV2 } = await seedPendingDocumentWithFullFields({
         owner: user,
         teamId: team.id,
-        recipients: ['signer-v2@test.documenso.com'],
+        recipients: ['signer-v2@test.systemise.dev'],
         fields: [FieldType.SIGNATURE],
         updateDocumentOptions: { internalVersion: 2 },
       });
@@ -168,11 +168,11 @@ test.describe('PDF Viewer Rendering', () => {
       const qrTokenV1 = prefixedId('qr');
       const qrTokenV2 = prefixedId('qr');
 
-      const documentV1 = await seedCompletedDocument(user, team.id, ['share-v1@test.documenso.com'], {
+      const documentV1 = await seedCompletedDocument(user, team.id, ['share-v1@test.systemise.dev'], {
         createDocumentOptions: { qrToken: qrTokenV1 },
       });
 
-      const documentV2 = await seedCompletedDocument(user, team.id, ['share-v2@test.documenso.com'], {
+      const documentV2 = await seedCompletedDocument(user, team.id, ['share-v2@test.systemise.dev'], {
         createDocumentOptions: { qrToken: qrTokenV2 },
         internalVersion: 2,
       });
@@ -205,14 +205,14 @@ test.describe('PDF Viewer Rendering', () => {
       const { recipients: recipientsV1 } = await seedPendingDocumentWithFullFields({
         owner: user,
         teamId: team.id,
-        recipients: ['embed-signer-v1@test.documenso.com'],
+        recipients: ['embed-signer-v1@test.systemise.dev'],
         fields: [FieldType.SIGNATURE],
       });
 
       const { document: documentV2, recipients: recipientsV2 } = await seedPendingDocumentWithFullFields({
         owner: user,
         teamId: team.id,
-        recipients: ['embed-signer-v2@test.documenso.com'],
+        recipients: ['embed-signer-v2@test.systemise.dev'],
         fields: [FieldType.SIGNATURE],
         updateDocumentOptions: { internalVersion: 2 },
       });
@@ -261,14 +261,14 @@ test.describe('PDF Viewer Rendering', () => {
       const { recipients: recipientsV1 } = await seedPendingDocumentWithFullFields({
         owner: user,
         teamId: team.id,
-        recipients: ['multisign-v1@test.documenso.com'],
+        recipients: ['multisign-v1@test.systemise.dev'],
         fields: [FieldType.SIGNATURE],
       });
 
       const { document: documentV2, recipients: recipientsV2 } = await seedPendingDocumentWithFullFields({
         owner: user,
         teamId: team.id,
-        recipients: ['multisign-v2@test.documenso.com'],
+        recipients: ['multisign-v2@test.systemise.dev'],
         fields: [FieldType.SIGNATURE],
         updateDocumentOptions: { internalVersion: 2 },
       });
@@ -318,7 +318,7 @@ test.describe('PDF Viewer Rendering', () => {
 
       const emailInput = page.getByPlaceholder('Email').first();
       await emailInput.click();
-      await emailInput.fill('test-signer@documenso.com');
+      await emailInput.fill('test-signer@systemise.dev');
 
       const [fileChooser] = await Promise.all([
         page.waitForEvent('filechooser'),

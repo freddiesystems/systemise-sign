@@ -1,9 +1,9 @@
 import type {
   TEnvelopeExpirationDurationPeriod,
   TEnvelopeExpirationPeriod,
-} from '@documenso/lib/constants/envelope-expiration';
-import { Input } from '@documenso/ui/primitives/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
+} from '@systemise/lib/constants/envelope-expiration';
+import { Input } from '@systemise/ui/primitives/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
 import { Plural, Trans } from '@lingui/react/macro';
 
 type ExpirationMode = 'duration' | 'disabled' | 'inherit';

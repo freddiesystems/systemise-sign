@@ -1,10 +1,10 @@
-import { authClient } from '@documenso/auth/client';
-import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { prisma } from '@documenso/prisma';
-import { Button } from '@documenso/ui/primitives/button';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { authClient } from '@systemise/auth/client';
+import { getOptionalSession } from '@systemise/auth/server/lib/utils/get-session';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { prisma } from '@systemise/prisma';
+import { Button } from '@systemise/ui/primitives/button';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { MailsIcon } from 'lucide-react';

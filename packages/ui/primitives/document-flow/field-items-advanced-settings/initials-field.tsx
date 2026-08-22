@@ -1,7 +1,7 @@
-import { validateFields as validateInitialsFields } from '@documenso/lib/advanced-fields-validation/validate-fields';
-import type { TInitialsFieldMeta as InitialsFieldMeta } from '@documenso/lib/types/field-meta';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
+import { validateFields as validateInitialsFields } from '@systemise/lib/advanced-fields-validation/validate-fields';
+import type { TInitialsFieldMeta as InitialsFieldMeta } from '@systemise/lib/types/field-meta';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
 import { Trans, useLingui } from '@lingui/react/macro';
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../select';

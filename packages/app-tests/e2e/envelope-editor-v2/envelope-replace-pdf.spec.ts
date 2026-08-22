@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { nanoid } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
+import { nanoid } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
 import { expect, type Page, test } from '@playwright/test';
 import { FieldType } from '@prisma/client';
 
@@ -270,7 +270,7 @@ const assertBasicReplaceInDatabase = async ({
 
 const TEST_FIELD_VALUES = {
   embeddedRecipient: {
-    email: 'embedded-replace-recipient@documenso.com',
+    email: 'embedded-replace-recipient@systemise.dev',
     name: 'Embedded Replace Recipient',
   },
 };

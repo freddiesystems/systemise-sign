@@ -1,19 +1,19 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
-import { generateEmailDomainRecords } from '@documenso/lib/utils/email-domains';
-import { trpc } from '@documenso/trpc/react';
-import type { TGetOrganisationEmailDomainResponse } from '@documenso/trpc/server/enterprise-router/get-organisation-email-domain.types';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { DataTable, type DataTableColumnDef } from '@documenso/ui/primitives/data-table';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
+import { generateEmailDomainRecords } from '@systemise/lib/utils/email-domains';
+import { trpc } from '@systemise/trpc/react';
+import type { TGetOrganisationEmailDomainResponse } from '@systemise/trpc/server/enterprise-router/get-organisation-email-domain.types';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { DataTable, type DataTableColumnDef } from '@systemise/ui/primitives/data-table';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
-import { SpinnerBox } from '@documenso/ui/primitives/spinner';
+} from '@systemise/ui/primitives/dropdown-menu';
+import { SpinnerBox } from '@systemise/ui/primitives/spinner';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { EditIcon, MoreHorizontalIcon, Trash2Icon } from 'lucide-react';

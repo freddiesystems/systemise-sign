@@ -1,8 +1,8 @@
-import { authClient } from '@documenso/auth/client';
-import { downloadFile } from '@documenso/lib/client-only/download-file';
-import { AppError } from '@documenso/lib/errors/app-error';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
+import { authClient } from '@systemise/auth/client';
+import { downloadFile } from '@systemise/lib/client-only/download-file';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -12,9 +12,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@documenso/ui/primitives/form/form';
-import { PinInput, PinInputGroup, PinInputSlot } from '@documenso/ui/primitives/pin-input';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@systemise/ui/primitives/form/form';
+import { PinInput, PinInputGroup, PinInputSlot } from '@systemise/ui/primitives/pin-input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans } from '@lingui/react/macro';
 import { useState } from 'react';

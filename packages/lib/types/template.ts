@@ -1,10 +1,10 @@
-import { DocumentDataSchema } from '@documenso/prisma/generated/zod/modelSchema/DocumentDataSchema';
-import { DocumentMetaSchema } from '@documenso/prisma/generated/zod/modelSchema/DocumentMetaSchema';
-import EnvelopeItemSchema from '@documenso/prisma/generated/zod/modelSchema/EnvelopeItemSchema';
-import { FolderSchema } from '@documenso/prisma/generated/zod/modelSchema/FolderSchema';
-import TeamSchema from '@documenso/prisma/generated/zod/modelSchema/TeamSchema';
-import { UserSchema } from '@documenso/prisma/generated/zod/modelSchema/UserSchema';
-import { LegacyTemplateDirectLinkSchema, TemplateSchema } from '@documenso/prisma/types/template-legacy-schema';
+import { DocumentDataSchema } from '@systemise/prisma/generated/zod/modelSchema/DocumentDataSchema';
+import { DocumentMetaSchema } from '@systemise/prisma/generated/zod/modelSchema/DocumentMetaSchema';
+import EnvelopeItemSchema from '@systemise/prisma/generated/zod/modelSchema/EnvelopeItemSchema';
+import { FolderSchema } from '@systemise/prisma/generated/zod/modelSchema/FolderSchema';
+import TeamSchema from '@systemise/prisma/generated/zod/modelSchema/TeamSchema';
+import { UserSchema } from '@systemise/prisma/generated/zod/modelSchema/UserSchema';
+import { LegacyTemplateDirectLinkSchema, TemplateSchema } from '@systemise/prisma/types/template-legacy-schema';
 import { z } from 'zod';
 
 import { ZFieldSchema } from './field';

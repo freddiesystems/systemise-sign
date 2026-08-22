@@ -1,15 +1,15 @@
-import { formatDocumentsPath, formatTemplatesPath } from '@documenso/lib/utils/teams';
-import { trpc } from '@documenso/trpc/react';
-import type { TFolderWithSubfolders } from '@documenso/trpc/server/folder-router/schema';
-import { Button } from '@documenso/ui/primitives/button';
-import { Card, CardContent } from '@documenso/ui/primitives/card';
+import { formatDocumentsPath, formatTemplatesPath } from '@systemise/lib/utils/teams';
+import { trpc } from '@systemise/trpc/react';
+import type { TFolderWithSubfolders } from '@systemise/trpc/server/folder-router/schema';
+import { Button } from '@systemise/ui/primitives/button';
+import { Card, CardContent } from '@systemise/ui/primitives/card';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@documenso/ui/primitives/dropdown-menu';
+} from '@systemise/ui/primitives/dropdown-menu';
 import { Plural, Trans } from '@lingui/react/macro';
 import { FolderType } from '@prisma/client';
 import {

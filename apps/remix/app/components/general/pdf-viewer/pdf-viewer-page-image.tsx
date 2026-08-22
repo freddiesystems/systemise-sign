@@ -1,6 +1,6 @@
-import type { ImageLoadingState } from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { cn } from '@documenso/ui/lib/utils';
-import { Spinner } from '@documenso/ui/primitives/spinner';
+import type { ImageLoadingState } from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { cn } from '@systemise/ui/lib/utils';
+import { Spinner } from '@systemise/ui/primitives/spinner';
 import { Trans } from '@lingui/react/macro';
 
 type PdfViewerPageImageProps = {

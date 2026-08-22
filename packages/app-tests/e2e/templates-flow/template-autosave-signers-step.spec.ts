@@ -1,9 +1,9 @@
-import { getEnvelopeWhereInput } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { getTemplateById } from '@documenso/lib/server-only/template/get-template-by-id';
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
-import { seedBlankTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { getEnvelopeWhereInput } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { getTemplateById } from '@systemise/lib/server-only/template/get-template-by-id';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
+import { seedBlankTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 import { EnvelopeType } from '@prisma/client';
@@ -35,7 +35,7 @@ const triggerAutosave = async (page: Page) => {
 };
 
 const addSignerAndSave = async (page: Page) => {
-  await page.getByPlaceholder('Email').fill('recipient1@documenso.com');
+  await page.getByPlaceholder('Email').fill('recipient1@systemise.dev');
   await page.getByPlaceholder('Name').fill('Recipient 1');
 
   await triggerAutosave(page);
@@ -55,7 +55,7 @@ test.describe('AutoSave Signers Step - Templates', () => {
       });
 
       expect(retrievedRecipients.length).toBe(1);
-      expect(retrievedRecipients[0].email).toBe('recipient1@documenso.com');
+      expect(retrievedRecipients[0].email).toBe('recipient1@systemise.dev');
       expect(retrievedRecipients[0].name).toBe('Recipient 1');
     }).toPass();
   });
@@ -89,8 +89,8 @@ test.describe('AutoSave Signers Step - Templates', () => {
 
     await addSignerAndSave(page);
 
-    await page.getByPlaceholder('Name').fill('Documenso Manager');
-    await page.getByPlaceholder('Email').fill('manager@documenso.com');
+    await page.getByPlaceholder('Name').fill('Systemise Manager');
+    await page.getByPlaceholder('Email').fill('manager@systemise.dev');
 
     await triggerAutosave(page);
 
@@ -107,8 +107,8 @@ test.describe('AutoSave Signers Step - Templates', () => {
       });
 
       expect(retrievedRecipients.length).toBe(1);
-      expect(retrievedRecipients[0].email).toBe('manager@documenso.com');
-      expect(retrievedRecipients[0].name).toBe('Documenso Manager');
+      expect(retrievedRecipients[0].email).toBe('manager@systemise.dev');
+      expect(retrievedRecipients[0].name).toBe('Systemise Manager');
       expect(retrievedRecipients[0].role).toBe('CC');
     }).toPass();
   });
@@ -120,12 +120,12 @@ test.describe('AutoSave Signers Step - Templates', () => {
 
     await page.getByRole('button', { name: 'Add placeholder recipient' }).click();
 
-    await page.getByTestId('placeholder-recipient-email-input').nth(1).fill('recipient2@documenso.com');
+    await page.getByTestId('placeholder-recipient-email-input').nth(1).fill('recipient2@systemise.dev');
     await page.getByTestId('placeholder-recipient-name-input').nth(1).fill('Recipient 2');
 
     await page.getByRole('button', { name: 'Add placeholder recipient' }).click();
 
-    await page.getByTestId('placeholder-recipient-email-input').nth(2).fill('recipient3@documenso.com');
+    await page.getByTestId('placeholder-recipient-email-input').nth(2).fill('recipient3@systemise.dev');
     await page.getByTestId('placeholder-recipient-name-input').nth(2).fill('Recipient 3');
 
     await triggerAutosave(page);

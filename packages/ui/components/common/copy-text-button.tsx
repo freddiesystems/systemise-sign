@@ -1,5 +1,5 @@
-import { useCopyToClipboard } from '@documenso/lib/client-only/hooks/use-copy-to-clipboard';
-import { Button } from '@documenso/ui/primitives/button';
+import { useCopyToClipboard } from '@systemise/lib/client-only/hooks/use-copy-to-clipboard';
+import { Button } from '@systemise/ui/primitives/button';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CheckSquareIcon, CopyIcon } from 'lucide-react';
 import { useState } from 'react';

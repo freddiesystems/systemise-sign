@@ -1,12 +1,12 @@
-import { ZBaseEmbedDataSchema } from '@documenso/lib/types/embed-base-schemas';
-import { ZEnvelopeFieldSchema } from '@documenso/lib/types/field';
-import { ZEnvelopeRecipientLiteSchema } from '@documenso/lib/types/recipient';
-import { DocumentMetaSchema } from '@documenso/prisma/generated/zod/modelSchema/DocumentMetaSchema';
-import { EnvelopeAttachmentSchema } from '@documenso/prisma/generated/zod/modelSchema/EnvelopeAttachmentSchema';
-import { EnvelopeItemSchema } from '@documenso/prisma/generated/zod/modelSchema/EnvelopeItemSchema';
-import { EnvelopeSchema } from '@documenso/prisma/generated/zod/modelSchema/EnvelopeSchema';
-import { TeamSchema } from '@documenso/prisma/generated/zod/modelSchema/TeamSchema';
-import { TemplateDirectLinkSchema } from '@documenso/prisma/generated/zod/modelSchema/TemplateDirectLinkSchema';
+import { ZBaseEmbedDataSchema } from '@systemise/lib/types/embed-base-schemas';
+import { ZEnvelopeFieldSchema } from '@systemise/lib/types/field';
+import { ZEnvelopeRecipientLiteSchema } from '@systemise/lib/types/recipient';
+import { DocumentMetaSchema } from '@systemise/prisma/generated/zod/modelSchema/DocumentMetaSchema';
+import { EnvelopeAttachmentSchema } from '@systemise/prisma/generated/zod/modelSchema/EnvelopeAttachmentSchema';
+import { EnvelopeItemSchema } from '@systemise/prisma/generated/zod/modelSchema/EnvelopeItemSchema';
+import { EnvelopeSchema } from '@systemise/prisma/generated/zod/modelSchema/EnvelopeSchema';
+import { TeamSchema } from '@systemise/prisma/generated/zod/modelSchema/TeamSchema';
+import { TemplateDirectLinkSchema } from '@systemise/prisma/generated/zod/modelSchema/TemplateDirectLinkSchema';
 import { EnvelopeType } from '@prisma/client';
 import { z } from 'zod';
 

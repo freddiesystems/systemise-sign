@@ -1,9 +1,9 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getEnvelopeWhereInput } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import { createDocumentAuditLogData } from '@documenso/lib/utils/document-audit-logs';
-import { canRecipientFieldsBeModified } from '@documenso/lib/utils/recipients';
-import { prisma } from '@documenso/prisma';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getEnvelopeWhereInput } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import { createDocumentAuditLogData } from '@systemise/lib/utils/document-audit-logs';
+import { canRecipientFieldsBeModified } from '@systemise/lib/utils/recipients';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 
 import { ZGenericSuccessResponse } from '../../schema';

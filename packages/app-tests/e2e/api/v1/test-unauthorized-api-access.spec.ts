@@ -1,16 +1,16 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createApiToken } from '@documenso/lib/server-only/public-api/create-api-token';
-import { mapSecondaryIdToDocumentId, mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { prisma } from '@documenso/prisma';
-import { DocumentDataType, FieldType } from '@documenso/prisma/client';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createApiToken } from '@systemise/lib/server-only/public-api/create-api-token';
+import { mapSecondaryIdToDocumentId, mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { prisma } from '@systemise/prisma';
+import { DocumentDataType, FieldType } from '@systemise/prisma/client';
 import {
   seedBlankDocument,
   seedCompletedDocument,
   seedDraftDocument,
   seedPendingDocumentWithFullFields,
-} from '@documenso/prisma/seed/documents';
-import { seedBlankTemplate, seedTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+} from '@systemise/prisma/seed/documents';
+import { seedBlankTemplate, seedTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 const WEBAPP_BASE_URL = NEXT_PUBLIC_WEBAPP_URL();

@@ -1,4 +1,4 @@
-import { AppError } from '@documenso/lib/errors/app-error';
+import { AppError } from '@systemise/lib/errors/app-error';
 
 import {
   DOCUMENT_CONVERSION_AUTH,

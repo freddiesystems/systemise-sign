@@ -1,7 +1,7 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import type { TDocumentMany as TDocumentRow } from '@documenso/lib/types/document';
-import { findRecipientByEmail } from '@documenso/lib/utils/recipients';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import type { TDocumentMany as TDocumentRow } from '@systemise/lib/types/document';
+import { findRecipientByEmail } from '@systemise/lib/utils/recipients';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
 import { Link } from 'react-router';
 import { match } from 'ts-pattern';
 

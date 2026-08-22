@@ -1,6 +1,6 @@
-import { useCurrentOrganisation } from '@documenso/lib/client-only/providers/organisation';
-import { canExecuteOrganisationAction } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
+import { useCurrentOrganisation } from '@systemise/lib/client-only/providers/organisation';
+import { canExecuteOrganisationAction } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

@@ -1,10 +1,10 @@
-import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@documenso/lib/constants/date-formats';
-import { DocumentSignatureType } from '@documenso/lib/constants/document';
-import { SUPPORTED_LANGUAGE_CODES } from '@documenso/lib/constants/i18n';
-import { DEFAULT_DOCUMENT_TIME_ZONE } from '@documenso/lib/constants/time-zones';
-import { ZDocumentAccessAuthTypesSchema, ZDocumentActionAuthTypesSchema } from '@documenso/lib/types/document-auth';
-import { ZDocumentMetaDateFormatSchema, ZDocumentMetaTimezoneSchema } from '@documenso/lib/types/document-meta';
-import { isValidRedirectUrl } from '@documenso/lib/utils/is-valid-redirect-url';
+import { DEFAULT_DOCUMENT_DATE_FORMAT } from '@systemise/lib/constants/date-formats';
+import { DocumentSignatureType } from '@systemise/lib/constants/document';
+import { SUPPORTED_LANGUAGE_CODES } from '@systemise/lib/constants/i18n';
+import { DEFAULT_DOCUMENT_TIME_ZONE } from '@systemise/lib/constants/time-zones';
+import { ZDocumentAccessAuthTypesSchema, ZDocumentActionAuthTypesSchema } from '@systemise/lib/types/document-auth';
+import { ZDocumentMetaDateFormatSchema, ZDocumentMetaTimezoneSchema } from '@systemise/lib/types/document-meta';
+import { isValidRedirectUrl } from '@systemise/lib/utils/is-valid-redirect-url';
 import { msg } from '@lingui/core/macro';
 import { DocumentVisibility } from '@prisma/client';
 import { z } from 'zod';

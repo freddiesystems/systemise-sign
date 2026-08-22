@@ -1,11 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { createApiToken } from '@documenso/lib/server-only/public-api/create-api-token';
-import { DEFAULT_EMBEDDED_EDITOR_CONFIG } from '@documenso/lib/types/envelope-editor';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedBlankTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { createApiToken } from '@systemise/lib/server-only/public-api/create-api-token';
+import { DEFAULT_EMBEDDED_EDITOR_CONFIG } from '@systemise/lib/types/envelope-editor';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedBlankTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect } from '@playwright/test';
 

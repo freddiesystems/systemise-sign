@@ -1,7 +1,7 @@
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { seedTeam, seedTeamMember } from '@documenso/prisma/seed/teams';
-import { seedBlankTemplate } from '@documenso/prisma/seed/templates';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { seedTeam, seedTeamMember } from '@systemise/prisma/seed/teams';
+import { seedBlankTemplate } from '@systemise/prisma/seed/templates';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 import { TeamMemberRole } from '@prisma/client';
 

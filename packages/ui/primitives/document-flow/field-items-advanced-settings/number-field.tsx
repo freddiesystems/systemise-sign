@@ -1,10 +1,10 @@
-import { validateNumberField } from '@documenso/lib/advanced-fields-validation/validate-number';
-import type { TNumberFieldMeta as NumberFieldMeta } from '@documenso/lib/types/field-meta';
-import { Button } from '@documenso/ui/primitives/button';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@documenso/ui/primitives/select';
-import { Switch } from '@documenso/ui/primitives/switch';
+import { validateNumberField } from '@systemise/lib/advanced-fields-validation/validate-number';
+import type { TNumberFieldMeta as NumberFieldMeta } from '@systemise/lib/types/field-meta';
+import { Button } from '@systemise/ui/primitives/button';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@systemise/ui/primitives/select';
+import { Switch } from '@systemise/ui/primitives/switch';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';

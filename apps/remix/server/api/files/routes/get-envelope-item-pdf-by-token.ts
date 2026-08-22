@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { sValidator } from '@hono/standard-validator';
 import type { Prisma } from '@prisma/client';
 import { Hono } from 'hono';

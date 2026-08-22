@@ -1,8 +1,8 @@
-import { extractCookieFromHeaders } from '@documenso/auth/server/lib/utils/cookies';
-import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
-import { getTeams } from '@documenso/lib/server-only/team/get-teams';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { ZTeamUrlSchema } from '@documenso/trpc/server/team-router/schema';
+import { extractCookieFromHeaders } from '@systemise/auth/server/lib/utils/cookies';
+import { getOptionalSession } from '@systemise/auth/server/lib/utils/get-session';
+import { getTeams } from '@systemise/lib/server-only/team/get-teams';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { ZTeamUrlSchema } from '@systemise/trpc/server/team-router/schema';
 import { redirect } from 'react-router';
 
 import type { Route } from './+types/_index';

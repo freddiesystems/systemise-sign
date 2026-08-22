@@ -1,9 +1,9 @@
-import { normalizePdf } from '@documenso/lib/server-only/pdf/normalize-pdf';
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import type { ApiRequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import { putPdfFileServerSide } from '@documenso/lib/universal/upload/put-file.server';
-import { createDocumentAuditLogData } from '@documenso/lib/utils/document-audit-logs';
-import { prisma } from '@documenso/prisma';
+import { normalizePdf } from '@systemise/lib/server-only/pdf/normalize-pdf';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import type { ApiRequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import { putPdfFileServerSide } from '@systemise/lib/universal/upload/put-file.server';
+import { createDocumentAuditLogData } from '@systemise/lib/utils/document-audit-logs';
+import { prisma } from '@systemise/prisma';
 import type { Envelope, Field, Recipient } from '@prisma/client';
 
 import { convertPlaceholdersToFieldInputs, extractPdfPlaceholders } from '../pdf/auto-place-fields';

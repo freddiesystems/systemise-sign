@@ -1,6 +1,6 @@
-import type { TTextFieldMeta } from '@documenso/lib/types/field-meta';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import type { TTextFieldMeta } from '@systemise/lib/types/field-meta';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -8,9 +8,9 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@documenso/ui/primitives/dialog';
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@documenso/ui/primitives/form/form';
-import { Textarea } from '@documenso/ui/primitives/textarea';
+} from '@systemise/ui/primitives/dialog';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@systemise/ui/primitives/form/form';
+import { Textarea } from '@systemise/ui/primitives/textarea';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { Plural, Trans, useLingui } from '@lingui/react/macro';

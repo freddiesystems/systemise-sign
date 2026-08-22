@@ -1,7 +1,7 @@
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getEnvelopeById } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { getPresignGetUrl } from '@documenso/lib/universal/upload/server-actions';
-import { isDocumentCompleted } from '@documenso/lib/utils/document';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getEnvelopeById } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { getPresignGetUrl } from '@systemise/lib/universal/upload/server-actions';
+import { isDocumentCompleted } from '@systemise/lib/utils/document';
 import type { DocumentData } from '@prisma/client';
 import { DocumentDataType, EnvelopeType } from '@prisma/client';
 

@@ -1,8 +1,8 @@
 import { DeleteEmailIdentityCommand } from '@aws-sdk/client-sesv2';
-import { DOCUMENSO_ENCRYPTION_KEY } from '@documenso/lib/constants/crypto';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { symmetricDecrypt } from '@documenso/lib/universal/crypto';
-import { prisma } from '@documenso/prisma';
+import { SYSTEMISE_ENCRYPTION_KEY } from '@systemise/lib/constants/crypto';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { symmetricDecrypt } from '@systemise/lib/universal/crypto';
+import { prisma } from '@systemise/prisma';
 import { EmailDomainStatus } from '@prisma/client';
 
 import { getSesClient, verifyDomainWithDKIM } from './create-email-domain';
@@ -20,10 +20,10 @@ type ReregisterEmailDomainOptions = {
  * Permission is assumed to be checked in the caller.
  */
 export const reregisterEmailDomain = async ({ emailDomainId }: ReregisterEmailDomainOptions) => {
-  const encryptionKey = DOCUMENSO_ENCRYPTION_KEY;
+  const encryptionKey = SYSTEMISE_ENCRYPTION_KEY;
 
   if (!encryptionKey) {
-    throw new Error('Missing DOCUMENSO_ENCRYPTION_KEY');
+    throw new Error('Missing SYSTEMISE_ENCRYPTION_KEY');
   }
 
   const emailDomain = await prisma.emailDomain.findUnique({
@@ -63,7 +63,7 @@ export const reregisterEmailDomain = async ({ emailDomainId }: ReregisterEmailDo
 
   const decryptedPrivateKey = new TextDecoder().decode(decryptedPrivateKeyBytes);
 
-  // The selector field in the DB is the full record name (e.g. "documenso-orgid._domainkey.example.com").
+  // The selector field in the DB is the full record name (e.g. "systemise-orgid._domainkey.example.com").
   // We need to extract just the selector part (before "._domainkey.").
   const selectorParts = emailDomain.selector.split('._domainkey.');
   const selector = selectorParts[0];

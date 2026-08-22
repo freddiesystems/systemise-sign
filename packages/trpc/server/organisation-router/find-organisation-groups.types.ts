@@ -1,5 +1,5 @@
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
-import { OrganisationGroupSchema } from '@documenso/prisma/generated/zod/modelSchema/OrganisationGroupSchema';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
+import { OrganisationGroupSchema } from '@systemise/prisma/generated/zod/modelSchema/OrganisationGroupSchema';
 import { OrganisationGroupType, OrganisationMemberRole, TeamMemberRole } from '@prisma/client';
 import { z } from 'zod';
 

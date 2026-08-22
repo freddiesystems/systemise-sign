@@ -1,5 +1,5 @@
-import { generateAvaliableRecipientPlaceholder } from '@documenso/lib/utils/templates';
-import { prisma } from '@documenso/prisma';
+import { generateAvaliableRecipientPlaceholder } from '@systemise/lib/utils/templates';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType } from '@prisma/client';
 
 import { AppError, AppErrorCode } from '../../errors/app-error';

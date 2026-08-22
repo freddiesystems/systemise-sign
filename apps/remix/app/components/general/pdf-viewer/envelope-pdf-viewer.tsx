@@ -1,7 +1,7 @@
-import { useCurrentEnvelopeRender } from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { PDF_VIEWER_ERROR_MESSAGES } from '@documenso/lib/constants/pdf-viewer-i18n';
-import { cn } from '@documenso/ui/lib/utils';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
+import { useCurrentEnvelopeRender } from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { PDF_VIEWER_ERROR_MESSAGES } from '@systemise/lib/constants/pdf-viewer-i18n';
+import { cn } from '@systemise/ui/lib/utils';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
 import type { MessageDescriptor } from '@lingui/core';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { useRef } from 'react';

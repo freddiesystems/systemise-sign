@@ -1,8 +1,8 @@
-import { useElementBounds } from '@documenso/lib/client-only/hooks/use-element-bounds';
-import { useIsPageInDom } from '@documenso/lib/client-only/hooks/use-is-page-in-dom';
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
-import type { TFieldMetaSchema } from '@documenso/lib/types/field-meta';
-import { ZCheckboxFieldMeta, ZRadioFieldMeta } from '@documenso/lib/types/field-meta';
+import { useElementBounds } from '@systemise/lib/client-only/hooks/use-element-bounds';
+import { useIsPageInDom } from '@systemise/lib/client-only/hooks/use-is-page-in-dom';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
+import type { TFieldMetaSchema } from '@systemise/lib/types/field-meta';
+import { ZCheckboxFieldMeta, ZRadioFieldMeta } from '@systemise/lib/types/field-meta';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

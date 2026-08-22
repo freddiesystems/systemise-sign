@@ -1,7 +1,7 @@
-import { mailer } from '@documenso/email/mailer';
-import { AccessAuth2FAEmailTemplate } from '@documenso/email/templates/access-auth-2fa';
-import { isRecipientEmailValidForSending } from '@documenso/lib/utils/recipients';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { AccessAuth2FAEmailTemplate } from '@systemise/email/templates/access-auth-2fa';
+import { isRecipientEmailValidForSending } from '@systemise/lib/utils/recipients';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import { EnvelopeType } from '@prisma/client';
 import { createElement } from 'react';

@@ -1,4 +1,4 @@
-import { Skeleton } from '@documenso/ui/primitives/skeleton';
+import { Skeleton } from '@systemise/ui/primitives/skeleton';
 import { Trans } from '@lingui/react/macro';
 import { ChevronLeft, Loader } from 'lucide-react';
 import { Link } from 'react-router';

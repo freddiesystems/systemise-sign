@@ -1,7 +1,7 @@
-import { useCurrentEnvelopeEditor } from '@documenso/lib/client-only/providers/envelope-editor-provider';
-import { useCurrentEnvelopeRender } from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { PDF_VIEWER_ERROR_MESSAGES } from '@documenso/lib/constants/pdf-viewer-i18n';
-import type { NormalizedFieldWithContext } from '@documenso/lib/server-only/ai/envelope/detect-fields/types';
+import { useCurrentEnvelopeEditor } from '@systemise/lib/client-only/providers/envelope-editor-provider';
+import { useCurrentEnvelopeRender } from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { PDF_VIEWER_ERROR_MESSAGES } from '@systemise/lib/constants/pdf-viewer-i18n';
+import type { NormalizedFieldWithContext } from '@systemise/lib/server-only/ai/envelope/detect-fields/types';
 import {
   FIELD_META_DEFAULT_VALUES,
   type TCheckboxFieldMeta,
@@ -15,14 +15,14 @@ import {
   type TRadioFieldMeta,
   type TSignatureFieldMeta,
   type TTextFieldMeta,
-} from '@documenso/lib/types/field-meta';
-import { getEnvelopeItemPermissions } from '@documenso/lib/utils/envelope';
-import { canRecipientFieldsBeModified } from '@documenso/lib/utils/recipients';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
-import { cn } from '@documenso/ui/lib/utils';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Button } from '@documenso/ui/primitives/button';
-import { Separator } from '@documenso/ui/primitives/separator';
+} from '@systemise/lib/types/field-meta';
+import { getEnvelopeItemPermissions } from '@systemise/lib/utils/envelope';
+import { canRecipientFieldsBeModified } from '@systemise/lib/utils/recipients';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
+import { cn } from '@systemise/ui/lib/utils';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Button } from '@systemise/ui/primitives/button';
+import { Separator } from '@systemise/ui/primitives/separator';
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';

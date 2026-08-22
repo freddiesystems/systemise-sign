@@ -1,5 +1,5 @@
-import { seedCompletedDocument, seedDraftDocument, seedPendingDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { seedCompletedDocument, seedDraftDocument, seedPendingDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, test } from '@playwright/test';
 
 import { apiSignin, apiSignout } from '../fixtures/authentication';

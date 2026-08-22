@@ -1,12 +1,12 @@
-import { useCopyToClipboard } from '@documenso/lib/client-only/hooks/use-copy-to-clipboard';
-import { useUpdateSearchParams } from '@documenso/lib/client-only/hooks/use-update-search-params';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { RECIPIENT_ROLES_DESCRIPTION } from '@documenso/lib/constants/recipient-roles';
-import type { TRecipientLite } from '@documenso/lib/types/recipient';
-import { formatSigningLink } from '@documenso/lib/utils/recipients';
-import { CopyTextButton } from '@documenso/ui/components/common/copy-text-button';
-import { AvatarWithText } from '@documenso/ui/primitives/avatar';
-import { Button } from '@documenso/ui/primitives/button';
+import { useCopyToClipboard } from '@systemise/lib/client-only/hooks/use-copy-to-clipboard';
+import { useUpdateSearchParams } from '@systemise/lib/client-only/hooks/use-update-search-params';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { RECIPIENT_ROLES_DESCRIPTION } from '@systemise/lib/constants/recipient-roles';
+import type { TRecipientLite } from '@systemise/lib/types/recipient';
+import { formatSigningLink } from '@systemise/lib/utils/recipients';
+import { CopyTextButton } from '@systemise/ui/components/common/copy-text-button';
+import { AvatarWithText } from '@systemise/ui/primitives/avatar';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogClose,
@@ -16,8 +16,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

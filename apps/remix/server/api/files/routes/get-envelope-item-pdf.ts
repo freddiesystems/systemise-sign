@@ -1,9 +1,9 @@
-import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
-import { verifyEmbeddingPresignToken } from '@documenso/lib/server-only/embedding-presign/verify-embedding-presign-token';
-import type { DocumentDataVersion } from '@documenso/lib/types/document';
-import { sha256 } from '@documenso/lib/universal/crypto';
-import { getFileServerSide } from '@documenso/lib/universal/upload/get-file.server';
-import { prisma } from '@documenso/prisma';
+import { getOptionalSession } from '@systemise/auth/server/lib/utils/get-session';
+import { verifyEmbeddingPresignToken } from '@systemise/lib/server-only/embedding-presign/verify-embedding-presign-token';
+import type { DocumentDataVersion } from '@systemise/lib/types/document';
+import { sha256 } from '@systemise/lib/universal/crypto';
+import { getFileServerSide } from '@systemise/lib/universal/upload/get-file.server';
+import { prisma } from '@systemise/prisma';
 import { sValidator } from '@hono/standard-validator';
 import type { DocumentData, EnvelopeItem } from '@prisma/client';
 import { type Context, Hono } from 'hono';

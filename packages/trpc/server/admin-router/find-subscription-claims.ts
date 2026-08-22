@@ -1,6 +1,6 @@
-import type { FindResultResponse } from '@documenso/lib/types/search-params';
-import { prisma } from '@documenso/prisma';
-import type SubscriptionClaimSchema from '@documenso/prisma/generated/zod/modelSchema/SubscriptionClaimSchema';
+import type { FindResultResponse } from '@systemise/lib/types/search-params';
+import { prisma } from '@systemise/prisma';
+import type SubscriptionClaimSchema from '@systemise/prisma/generated/zod/modelSchema/SubscriptionClaimSchema';
 import type { Prisma } from '@prisma/client';
 import type { z } from 'zod';
 

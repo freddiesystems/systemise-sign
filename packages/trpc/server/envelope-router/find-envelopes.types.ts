@@ -1,5 +1,5 @@
-import { ZEnvelopeManySchema } from '@documenso/lib/types/envelope';
-import { ZFindResultResponse, ZFindSearchParamsSchema } from '@documenso/lib/types/search-params';
+import { ZEnvelopeManySchema } from '@systemise/lib/types/envelope';
+import { ZFindResultResponse, ZFindSearchParamsSchema } from '@systemise/lib/types/search-params';
 import { DocumentSource, DocumentStatus, EnvelopeType } from '@prisma/client';
 import { z } from 'zod';
 

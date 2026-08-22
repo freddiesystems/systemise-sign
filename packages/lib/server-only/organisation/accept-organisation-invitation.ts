@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import type { OrganisationGroup, OrganisationMemberRole } from '@prisma/client';
 import { OrganisationGroupType, OrganisationMemberInviteStatus } from '@prisma/client';
 

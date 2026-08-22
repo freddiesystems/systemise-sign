@@ -69,7 +69,7 @@ export default defineConfig({
       '@napi-rs/canvas',
       '@node-rs/bcrypt',
       '@prisma/client',
-      '@documenso/tailwind-config',
+      '@systemise/tailwind-config',
       'playwright',
       'playwright-core',
       '@playwright/browser-chromium',

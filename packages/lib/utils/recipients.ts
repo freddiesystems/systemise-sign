@@ -1,4 +1,4 @@
-import { isSignatureFieldType } from '@documenso/prisma/guards/is-signature-field';
+import { isSignatureFieldType } from '@systemise/prisma/guards/is-signature-field';
 import type { Envelope } from '@prisma/client';
 import { type Field, RecipientRole, SigningStatus } from '@prisma/client';
 

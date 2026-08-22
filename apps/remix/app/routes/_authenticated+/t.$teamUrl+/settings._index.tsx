@@ -1,10 +1,10 @@
-import { getSession } from '@documenso/auth/server/lib/utils/get-session';
-import { getTeamWithEmail } from '@documenso/lib/server-only/team/get-team-email-by-email';
-import { formatAvatarUrl } from '@documenso/lib/utils/avatars';
-import { extractInitials } from '@documenso/lib/utils/recipient-formatter';
-import { canExecuteTeamAction } from '@documenso/lib/utils/teams';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { AvatarWithText } from '@documenso/ui/primitives/avatar';
+import { getSession } from '@systemise/auth/server/lib/utils/get-session';
+import { getTeamWithEmail } from '@systemise/lib/server-only/team/get-team-email-by-email';
+import { formatAvatarUrl } from '@systemise/lib/utils/avatars';
+import { extractInitials } from '@systemise/lib/utils/recipient-formatter';
+import { canExecuteTeamAction } from '@systemise/lib/utils/teams';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { AvatarWithText } from '@systemise/ui/primitives/avatar';
 import { Trans } from '@lingui/react/macro';
 import { CheckCircle2, Clock } from 'lucide-react';
 import { match, P } from 'ts-pattern';

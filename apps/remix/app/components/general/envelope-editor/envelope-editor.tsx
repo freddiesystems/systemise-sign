@@ -1,10 +1,10 @@
-import type { EnvelopeEditorStep } from '@documenso/lib/client-only/providers/envelope-editor-provider';
-import { useCurrentEnvelopeEditor } from '@documenso/lib/client-only/providers/envelope-editor-provider';
-import { mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
-import { Separator } from '@documenso/ui/primitives/separator';
-import { SpinnerBox } from '@documenso/ui/primitives/spinner';
+import type { EnvelopeEditorStep } from '@systemise/lib/client-only/providers/envelope-editor-provider';
+import { useCurrentEnvelopeEditor } from '@systemise/lib/client-only/providers/envelope-editor-provider';
+import { mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
+import { Separator } from '@systemise/ui/primitives/separator';
+import { SpinnerBox } from '@systemise/ui/primitives/spinner';
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';

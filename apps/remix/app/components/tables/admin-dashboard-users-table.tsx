@@ -1,10 +1,10 @@
-import { useDebouncedValue } from '@documenso/lib/client-only/hooks/use-debounced-value';
-import { useUpdateSearchParams } from '@documenso/lib/client-only/hooks/use-update-search-params';
-import { Button } from '@documenso/ui/primitives/button';
-import type { DataTableColumnDef } from '@documenso/ui/primitives/data-table';
-import { DataTable } from '@documenso/ui/primitives/data-table';
-import { DataTablePagination } from '@documenso/ui/primitives/data-table-pagination';
-import { Input } from '@documenso/ui/primitives/input';
+import { useDebouncedValue } from '@systemise/lib/client-only/hooks/use-debounced-value';
+import { useUpdateSearchParams } from '@systemise/lib/client-only/hooks/use-update-search-params';
+import { Button } from '@systemise/ui/primitives/button';
+import type { DataTableColumnDef } from '@systemise/ui/primitives/data-table';
+import { DataTable } from '@systemise/ui/primitives/data-table';
+import { DataTablePagination } from '@systemise/ui/primitives/data-table-pagination';
+import { Input } from '@systemise/ui/primitives/input';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

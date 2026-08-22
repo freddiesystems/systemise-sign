@@ -1,7 +1,7 @@
-import { PDF_VIEWER_PAGE_SELECTOR } from '@documenso/lib/constants/pdf-viewer';
-import { prisma } from '@documenso/prisma';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { PDF_VIEWER_PAGE_SELECTOR } from '@systemise/lib/constants/pdf-viewer';
+import { prisma } from '@systemise/prisma';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, type Page, test } from '@playwright/test';
 import type { Document, Team } from '@prisma/client';
 

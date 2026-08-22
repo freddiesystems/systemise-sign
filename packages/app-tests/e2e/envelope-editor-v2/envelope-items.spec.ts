@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { nanoid } from '@documenso/lib/universal/id';
-import { prisma } from '@documenso/prisma';
-import { seedPendingDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { nanoid } from '@systemise/lib/universal/id';
+import { prisma } from '@systemise/prisma';
+import { seedPendingDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import { expect, type Page, test } from '@playwright/test';
 
 import { apiSignin } from '../fixtures/authentication';
@@ -314,7 +314,7 @@ test.describe('embedded edit', () => {
 
 test.describe('pending envelope title editing', () => {
   test('edit envelope and item titles on a pending envelope', async ({ page }) => {
-    const recipientEmail = `recipient-${nanoid()}@test.documenso.com`;
+    const recipientEmail = `recipient-${nanoid()}@test.systemise.dev`;
     const { user, team } = await seedUser();
     const pendingDocument = await seedPendingDocument(user, team.id, [recipientEmail], {
       internalVersion: 2,

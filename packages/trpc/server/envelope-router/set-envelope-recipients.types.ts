@@ -1,5 +1,5 @@
-import { ZRecipientActionAuthTypesSchema } from '@documenso/lib/types/document-auth';
-import { ZRecipientEmailSchema, ZRecipientLiteSchema } from '@documenso/lib/types/recipient';
+import { ZRecipientActionAuthTypesSchema } from '@systemise/lib/types/document-auth';
+import { ZRecipientEmailSchema, ZRecipientLiteSchema } from '@systemise/lib/types/recipient';
 import { EnvelopeType, RecipientRole } from '@prisma/client';
 import { z } from 'zod';
 

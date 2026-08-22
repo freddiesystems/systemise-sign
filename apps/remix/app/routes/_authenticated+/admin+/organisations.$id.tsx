@@ -1,19 +1,19 @@
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { SUBSCRIPTION_STATUS_MAP } from '@documenso/lib/constants/billing';
-import { AppError } from '@documenso/lib/errors/app-error';
-import { LicenseClient } from '@documenso/lib/server-only/license/license-client';
-import type { TLicenseClaim } from '@documenso/lib/types/license';
-import { SUBSCRIPTION_CLAIM_FEATURE_FLAGS } from '@documenso/lib/types/subscription';
-import { getHighestOrganisationRoleInGroup } from '@documenso/lib/utils/organisations';
-import { trpc } from '@documenso/trpc/react';
-import type { TGetAdminOrganisationResponse } from '@documenso/trpc/server/admin-router/get-admin-organisation.types';
-import { ZUpdateAdminOrganisationRequestSchema } from '@documenso/trpc/server/admin-router/update-admin-organisation.types';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@documenso/ui/primitives/accordion';
-import { Alert, AlertDescription, AlertTitle } from '@documenso/ui/primitives/alert';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
-import { DataTable, type DataTableColumnDef } from '@documenso/ui/primitives/data-table';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { SUBSCRIPTION_STATUS_MAP } from '@systemise/lib/constants/billing';
+import { AppError } from '@systemise/lib/errors/app-error';
+import { LicenseClient } from '@systemise/lib/server-only/license/license-client';
+import type { TLicenseClaim } from '@systemise/lib/types/license';
+import { SUBSCRIPTION_CLAIM_FEATURE_FLAGS } from '@systemise/lib/types/subscription';
+import { getHighestOrganisationRoleInGroup } from '@systemise/lib/utils/organisations';
+import { trpc } from '@systemise/trpc/react';
+import type { TGetAdminOrganisationResponse } from '@systemise/trpc/server/admin-router/get-admin-organisation.types';
+import { ZUpdateAdminOrganisationRequestSchema } from '@systemise/trpc/server/admin-router/update-admin-organisation.types';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@systemise/ui/primitives/accordion';
+import { Alert, AlertDescription, AlertTitle } from '@systemise/ui/primitives/alert';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
+import { DataTable, type DataTableColumnDef } from '@systemise/ui/primitives/data-table';
 import {
   Form,
   FormControl,
@@ -22,10 +22,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';

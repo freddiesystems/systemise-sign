@@ -1,10 +1,10 @@
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
-import { DOCUMENSO_ENCRYPTION_KEY } from '@documenso/lib/constants/crypto';
-import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/organisations';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { symmetricEncrypt } from '@documenso/lib/universal/crypto';
-import { buildOrganisationWhereQuery } from '@documenso/lib/utils/organisations';
-import { prisma } from '@documenso/prisma';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
+import { SYSTEMISE_ENCRYPTION_KEY } from '@systemise/lib/constants/crypto';
+import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/organisations';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { symmetricEncrypt } from '@systemise/lib/universal/crypto';
+import { buildOrganisationWhereQuery } from '@systemise/lib/utils/organisations';
+import { prisma } from '@systemise/prisma';
 
 import { authenticatedProcedure } from '../trpc';
 import {
@@ -78,10 +78,10 @@ export const updateOrganisationAuthenticationPortalRoute = authenticatedProcedur
 
     // Encrypt the secret if it is provided.
     if (clientSecret) {
-      const encryptionKey = DOCUMENSO_ENCRYPTION_KEY;
+      const encryptionKey = SYSTEMISE_ENCRYPTION_KEY;
 
       if (!encryptionKey) {
-        throw new Error('Missing DOCUMENSO_ENCRYPTION_KEY');
+        throw new Error('Missing SYSTEMISE_ENCRYPTION_KEY');
       }
 
       encryptedClientSecret = symmetricEncrypt({

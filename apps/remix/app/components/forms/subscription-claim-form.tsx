@@ -1,8 +1,8 @@
-import type { TLicenseClaim } from '@documenso/lib/types/license';
-import { SUBSCRIPTION_CLAIM_FEATURE_FLAGS } from '@documenso/lib/types/subscription';
-import { ZCreateSubscriptionClaimRequestSchema } from '@documenso/trpc/server/admin-router/create-subscription-claim.types';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
-import { Checkbox } from '@documenso/ui/primitives/checkbox';
+import type { TLicenseClaim } from '@systemise/lib/types/license';
+import { SUBSCRIPTION_CLAIM_FEATURE_FLAGS } from '@systemise/lib/types/subscription';
+import { ZCreateSubscriptionClaimRequestSchema } from '@systemise/trpc/server/admin-router/create-subscription-claim.types';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
+import { Checkbox } from '@systemise/ui/primitives/checkbox';
 import {
   Form,
   FormControl,
@@ -11,8 +11,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@documenso/ui/primitives/form/form';
-import { Input } from '@documenso/ui/primitives/input';
+} from '@systemise/ui/primitives/form/form';
+import { Input } from '@systemise/ui/primitives/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Trans, useLingui } from '@lingui/react/macro';
 import type { SubscriptionClaim } from '@prisma/client';

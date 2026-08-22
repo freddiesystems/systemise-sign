@@ -1,7 +1,7 @@
-import { IS_AI_FEATURES_CONFIGURED } from '@documenso/lib/constants/app';
-import { DocumentSignatureType } from '@documenso/lib/constants/document';
-import { trpc } from '@documenso/trpc/react';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+import { IS_AI_FEATURES_CONFIGURED } from '@systemise/lib/constants/app';
+import { DocumentSignatureType } from '@systemise/lib/constants/document';
+import { trpc } from '@systemise/trpc/react';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { Loader } from 'lucide-react';

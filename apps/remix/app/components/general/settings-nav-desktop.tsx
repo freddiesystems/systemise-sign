@@ -1,8 +1,8 @@
-import { useSession } from '@documenso/lib/client-only/providers/session';
-import { IS_BILLING_ENABLED } from '@documenso/lib/constants/app';
-import { canExecuteOrganisationAction, isPersonalLayout } from '@documenso/lib/utils/organisations';
-import { cn } from '@documenso/ui/lib/utils';
-import { Button } from '@documenso/ui/primitives/button';
+import { useSession } from '@systemise/lib/client-only/providers/session';
+import { IS_BILLING_ENABLED } from '@systemise/lib/constants/app';
+import { canExecuteOrganisationAction, isPersonalLayout } from '@systemise/lib/utils/organisations';
+import { cn } from '@systemise/ui/lib/utils';
+import { Button } from '@systemise/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { BracesIcon, CreditCardIcon, Globe2Icon, Lock, Settings2Icon, User, Users, WebhookIcon } from 'lucide-react';
 import type { HTMLAttributes } from 'react';

@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { DocumentSource, EnvelopeType, WebhookTriggerEvents } from '@prisma/client';
 import pMap from 'p-map';
 import { omit } from 'remeda';

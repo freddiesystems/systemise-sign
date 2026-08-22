@@ -1,13 +1,13 @@
-import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
+import { getOptionalSession } from '@systemise/auth/server/lib/utils/get-session';
 import {
   IS_GOOGLE_SSO_ENABLED,
   IS_MICROSOFT_SSO_ENABLED,
   IS_OIDC_SSO_ENABLED,
   isSignupEnabledForProvider,
   OIDC_PROVIDER_LABEL,
-} from '@documenso/lib/constants/auth';
-import { isValidReturnTo, normalizeReturnTo } from '@documenso/lib/utils/is-valid-return-to';
-import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
+} from '@systemise/lib/constants/auth';
+import { isValidReturnTo, normalizeReturnTo } from '@systemise/lib/utils/is-valid-return-to';
+import { Alert, AlertDescription } from '@systemise/ui/primitives/alert';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

@@ -1,15 +1,15 @@
 import {
   assertMemberCountWithinCap,
   syncMemberCountWithStripeSeatPlan,
-} from '@documenso/ee/server-only/stripe/update-subscription-item-quantity';
-import { mailer } from '@documenso/email/mailer';
-import { OrganisationInviteEmailTemplate } from '@documenso/email/templates/organisation-invite';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@documenso/lib/constants/organisations';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { isOrganisationRoleWithinUserHierarchy } from '@documenso/lib/utils/organisations';
-import { prisma } from '@documenso/prisma';
-import type { TCreateOrganisationMemberInvitesRequestSchema } from '@documenso/trpc/server/organisation-router/create-organisation-member-invites.types';
+} from '@systemise/ee/server-only/stripe/update-subscription-item-quantity';
+import { mailer } from '@systemise/email/mailer';
+import { OrganisationInviteEmailTemplate } from '@systemise/email/templates/organisation-invite';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP } from '@systemise/lib/constants/organisations';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { isOrganisationRoleWithinUserHierarchy } from '@systemise/lib/utils/organisations';
+import { prisma } from '@systemise/prisma';
+import type { TCreateOrganisationMemberInvitesRequestSchema } from '@systemise/trpc/server/organisation-router/create-organisation-member-invites.types';
 import { msg } from '@lingui/core/macro';
 import type { Organisation, Prisma } from '@prisma/client';
 import { OrganisationMemberInviteStatus } from '@prisma/client';

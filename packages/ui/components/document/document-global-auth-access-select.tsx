@@ -1,7 +1,7 @@
-import { DOCUMENT_AUTH_TYPES } from '@documenso/lib/constants/document-auth';
-import { DocumentAccessAuth } from '@documenso/lib/types/document-auth';
-import { MultiSelect, type Option } from '@documenso/ui/primitives/multiselect';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@documenso/ui/primitives/tooltip';
+import { DOCUMENT_AUTH_TYPES } from '@systemise/lib/constants/document-auth';
+import { DocumentAccessAuth } from '@systemise/lib/types/document-auth';
+import { MultiSelect, type Option } from '@systemise/ui/primitives/multiselect';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@systemise/ui/primitives/tooltip';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

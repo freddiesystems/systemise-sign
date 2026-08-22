@@ -1,7 +1,7 @@
-import type { FindResultResponse } from '@documenso/lib/types/search-params';
-import { mapEnvelopesToDocumentMany } from '@documenso/lib/utils/document';
-import { maskRecipientTokensForDocument } from '@documenso/lib/utils/mask-recipient-tokens-for-document';
-import { prisma } from '@documenso/prisma';
+import type { FindResultResponse } from '@systemise/lib/types/search-params';
+import { mapEnvelopesToDocumentMany } from '@systemise/lib/utils/document';
+import { maskRecipientTokensForDocument } from '@systemise/lib/utils/mask-recipient-tokens-for-document';
+import { prisma } from '@systemise/prisma';
 import type { Envelope, Prisma } from '@prisma/client';
 import { DocumentStatus, EnvelopeType, RecipientRole } from '@prisma/client';
 

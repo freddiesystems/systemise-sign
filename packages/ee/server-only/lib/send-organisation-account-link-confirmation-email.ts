@@ -1,14 +1,14 @@
-import { mailer } from '@documenso/email/mailer';
-import { OrganisationAccountLinkConfirmationTemplate } from '@documenso/email/templates/organisation-account-link-confirmation';
-import { getI18nInstance } from '@documenso/lib/client-only/providers/i18n-server';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { DOCUMENSO_INTERNAL_EMAIL } from '@documenso/lib/constants/email';
-import { ORGANISATION_ACCOUNT_LINK_VERIFICATION_TOKEN_IDENTIFIER } from '@documenso/lib/constants/organisations';
-import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
-import { getEmailContext } from '@documenso/lib/server-only/email/get-email-context';
-import type { TOrganisationAccountLinkMetadata } from '@documenso/lib/types/organisation';
-import { renderEmailWithI18N } from '@documenso/lib/utils/render-email-with-i18n';
-import { prisma } from '@documenso/prisma';
+import { mailer } from '@systemise/email/mailer';
+import { OrganisationAccountLinkConfirmationTemplate } from '@systemise/email/templates/organisation-account-link-confirmation';
+import { getI18nInstance } from '@systemise/lib/client-only/providers/i18n-server';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { SYSTEMISE_INTERNAL_EMAIL } from '@systemise/lib/constants/email';
+import { ORGANISATION_ACCOUNT_LINK_VERIFICATION_TOKEN_IDENTIFIER } from '@systemise/lib/constants/organisations';
+import { AppError, AppErrorCode } from '@systemise/lib/errors/app-error';
+import { getEmailContext } from '@systemise/lib/server-only/email/get-email-context';
+import type { TOrganisationAccountLinkMetadata } from '@systemise/lib/types/organisation';
+import { renderEmailWithI18N } from '@systemise/lib/utils/render-email-with-i18n';
+import { prisma } from '@systemise/prisma';
 import { msg } from '@lingui/core/macro';
 import crypto from 'crypto';
 import { DateTime } from 'luxon';
@@ -106,7 +106,7 @@ export const sendOrganisationAccountLinkConfirmationEmail = async ({
       address: user.email,
       name: user.name || '',
     },
-    from: DOCUMENSO_INTERNAL_EMAIL,
+    from: SYSTEMISE_INTERNAL_EMAIL,
     subject: type === 'create' ? i18n._(msg`Account creation request`) : i18n._(msg`Account linking request`),
     html,
     text,

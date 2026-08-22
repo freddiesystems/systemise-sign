@@ -1,10 +1,10 @@
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import type { TRecipientAccessAuthTypes } from '@documenso/lib/types/document-auth';
-import { type TRecipientActionAuthTypes, ZRecipientAuthOptionsSchema } from '@documenso/lib/types/document-auth';
-import type { ApiRequestMetadata } from '@documenso/lib/universal/extract-request-metadata';
-import { createDocumentAuditLogData, diffRecipientChanges } from '@documenso/lib/utils/document-audit-logs';
-import { createRecipientAuthOptions } from '@documenso/lib/utils/document-auth';
-import { prisma } from '@documenso/prisma';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import type { TRecipientAccessAuthTypes } from '@systemise/lib/types/document-auth';
+import { type TRecipientActionAuthTypes, ZRecipientAuthOptionsSchema } from '@systemise/lib/types/document-auth';
+import type { ApiRequestMetadata } from '@systemise/lib/universal/extract-request-metadata';
+import { createDocumentAuditLogData, diffRecipientChanges } from '@systemise/lib/utils/document-audit-logs';
+import { createRecipientAuthOptions } from '@systemise/lib/utils/document-auth';
+import { prisma } from '@systemise/prisma';
 import { EnvelopeType, RecipientRole, SendStatus, SigningStatus } from '@prisma/client';
 
 import { AppError, AppErrorCode } from '../../errors/app-error';

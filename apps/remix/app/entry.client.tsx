@@ -1,5 +1,5 @@
-import { extractPostHogConfig } from '@documenso/lib/constants/feature-flags';
-import { dynamicActivate } from '@documenso/lib/utils/i18n';
+import { extractPostHogConfig } from '@systemise/lib/constants/feature-flags';
+import { dynamicActivate } from '@systemise/lib/utils/i18n';
 import { i18n } from '@lingui/core';
 import { detect, fromHtmlTag } from '@lingui/detect-locale';
 import { I18nProvider } from '@lingui/react';

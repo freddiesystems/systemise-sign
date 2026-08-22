@@ -1,8 +1,8 @@
-import { useCopyShareLink } from '@documenso/lib/client-only/hooks/use-copy-share-link';
-import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
-import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@documenso/lib/constants/trpc';
-import { generateTwitterIntent } from '@documenso/lib/universal/generate-twitter-intent';
-import { trpc } from '@documenso/trpc/react';
+import { useCopyShareLink } from '@systemise/lib/client-only/hooks/use-copy-share-link';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@systemise/lib/constants/app';
+import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@systemise/lib/constants/trpc';
+import { generateTwitterIntent } from '@systemise/lib/universal/generate-twitter-intent';
+import { trpc } from '@systemise/trpc/react';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';

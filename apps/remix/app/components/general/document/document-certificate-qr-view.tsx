@@ -1,12 +1,12 @@
 import {
   EnvelopeRenderProvider,
   useCurrentEnvelopeRender,
-} from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { PDF_VIEWER_ERROR_MESSAGES } from '@documenso/lib/constants/pdf-viewer-i18n';
-import { getDocumentDataUrlForPdfViewer } from '@documenso/lib/utils/envelope-download';
-import { formatDocumentsPath } from '@documenso/lib/utils/teams';
-import { trpc } from '@documenso/trpc/react';
-import { Button } from '@documenso/ui/primitives/button';
+} from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { PDF_VIEWER_ERROR_MESSAGES } from '@systemise/lib/constants/pdf-viewer-i18n';
+import { getDocumentDataUrlForPdfViewer } from '@systemise/lib/utils/envelope-download';
+import { formatDocumentsPath } from '@systemise/lib/utils/teams';
+import { trpc } from '@systemise/trpc/react';
+import { Button } from '@systemise/ui/primitives/button';
 import {
   Dialog,
   DialogContent,
@@ -14,7 +14,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@documenso/ui/primitives/dialog';
+} from '@systemise/ui/primitives/dialog';
 import { Trans } from '@lingui/react/macro';
 import { type DocumentData, DocumentStatus, type EnvelopeItem, EnvelopeType } from '@prisma/client';
 import { DownloadIcon } from 'lucide-react';

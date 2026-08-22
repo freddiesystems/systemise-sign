@@ -1,8 +1,8 @@
-import { useCurrentEnvelopeEditor } from '@documenso/lib/client-only/providers/envelope-editor-provider';
-import { getEnvelopeItemPermissions, mapSecondaryIdToTemplateId } from '@documenso/lib/utils/envelope';
-import { Badge } from '@documenso/ui/primitives/badge';
-import { Button } from '@documenso/ui/primitives/button';
-import { Separator } from '@documenso/ui/primitives/separator';
+import { useCurrentEnvelopeEditor } from '@systemise/lib/client-only/providers/envelope-editor-provider';
+import { getEnvelopeItemPermissions, mapSecondaryIdToTemplateId } from '@systemise/lib/utils/envelope';
+import { Badge } from '@systemise/ui/primitives/badge';
+import { Button } from '@systemise/ui/primitives/button';
+import { Separator } from '@systemise/ui/primitives/separator';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { DocumentStatus, EnvelopeType, TemplateType } from '@prisma/client';
 import {

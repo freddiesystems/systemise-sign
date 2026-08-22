@@ -1,6 +1,6 @@
-import { getEnvelopeById } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { getEnvelopeById } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 import { EnvelopeType } from '@prisma/client';
@@ -214,7 +214,7 @@ test.describe('AutoSave Settings Step', () => {
   test('should autosave the redirect URL change', async ({ page }) => {
     const { user, document, team } = await setupDocument(page);
 
-    const newRedirectUrl = 'https://documenso.com/test/';
+    const newRedirectUrl = 'https://systemise.dev/test/';
 
     await page.getByRole('button', { name: 'Advanced Options' }).click();
 

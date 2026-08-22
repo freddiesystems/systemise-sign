@@ -1,7 +1,7 @@
-import { authClient } from '@documenso/auth/client';
-import { Button } from '@documenso/ui/primitives/button';
-import type { DataTableColumnDef } from '@documenso/ui/primitives/data-table';
-import { DataTable } from '@documenso/ui/primitives/data-table';
+import { authClient } from '@systemise/auth/client';
+import { Button } from '@systemise/ui/primitives/button';
+import type { DataTableColumnDef } from '@systemise/ui/primitives/data-table';
+import { DataTable } from '@systemise/ui/primitives/data-table';
 import {
   Dialog,
   DialogContent,
@@ -10,10 +10,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@documenso/ui/primitives/dialog';
-import { Skeleton } from '@documenso/ui/primitives/skeleton';
-import { TableCell } from '@documenso/ui/primitives/table';
-import { useToast } from '@documenso/ui/primitives/use-toast';
+} from '@systemise/ui/primitives/dialog';
+import { Skeleton } from '@systemise/ui/primitives/skeleton';
+import { TableCell } from '@systemise/ui/primitives/table';
+import { useToast } from '@systemise/ui/primitives/use-toast';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { useQuery } from '@tanstack/react-query';

@@ -1,5 +1,5 @@
-import { ZOrganisationManySchema } from '@documenso/lib/types/organisation';
-import OrganisationMemberRoleSchema from '@documenso/prisma/generated/zod/inputTypeSchemas/OrganisationMemberRoleSchema';
+import { ZOrganisationManySchema } from '@systemise/lib/types/organisation';
+import OrganisationMemberRoleSchema from '@systemise/prisma/generated/zod/inputTypeSchemas/OrganisationMemberRoleSchema';
 import { z } from 'zod';
 
 // export const getOrganisationsMeta: TrpcOpenApiMeta = {

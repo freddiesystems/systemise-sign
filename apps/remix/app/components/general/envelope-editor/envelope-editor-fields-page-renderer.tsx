@@ -1,20 +1,20 @@
-import type { TLocalField } from '@documenso/lib/client-only/hooks/use-editor-fields';
-import { usePageRenderer } from '@documenso/lib/client-only/hooks/use-page-renderer';
-import { useCurrentEnvelopeEditor } from '@documenso/lib/client-only/providers/envelope-editor-provider';
+import type { TLocalField } from '@systemise/lib/client-only/hooks/use-editor-fields';
+import { usePageRenderer } from '@systemise/lib/client-only/hooks/use-page-renderer';
+import { useCurrentEnvelopeEditor } from '@systemise/lib/client-only/providers/envelope-editor-provider';
 import {
   type PageRenderData,
   useCurrentEnvelopeRender,
-} from '@documenso/lib/client-only/providers/envelope-render-provider';
-import { FIELD_META_DEFAULT_VALUES } from '@documenso/lib/types/field-meta';
+} from '@systemise/lib/client-only/providers/envelope-render-provider';
+import { FIELD_META_DEFAULT_VALUES } from '@systemise/lib/types/field-meta';
 import {
   convertPixelToPercentage,
   MIN_FIELD_HEIGHT_PX,
   MIN_FIELD_WIDTH_PX,
-} from '@documenso/lib/universal/field-renderer/field-renderer';
-import { renderField } from '@documenso/lib/universal/field-renderer/render-field';
-import { getClientSideFieldTranslations } from '@documenso/lib/utils/fields';
-import { canRecipientFieldsBeModified } from '@documenso/lib/utils/recipients';
-import { CommandDialog } from '@documenso/ui/primitives/command';
+} from '@systemise/lib/universal/field-renderer/field-renderer';
+import { renderField } from '@systemise/lib/universal/field-renderer/render-field';
+import { getClientSideFieldTranslations } from '@systemise/lib/utils/fields';
+import { canRecipientFieldsBeModified } from '@systemise/lib/utils/recipients';
+import { CommandDialog } from '@systemise/ui/primitives/command';
 import { useLingui } from '@lingui/react/macro';
 import type { FieldType } from '@prisma/client';
 import Konva from 'konva';

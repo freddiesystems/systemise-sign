@@ -1,8 +1,8 @@
-import { isSignatureFieldType } from '@documenso/prisma/guards/is-signature-field';
-import { Input } from '@documenso/ui/primitives/input';
-import { Label } from '@documenso/ui/primitives/label';
-import { RadioGroup, RadioGroupItem } from '@documenso/ui/primitives/radio-group';
-import { SignaturePadDialog } from '@documenso/ui/primitives/signature-pad/signature-pad-dialog';
+import { isSignatureFieldType } from '@systemise/prisma/guards/is-signature-field';
+import { Input } from '@systemise/ui/primitives/input';
+import { Label } from '@systemise/ui/primitives/label';
+import { RadioGroup, RadioGroupItem } from '@systemise/ui/primitives/radio-group';
+import { SignaturePadDialog } from '@systemise/ui/primitives/signature-pad/signature-pad-dialog';
 import { Plural, Trans } from '@lingui/react/macro';
 import { RecipientRole } from '@prisma/client';
 import { useMemo } from 'react';

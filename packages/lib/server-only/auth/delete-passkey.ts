@@ -1,4 +1,4 @@
-import { prisma } from '@documenso/prisma';
+import { prisma } from '@systemise/prisma';
 import { UserSecurityAuditLogType } from '@prisma/client';
 
 import type { RequestMetadata } from '../../universal/extract-request-metadata';

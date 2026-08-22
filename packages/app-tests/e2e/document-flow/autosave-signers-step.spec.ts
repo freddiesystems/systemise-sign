@@ -1,8 +1,8 @@
-import { getEnvelopeById } from '@documenso/lib/server-only/envelope/get-envelope-by-id';
-import { getRecipientsForDocument } from '@documenso/lib/server-only/recipient/get-recipients-for-document';
-import { mapSecondaryIdToDocumentId } from '@documenso/lib/utils/envelope';
-import { seedBlankDocument } from '@documenso/prisma/seed/documents';
-import { seedUser } from '@documenso/prisma/seed/users';
+import { getEnvelopeById } from '@systemise/lib/server-only/envelope/get-envelope-by-id';
+import { getRecipientsForDocument } from '@systemise/lib/server-only/recipient/get-recipients-for-document';
+import { mapSecondaryIdToDocumentId } from '@systemise/lib/utils/envelope';
+import { seedBlankDocument } from '@systemise/prisma/seed/documents';
+import { seedUser } from '@systemise/prisma/seed/users';
 import type { Page } from '@playwright/test';
 import { expect, test } from '@playwright/test';
 import { EnvelopeType } from '@prisma/client';
@@ -34,7 +34,7 @@ const triggerAutosave = async (page: Page) => {
 };
 
 const addSignerAndSave = async (page: Page) => {
-  await page.getByPlaceholder('Email').fill('recipient1@documenso.com');
+  await page.getByPlaceholder('Email').fill('recipient1@systemise.dev');
   await page.getByPlaceholder('Name').fill('Recipient 1');
 
   await triggerAutosave(page);
@@ -54,7 +54,7 @@ test.describe('AutoSave Signers Step', () => {
       });
 
       expect(retrievedRecipients.length).toBe(1);
-      expect(retrievedRecipients[0].email).toBe('recipient1@documenso.com');
+      expect(retrievedRecipients[0].email).toBe('recipient1@systemise.dev');
       expect(retrievedRecipients[0].name).toBe('Recipient 1');
     }).toPass();
   });
@@ -88,8 +88,8 @@ test.describe('AutoSave Signers Step', () => {
 
     await addSignerAndSave(page);
 
-    await page.getByPlaceholder('Name').fill('Documenso Manager');
-    await page.getByPlaceholder('Email').fill('manager@documenso.com');
+    await page.getByPlaceholder('Name').fill('Systemise Manager');
+    await page.getByPlaceholder('Email').fill('manager@systemise.dev');
 
     await triggerAutosave(page);
 
@@ -106,8 +106,8 @@ test.describe('AutoSave Signers Step', () => {
       });
 
       expect(retrievedRecipients.length).toBe(1);
-      expect(retrievedRecipients[0].email).toBe('manager@documenso.com');
-      expect(retrievedRecipients[0].name).toBe('Documenso Manager');
+      expect(retrievedRecipients[0].email).toBe('manager@systemise.dev');
+      expect(retrievedRecipients[0].name).toBe('Systemise Manager');
       expect(retrievedRecipients[0].role).toBe('CC');
     }).toPass();
   });
@@ -119,12 +119,12 @@ test.describe('AutoSave Signers Step', () => {
 
     await page.getByRole('button', { name: 'Add signer' }).click();
 
-    await page.getByTestId('signer-email-input').nth(1).fill('recipient2@documenso.com');
+    await page.getByTestId('signer-email-input').nth(1).fill('recipient2@systemise.dev');
     await page.getByLabel('Name').nth(1).fill('Recipient 2');
 
     await page.getByRole('button', { name: 'Add Signer' }).click();
 
-    await page.getByTestId('signer-email-input').nth(2).fill('recipient3@documenso.com');
+    await page.getByTestId('signer-email-input').nth(2).fill('recipient3@systemise.dev');
     await page.getByLabel('Name').nth(2).fill('Recipient 3');
 
     await triggerAutosave(page);
@@ -166,9 +166,9 @@ test.describe('AutoSave Signers Step', () => {
       expect(retrievedDocumentData.documentMeta?.allowDictateNextSigner).toBe(true);
       expect(retrievedRecipients.length).toBe(3);
 
-      const firstRecipient = retrievedRecipients.find((r) => r.email === 'recipient1@documenso.com');
-      const secondRecipient = retrievedRecipients.find((r) => r.email === 'recipient2@documenso.com');
-      const thirdRecipient = retrievedRecipients.find((r) => r.email === 'recipient3@documenso.com');
+      const firstRecipient = retrievedRecipients.find((r) => r.email === 'recipient1@systemise.dev');
+      const secondRecipient = retrievedRecipients.find((r) => r.email === 'recipient2@systemise.dev');
+      const thirdRecipient = retrievedRecipients.find((r) => r.email === 'recipient3@systemise.dev');
 
       expect(firstRecipient?.signingOrder).toBe(2);
       expect(secondRecipient?.signingOrder).toBe(3);

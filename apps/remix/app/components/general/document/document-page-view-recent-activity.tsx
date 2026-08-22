@@ -1,8 +1,8 @@
-import { DOCUMENT_AUDIT_LOG_TYPE } from '@documenso/lib/types/document-audit-logs';
-import { formatDocumentAuditLogAction } from '@documenso/lib/utils/document-audit-logs';
-import { trpc } from '@documenso/trpc/react';
-import { AnimateGenericFadeInOut } from '@documenso/ui/components/animate/animate-generic-fade-in-out';
-import { cn } from '@documenso/ui/lib/utils';
+import { DOCUMENT_AUDIT_LOG_TYPE } from '@systemise/lib/types/document-audit-logs';
+import { formatDocumentAuditLogAction } from '@systemise/lib/utils/document-audit-logs';
+import { trpc } from '@systemise/trpc/react';
+import { AnimateGenericFadeInOut } from '@systemise/ui/components/animate/animate-generic-fade-in-out';
+import { cn } from '@systemise/ui/lib/utils';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
